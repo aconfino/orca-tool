@@ -1,0 +1,6 @@
+<orca:weightSlider name="functionalityWeight" title="Functionality" value="${evaluation.functionalityWeight}"/><br>
+<orca:weightSlider name="codeWeight" title="Code Quality" value="${evaluation.codeWeight}"/> 
+<orca:weightSlider name="pedigreeWeight" title="Pedigree" value="${evaluation.functionalityWeight}"/> 
+<orca:weightSlider name="marketWeight" title="Market Penetration" value="${evaluation.pedigreeWeight}"/> 
+<orca:weightSlider name="supportWeight" title="Support" value="${evaluation.supportWeight}"/>
+	

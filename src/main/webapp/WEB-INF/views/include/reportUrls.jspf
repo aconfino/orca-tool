@@ -1,0 +1,87 @@
+<!-- Radar  Variables -->
+<c:if test="${report.quantity eq 1}">
+	<c:set var="reportData" value="${report.firstSurvey.codeDesign.calculatedValue*10},${report.firstSurvey.codeRuntime.calculatedValue*10},${report.firstSurvey.codeStatic.calculatedValue*10},${report.firstSurvey.community.calculatedValue*10},${report.firstSurvey.documentation.calculatedValue*10},${report.firstSurvey.functionality.calculatedValue*10},${report.firstSurvey.license.calculatedValue*10},${report.firstSurvey.marketPenetration.calculatedValue*10},${report.firstSurvey.pedigree.calculatedValue*10},${report.firstSurvey.support.calculatedValue*10},${report.firstSurvey.velocity.calculatedValue*10}"/>
+	<c:set var="overUnderReportData" value="${report.firstSurvey.codeDesign.calculatedValue*10-50},${report.firstSurvey.codeRuntime.calculatedValue*10-50},${report.firstSurvey.codeStatic.calculatedValue*10-50},${report.firstSurvey.community.calculatedValue*10-50},${report.firstSurvey.documentation.calculatedValue*10-50},${report.firstSurvey.functionality.calculatedValue*10-50},${report.firstSurvey.license.calculatedValue*10-50},${report.firstSurvey.marketPenetration.calculatedValue*10-50},${report.firstSurvey.pedigree.calculatedValue*10-50},${report.firstSurvey.support.calculatedValue*10-50},${report.firstSurvey.velocity.calculatedValue*10-50}"/>
+	<c:set var="reportLegend" value="${report.firstSurvey.surveyName}"/>
+	<c:set var="reportColors" value="FF0000"/>
+	<c:set var="lineThickness" value="4"/>
+</c:if>
+<c:if test="${report.quantity eq 2}">
+	<c:set var="reportData" value="${report.firstSurvey.codeDesign.calculatedValue*10},${report.firstSurvey.codeRuntime.calculatedValue*10},${report.firstSurvey.codeStatic.calculatedValue*10},${report.firstSurvey.community.calculatedValue*10},${report.firstSurvey.documentation.calculatedValue*10},${report.firstSurvey.functionality.calculatedValue*10},${report.firstSurvey.license.calculatedValue*10},${report.firstSurvey.marketPenetration.calculatedValue*10},${report.firstSurvey.pedigree.calculatedValue*10},${report.firstSurvey.support.calculatedValue*10},${report.firstSurvey.velocity.calculatedValue*10}|${report.secondSurvey.codeDesign.calculatedValue*10},${report.secondSurvey.codeRuntime.calculatedValue*10},${report.secondSurvey.codeStatic.calculatedValue*10},${report.secondSurvey.community.calculatedValue*10},${report.secondSurvey.documentation.calculatedValue*10},${report.secondSurvey.functionality.calculatedValue*10},${report.secondSurvey.license.calculatedValue*10},${report.secondSurvey.marketPenetration.calculatedValue*10},${report.secondSurvey.pedigree.calculatedValue*10},${report.secondSurvey.support.calculatedValue*10},${report.secondSurvey.velocity.calculatedValue*10}"/>
+	<c:set var="overUnderReportData" value="${report.firstSurvey.codeDesign.calculatedValue*10-50},${report.firstSurvey.codeRuntime.calculatedValue*10-50},${report.firstSurvey.codeStatic.calculatedValue*10-50},${report.firstSurvey.community.calculatedValue*10-50},${report.firstSurvey.documentation.calculatedValue*10-50},${report.firstSurvey.functionality.calculatedValue*10-50},${report.firstSurvey.license.calculatedValue*10-50},${report.firstSurvey.marketPenetration.calculatedValue*10-50},${report.firstSurvey.pedigree.calculatedValue*10-50},${report.firstSurvey.support.calculatedValue*10-50},${report.firstSurvey.velocity.calculatedValue*10-50}|${report.secondSurvey.codeDesign.calculatedValue*10-50},${report.secondSurvey.codeRuntime.calculatedValue*10-50},${report.secondSurvey.codeStatic.calculatedValue*10-50},${report.secondSurvey.community.calculatedValue*10-50},${report.secondSurvey.documentation.calculatedValue*10-50},${report.secondSurvey.functionality.calculatedValue*10-50},${report.secondSurvey.license.calculatedValue*10-50},${report.secondSurvey.marketPenetration.calculatedValue*10-50},${report.secondSurvey.pedigree.calculatedValue*10-50},${report.secondSurvey.support.calculatedValue*10-50},${report.secondSurvey.velocity.calculatedValue*10-50}"/>
+	<c:set var="reportLegend" value="${report.firstSurvey.surveyName}|${report.secondSurvey.surveyName}"/>
+	<c:set var="reportColors" value="FF0000,00FF00"/>
+	<c:set var="lineThickness" value="4|4"/>
+</c:if>
+<c:if test="${report.quantity eq 3}">
+	<c:set var="reportData" value="${report.firstSurvey.codeDesign.calculatedValue*10},${report.firstSurvey.codeRuntime.calculatedValue*10},${report.firstSurvey.codeStatic.calculatedValue*10},${report.firstSurvey.community.calculatedValue*10},${report.firstSurvey.documentation.calculatedValue*10},${report.firstSurvey.functionality.calculatedValue*10},${report.firstSurvey.license.calculatedValue*10},${report.firstSurvey.marketPenetration.calculatedValue*10},${report.firstSurvey.pedigree.calculatedValue*10},${report.firstSurvey.support.calculatedValue*10},${report.firstSurvey.velocity.calculatedValue*10}|${report.secondSurvey.codeDesign.calculatedValue*10},${report.secondSurvey.codeRuntime.calculatedValue*10},${report.secondSurvey.codeStatic.calculatedValue*10},${report.secondSurvey.community.calculatedValue*10},${report.secondSurvey.documentation.calculatedValue*10},${report.secondSurvey.functionality.calculatedValue*10},${report.secondSurvey.license.calculatedValue*10},${report.secondSurvey.marketPenetration.calculatedValue*10},${report.secondSurvey.pedigree.calculatedValue*10},${report.secondSurvey.support.calculatedValue*10},${report.secondSurvey.velocity.calculatedValue*10}|${report.thirdSurvey.codeDesign.calculatedValue*10},${report.thirdSurvey.codeRuntime.calculatedValue*10},${report.thirdSurvey.codeStatic.calculatedValue*10},${report.thirdSurvey.community.calculatedValue*10},${report.thirdSurvey.documentation.calculatedValue*10},${report.thirdSurvey.functionality.calculatedValue*10},${report.thirdSurvey.license.calculatedValue*10},${report.thirdSurvey.marketPenetration.calculatedValue*10},${report.thirdSurvey.pedigree.calculatedValue*10},${report.thirdSurvey.support.calculatedValue*10},${report.thirdSurvey.velocity.calculatedValue*10}"/>
+	<c:set var="overUnderReportData" value="${report.firstSurvey.codeDesign.calculatedValue*10-50},${report.firstSurvey.codeRuntime.calculatedValue*10-50},${report.firstSurvey.codeStatic.calculatedValue*10-50},${report.firstSurvey.community.calculatedValue*10-50},${report.firstSurvey.documentation.calculatedValue*10-50},${report.firstSurvey.functionality.calculatedValue*10-50},${report.firstSurvey.license.calculatedValue*10-50},${report.firstSurvey.marketPenetration.calculatedValue*10-50},${report.firstSurvey.pedigree.calculatedValue*10-50},${report.firstSurvey.support.calculatedValue*10-50},${report.firstSurvey.velocity.calculatedValue*10-50}|${report.secondSurvey.codeDesign.calculatedValue*10-50},${report.secondSurvey.codeRuntime.calculatedValue*10-50},${report.secondSurvey.codeStatic.calculatedValue*10-50},${report.secondSurvey.community.calculatedValue*10-50},${report.secondSurvey.documentation.calculatedValue*10-50},${report.secondSurvey.functionality.calculatedValue*10-50},${report.secondSurvey.license.calculatedValue*10-50},${report.secondSurvey.marketPenetration.calculatedValue*10-50},${report.secondSurvey.pedigree.calculatedValue*10-50},${report.secondSurvey.support.calculatedValue*10-50},${report.secondSurvey.velocity.calculatedValue*10-50}|${report.thirdSurvey.codeDesign.calculatedValue*10-50},${report.thirdSurvey.codeRuntime.calculatedValue*10-50},${report.thirdSurvey.codeStatic.calculatedValue*10-50},${report.thirdSurvey.community.calculatedValue*10-50},${report.thirdSurvey.documentation.calculatedValue*10-50},${report.thirdSurvey.functionality.calculatedValue*10-50},${report.thirdSurvey.license.calculatedValue*10-50},${report.thirdSurvey.marketPenetration.calculatedValue*10-50},${report.thirdSurvey.pedigree.calculatedValue*10-50},${report.thirdSurvey.support.calculatedValue*10-50},${report.thirdSurvey.velocity.calculatedValue*10-50}"/>
+	<c:set var="reportLegend" value="${report.firstSurvey.surveyName}|${report.secondSurvey.surveyName}|${report.thirdSurvey.surveyName}"/>
+	<c:set var="reportColors" value="FF0000,00FF00,0000FF"/>
+	<c:set var="lineThickness" value="4|4|4"/>
+</c:if>
+<c:if test="${report.quantity eq 4}">
+	<c:set var="reportData" value="${report.firstSurvey.codeDesign.calculatedValue*10},${report.firstSurvey.codeRuntime.calculatedValue*10},${report.firstSurvey.codeStatic.calculatedValue*10},${report.firstSurvey.community.calculatedValue*10},${report.firstSurvey.documentation.calculatedValue*10},${report.firstSurvey.functionality.calculatedValue*10},${report.firstSurvey.license.calculatedValue*10},${report.firstSurvey.marketPenetration.calculatedValue*10},${report.firstSurvey.pedigree.calculatedValue*10},${report.firstSurvey.support.calculatedValue*10},${report.firstSurvey.velocity.calculatedValue*10}|${report.secondSurvey.codeDesign.calculatedValue*10},${report.secondSurvey.codeRuntime.calculatedValue*10},${report.secondSurvey.codeStatic.calculatedValue*10},${report.secondSurvey.community.calculatedValue*10},${report.secondSurvey.documentation.calculatedValue*10},${report.secondSurvey.functionality.calculatedValue*10},${report.secondSurvey.license.calculatedValue*10},${report.secondSurvey.marketPenetration.calculatedValue*10},${report.secondSurvey.pedigree.calculatedValue*10},${report.secondSurvey.support.calculatedValue*10},${report.secondSurvey.velocity.calculatedValue*10}|${report.thirdSurvey.codeDesign.calculatedValue*10},${report.thirdSurvey.codeRuntime.calculatedValue*10},${report.thirdSurvey.codeStatic.calculatedValue*10},${report.thirdSurvey.community.calculatedValue*10},${report.thirdSurvey.documentation.calculatedValue*10},${report.thirdSurvey.functionality.calculatedValue*10},${report.thirdSurvey.license.calculatedValue*10},${report.thirdSurvey.marketPenetration.calculatedValue*10},${report.thirdSurvey.pedigree.calculatedValue*10},${report.thirdSurvey.support.calculatedValue*10},${report.thirdSurvey.velocity.calculatedValue*10}|${report.fourthSurvey.codeDesign.calculatedValue*10},${report.fourthSurvey.codeRuntime.calculatedValue*10},${report.fourthSurvey.codeStatic.calculatedValue*10},${report.fourthSurvey.community.calculatedValue*10},${report.fourthSurvey.documentation.calculatedValue*10},${report.fourthSurvey.functionality.calculatedValue*10},${report.fourthSurvey.license.calculatedValue*10},${report.fourthSurvey.marketPenetration.calculatedValue*10},${report.fourthSurvey.pedigree.calculatedValue*10},${report.fourthSurvey.support.calculatedValue*10},${report.fourthSurvey.velocity.calculatedValue*10}"/>
+	<c:set var="overUnderReportData" value="${report.firstSurvey.codeDesign.calculatedValue*10-50},${report.firstSurvey.codeRuntime.calculatedValue*10-50},${report.firstSurvey.codeStatic.calculatedValue*10-50},${report.firstSurvey.community.calculatedValue*10-50},${report.firstSurvey.documentation.calculatedValue*10-50},${report.firstSurvey.functionality.calculatedValue*10-50},${report.firstSurvey.license.calculatedValue*10-50},${report.firstSurvey.marketPenetration.calculatedValue*10-50},${report.firstSurvey.pedigree.calculatedValue*10-50},${report.firstSurvey.support.calculatedValue*10-50},${report.firstSurvey.velocity.calculatedValue*10-50}|${report.secondSurvey.codeDesign.calculatedValue*10-50},${report.secondSurvey.codeRuntime.calculatedValue*10-50},${report.secondSurvey.codeStatic.calculatedValue*10-50},${report.secondSurvey.community.calculatedValue*10-50},${report.secondSurvey.documentation.calculatedValue*10-50},${report.secondSurvey.functionality.calculatedValue*10-50},${report.secondSurvey.license.calculatedValue*10-50},${report.secondSurvey.marketPenetration.calculatedValue*10-50},${report.secondSurvey.pedigree.calculatedValue*10-50},${report.secondSurvey.support.calculatedValue*10-50},${report.secondSurvey.velocity.calculatedValue*10-50}|${report.thirdSurvey.codeDesign.calculatedValue*10-50},${report.thirdSurvey.codeRuntime.calculatedValue*10-50},${report.thirdSurvey.codeStatic.calculatedValue*10-50},${report.thirdSurvey.community.calculatedValue*10-50},${report.thirdSurvey.documentation.calculatedValue*10-50},${report.thirdSurvey.functionality.calculatedValue*10-50},${report.thirdSurvey.license.calculatedValue*10-50},${report.thirdSurvey.marketPenetration.calculatedValue*10-50},${report.thirdSurvey.pedigree.calculatedValue*10-50},${report.thirdSurvey.support.calculatedValue*10-50},${report.thirdSurvey.velocity.calculatedValue*10-50}|${report.fourthSurvey.codeDesign.calculatedValue*10-50},${report.fourthSurvey.codeRuntime.calculatedValue*10-50},${report.fourthSurvey.codeStatic.calculatedValue*10-50},${report.fourthSurvey.community.calculatedValue*10-50},${report.fourthSurvey.documentation.calculatedValue*10-50},${report.fourthSurvey.functionality.calculatedValue*10-50},${report.fourthSurvey.license.calculatedValue*10-50},${report.fourthSurvey.marketPenetration.calculatedValue*10-50},${report.fourthSurvey.pedigree.calculatedValue*10-50},${report.fourthSurvey.support.calculatedValue*10-50},${report.fourthSurvey.velocity.calculatedValue*10-50}"/>
+	<c:set var="reportLegend" value="${report.firstSurvey.surveyName}|${report.secondSurvey.surveyName}|${report.thirdSurvey.surveyName}|${report.fourthSurvey.surveyName}"/>
+	 <c:set var="reportColors" value="FF0000,00FF00,0000FF,FFFF00"/>
+ 	<c:set var="lineThickness" value="4|4|4|4"/>
+ </c:if>
+<!-- Straight Radar  -->
+<c:url value="http://chart.apis.google.com/chart" var="StraightRadar">
+   <c:param name="chxl" value="0:|Design|Runtime|Static|Community|Documentation|Functionality|License|Market Penetration|Pedigree|Support|Velocity"/>
+   <c:param name="chxr" value="0,0,360"/>
+   <c:param name="chxt" value="x"/>
+   <c:param name="chs" value="600x400"/>
+   <c:param name="cht" value="r"/>
+   <c:param name="chd" value="t:${reportData}"/>
+   <c:param name="chls"  value="${lineThickness}"/>
+	<c:param name="chdl" value="${reportLegend}"/>
+ 	<c:param name="chtt" value="${evaluation.name} - Straight Radar Chart"/>
+	<c:param name="chco" value="${reportColors}"/>
+</c:url>
+<!-- Curved Radar -->
+<c:url value="http://chart.apis.google.com/chart" var="CurvedRadar">
+   <c:param name="chxl" value="0:|Design|Runtime|Static|Community|Documentation|Functionality|License|Market Penetration|Pedigree|Support|Velocity"/>
+   <c:param name="chxr" value="0,0,360"/>
+   <c:param name="chxt" value="x"/>
+   <c:param name="chs" value="600x400"/>
+   <c:param name="cht" value="rs"/>
+  <c:param name="chd" value="t:${reportData}"/>
+   <c:param name="chls"  value="${lineThickness}"/>
+	<c:param name="chdl" value="${reportLegend}"/>
+ 	<c:param name="chtt" value="${evaluation.name} - Straight Radar Chart"/>
+	<c:param name="chco" value="${reportColors}"/>
+</c:url>
+<!-- Bar Graph -->
+<c:url value="http://chart.apis.google.com/chart" var="ClassicBarGraph">
+   <c:param name="chxl" value="0:|Design|Runtime|Static|Community|Doc|Functionality|License|Penetration|Pedigree|Support|Velocity"/>
+   <c:param name="chxr" value="0,0,360"/>
+   <c:param name="chxt" value="x"/>
+   <c:param name="chbh" value="a"/>
+   <c:param name="chs" value="750x200"/>
+   <c:param name="chds" value="0,110"/>
+   <c:param name="cht" value="bvg"/>
+   <c:param name="chd" value="t:${reportData}"/>
+   <c:param name="chls"  value="${lineThickness}"/>
+   <c:param name="chma" value="|101"/>
+   <c:param name="chtt" value="${evaluation.name} - Bar chart"/>
+	<c:param name="chdl" value="${reportLegend}"/>
+	<c:param name="chco" value="${reportColors}"/>
+</c:url>
+<!-- Over Under Bar Graph -->
+<c:url value="http://chart.apis.google.com/chart" var="OverUnderBarGraph">
+   <c:param name="chxl" value="0:|Design|Runtime|Static|Community|Doc|Functionality|License|Penetration|Pedigree|Support|Velocity"/>
+   <c:param name="chxr" value="0,0,360"/>
+   <c:param name="chxt" value="x"/>
+   <c:param name="chbh" value="a"/>
+   <c:param name="chs" value="750x200"/>
+   <c:param name="chds" value="-60,60"/>
+	<c:param name="cht" value="bvg"/>
+   <c:param name="chd" value="t:${overUnderReportData}"/>
+   <c:param name="chls"  value="${lineThickness}"/>
+   <c:param name="chma" value="|101"/>
+   <c:param name="chtt" value="${evaluation.name} - Bar Chart"/>
+	<c:param name="chdl" value="${reportLegend}"/>
+	<c:param name="chco" value="${reportColors}"/>
+</c:url>

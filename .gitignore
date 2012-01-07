@@ -1,0 +1,14 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+/.svn/
+*/.svn/ 
+confino_professional_paper_2_2_2009.doc
+.classpath
+.project
+.settings/
+/target/*

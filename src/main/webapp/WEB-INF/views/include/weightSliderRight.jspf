@@ -1,0 +1,5 @@
+<orca:weightSlider name="licenseWeight" title="License" value="${evaluation.licenseWeight}"/>				
+<orca:weightSlider name="velocityWeight" title="Velocity" value="${evaluation.velocityWeight}"/>	
+<orca:weightSlider name="communityWeight" title="Community" value="${evaluation.communityWeight}"/>					    
+<orca:weightSlider name="documentationWeight" title="Documentation" value="${evaluation.documentationWeight}"/>
+		

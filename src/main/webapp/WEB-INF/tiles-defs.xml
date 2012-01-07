@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+	<definition name="mainTemplate" template="/WEB-INF/views/templates/mainTemplate.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/include/header.jsp" />
+		<put-attribute name="topDisplay" value="/WEB-INF/views/include/topDisplay.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/include/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="mainTemplate">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+	
+	<!-- Evaluation Views -->
+	
+	<definition name="beginEvaluation" extends="mainTemplate">
+		<put-attribute name="title" value="Begin Evaluation" />
+		<put-attribute name="body" value="/WEB-INF/views/beginEvaluation.jsp" />
+	</definition>
+	
+	<definition name="evaluationWeight" extends="mainTemplate">
+		<put-attribute name="title" value="Evaluation Weight" />
+		<put-attribute name="body" value="/WEB-INF/views/evaluationWeight.jsp" />
+	</definition>
+	
+	<definition name="editEvaluation" extends="mainTemplate">
+		<put-attribute name="title" value="Edit" />
+		<put-attribute name="body" value="/WEB-INF/views/editEvaluation.jsp" />
+	</definition>
+	
+	<definition name="removeSurvey" extends="mainTemplate">
+		<put-attribute name="title" value="Evaluation Summary" />
+		<put-attribute name="body" value="/WEB-INF/views/evaluationSummary.jsp" />
+	</definition>
+	
+	<definition name="removeSurveyConfirm" extends="mainTemplate">
+		<put-attribute name="title" value="Remove Survey" />
+		<put-attribute name="body" value="/WEB-INF/views/removeSurveyConfirm.jsp" />
+	</definition>			
+	
+	
+	<definition name="evaluationSummary" extends="mainTemplate">
+		<put-attribute name="title" value="Evaluation Summary" />
+		<put-attribute name="body" value="/WEB-INF/views/evaluationSummary.jsp" />
+	</definition>
+
+	<definition name="continueEvaluation" extends="mainTemplate">
+		<put-attribute name="title" value="Continue Evaluation" />
+		<put-attribute name="body" value="/WEB-INF/views/continueEvaluation.jsp" />
+	</definition>	
+
+	<definition name="removeEvaluationConfirm" extends="mainTemplate">
+		<put-attribute name="title" value="Remove Evaluation" />
+		<put-attribute name="body" value="/WEB-INF/views/removeEvaluationConfirm.jsp" />
+	</definition>
+
+	<definition name="noResultsFound" extends="mainTemplate">
+		<put-attribute name="title" value="No Search Results" />
+		<put-attribute name="body" value="/WEB-INF/views/noResultsFound.jsp" />
+	</definition>
+	
+	<!-- Survey Views -->
+	
+	<definition name="surveyName" extends="mainTemplate">
+		<put-attribute name="title" value="Begin Survey" />
+		<put-attribute name="body" value="/WEB-INF/views/surveyName.jsp" />
+	</definition>
+	
+	<definition name="codeDesign" extends="mainTemplate">
+		<put-attribute name="title" value="Code Design" />
+		<put-attribute name="body" value="/WEB-INF/views/codeDesign.jsp" />
+	</definition>
+		
+	<definition name="codeRuntime" extends="mainTemplate">
+		<put-attribute name="title" value="Code Rutime" />
+		<put-attribute name="body" value="/WEB-INF/views/codeRuntime.jsp" />
+	</definition>
+	
+	<definition name="codeStatic" extends="mainTemplate">
+		<put-attribute name="title" value="Code Static" />
+		<put-attribute name="body" value="/WEB-INF/views/codeStatic.jsp" />
+	</definition>
+	
+	<definition name="community" extends="mainTemplate">
+		<put-attribute name="title" value="Community" />
+		<put-attribute name="body" value="/WEB-INF/views/community.jsp" />
+	</definition>
+	
+	<definition name="documentation" extends="mainTemplate">
+		<put-attribute name="title" value="Documentation" />
+		<put-attribute name="body" value="/WEB-INF/views/documentation.jsp" />
+	</definition>
+	
+	<definition name="license" extends="mainTemplate">
+		<put-attribute name="title" value="License" />
+		<put-attribute name="body" value="/WEB-INF/views/license.jsp" />
+	</definition>
+	
+	<definition name="marketPenetration" extends="mainTemplate">
+		<put-attribute name="title" value="Market Penetration" />
+		<put-attribute name="body" value="/WEB-INF/views/marketPenetration.jsp" />
+	</definition>
+	
+	<definition name="pedigree" extends="mainTemplate">
+		<put-attribute name="title" value="Pedigree" />
+		<put-attribute name="body" value="/WEB-INF/views/pedigree.jsp" />
+	</definition>
+	
+	<definition name="support" extends="mainTemplate">
+		<put-attribute name="title" value="Support" />
+		<put-attribute name="body" value="/WEB-INF/views/support.jsp" />
+	</definition>
+
+	<definition name="velocity" extends="mainTemplate">
+		<put-attribute name="title" value="Velocity" />
+		<put-attribute name="body" value="/WEB-INF/views/velocity.jsp" />
+	</definition>
+	
+	<definition name="functionality" extends="mainTemplate">
+		<put-attribute name="title" value="Functionality" />
+		<put-attribute name="body" value="/WEB-INF/views/functionality.jsp" />
+	</definition>
+	
+	<definition name="surveyComments" extends="mainTemplate">
+		<put-attribute name="title" value="Survey Comments" />
+		<put-attribute name="body" value="/WEB-INF/views/surveyComments.jsp" />
+	</definition>
+	
+	<!-- Report Views -->
+	
+	<definition name="reportSummary" extends="mainTemplate">
+		<put-attribute name="title" value="Report Summary" />
+		<put-attribute name="body" value="/WEB-INF/views/reportSummary.jsp" />
+	</definition>
+	
+	<!-- Account Views -->
+			
+	<definition name="login" extends="mainTemplate">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>	
+	
+	<definition name="createAccount" extends="mainTemplate">
+		<put-attribute name="title" value="Create User Account" />
+		<put-attribute name="body" value="/WEB-INF/views/createAccount.jsp" />
+	</definition>
+	
+	<definition name="myAccount" extends="mainTemplate">
+		<put-attribute name="title" value="My Account" />
+		<put-attribute name="body" value="/WEB-INF/views/myAccount.jsp" />
+	</definition>
+	
+	<definition name="notAuthorized" extends="mainTemplate">
+		<put-attribute name="title" value="Not Authorized" />
+		<put-attribute name="body" value="/WEB-INF/views/notAuthorized.jsp" />
+	</definition>
+	
+		<!-- Email Views -->
+			
+	<definition name="emailEvaluation" extends="mainTemplate">
+		<put-attribute name="title" value="Email Evaluation" />
+		<put-attribute name="body" value="/WEB-INF/views/emailEvaluation.jsp" />
+	</definition>
+	
+		<definition name="emailEvaluationConfirmation" extends="mainTemplate">
+		<put-attribute name="title" value="Email Evaluation Confirmation" />
+		<put-attribute name="body" value="/WEB-INF/views/emailEvaluationConfirmation.jsp" />
+	</definition>			
+			
+</tiles-definitions>

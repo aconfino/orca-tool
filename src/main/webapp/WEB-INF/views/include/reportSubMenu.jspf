@@ -1,0 +1,13 @@
+<c:url value="addSurvey.html" var="addSurvey">
+	<c:param name="evaluationId" value="${evaluation.id}"/>
+</c:url>
+<c:url value="evaluationSummary.html" var="evaluationSummary">
+	<c:param name="evaluationId" value="${evaluation.id}"/>
+</c:url>
+<div id="evaluationSubMenu">
+	<span id="submenu"><a href="${evaluationSummary}">evaluation summary</a></span>
+	<span id="submenu"><a href="#">interpreting reports</a></span>
+	<span id="submenu"><a href="mailto:?subject=ORCA%20evaluation%20number%20-%20${evaluation.number}&body=Thank you for using the ORCA (Open Source Rapid Analysis) tool.  To continue you software evaluation go to http://localhost:8080/evaluationSummary.html?evaluationId=${evaluation.id}.  Thank you.">email an evaluation</a></span>
+</div>
+
+
