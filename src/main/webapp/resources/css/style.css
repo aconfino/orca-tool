@@ -530,6 +530,13 @@ input {
 	color: FFFFFF;
 	font-size: 14px;
 }
+
+/* Simple Captcha */
+
+#simpleCaptcha {
+	background-color: white;
+	width: 200px;
+}
 /* Footer */
 
 #footer {

@@ -2,11 +2,17 @@ package com.orca.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
+import com.orca.domain.EmailEvaluationForm;
 import com.orca.service.EmailService;
+import com.orca.validator.EmailEvaluationFormValidator;
 
+@SessionAttributes({"emailEvaluationForm", "emailFormValidator"})
 @Controller
 public class EmailController {
 
@@ -17,17 +23,22 @@ public class EmailController {
 	public ModelAndView emailEvaluation(
 			@RequestParam("evaluationNumber") String evaluationNumber) {
 		ModelAndView mav = new ModelAndView("emailEvaluation");
+		mav.addObject("emailEvaluationForm", new EmailEvaluationForm());
 		return mav;
 	}
 
-	@RequestMapping(value = "emailEvaluationConfirmation.html")
-	public ModelAndView emailEvaluationConfirmation(
-			@RequestParam("evaluationNumber") String evaluationNumber,
-			@RequestParam("emailRecepient") String emailRecepient) {
-		emailService.sendEmail(emailRecepient, getSubject(evaluationNumber),
-				getMessageBody(evaluationNumber));
-		ModelAndView mav = new ModelAndView("emailEvaluationConfirmation");
-		return mav;
+	@RequestMapping(value = "emailEvaluationVerify.html")
+	public ModelAndView emailEvaluationVerify(@ModelAttribute("emailEvaluationForm") EmailEvaluationForm form, BindingResult result) {	
+	
+		EmailEvaluationFormValidator emailFormValidator = new EmailEvaluationFormValidator();
+		emailFormValidator.validate(form, result);
+		if (result.hasErrors()) {
+			ModelAndView mav = new ModelAndView("emailEvaluation");
+			mav.addObject("form", form);
+			return mav;
+		}
+		emailService.sendEmail(form.getEmail(), getSubject(form.getEvaluationNumber()),getMessageBody(form.getEvaluationNumber()));
+		return new ModelAndView("emailEvaluationConfirmation");
 	}
 
 	public String getSubject(String evaluationNumber) {
@@ -45,5 +56,5 @@ public class EmailController {
 				+ ".  \n\n Many thanks. \n The ORCA Team.";
 		return body;
 	}
-
+	
 }

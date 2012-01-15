@@ -17,9 +17,9 @@ import org.springframework.validation.Errors;
 
 import com.orca.domain.Evaluation;
 import com.orca.domain.User;
-import com.orca.domain.UserValidator;
 import com.orca.factory.EvaluationFactory;
 import com.orca.service.UserService;
+import com.orca.validator.UserValidator;
 
 @ContextConfiguration( locations = { "/root-context.xml", "/db-config.xml", "/controllers.xml" })
 @RunWith(SpringJUnit4ClassRunner.class)

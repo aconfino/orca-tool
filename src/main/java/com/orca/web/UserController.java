@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.orca.domain.User;
-import com.orca.domain.UserValidator;
 import com.orca.service.UserService;
+import com.orca.validator.UserValidator;
 
 @SessionAttributes({"user"})
 @Controller
