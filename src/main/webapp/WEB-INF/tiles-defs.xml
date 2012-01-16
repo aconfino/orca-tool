@@ -159,6 +159,16 @@
 		<put-attribute name="body" value="/WEB-INF/views/notAuthorized.jsp" />
 	</definition>
 	
+	<definition name="resetPassword" extends="mainTemplate">
+		<put-attribute name="title" value="Reset Password" />
+		<put-attribute name="body" value="/WEB-INF/views/resetPassword.jsp" />
+	</definition>
+	
+	<definition name="resetPasswordConfirmation" extends="mainTemplate">
+		<put-attribute name="title" value="Reset Password Confirmation" />
+		<put-attribute name="body" value="/WEB-INF/views/resetPasswordConfirmation.jsp" />
+	</definition>
+	
 		<!-- Email Views -->
 			
 	<definition name="emailEvaluation" extends="mainTemplate">

@@ -26,7 +26,7 @@ public class UserValidator implements Validator {
         	e.rejectValue("confirmPassword", "confirmPassword.does.not.match");
         } else if (!(user.getUsername().matches("^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$"))) {
             e.rejectValue("username", "username.invalid", "email invalid");
-        } else if (!(service.userNameAvailable(user.getUsername()))){
+        } else if (!(service.emailAvailable(user.getUsername()))){
             e.rejectValue("username", "username.exists");
         }
 	}

@@ -1,10 +1,9 @@
-package com.orca.domain;
+package com.orca.form;
 
-public class EmailEvaluationForm {
+public class ResetPasswordForm {
 	
 	private String email;
 	private String answer;
-	private String evaluationNumber;
 	
 	public String getEmail() {
 		return email;
@@ -17,12 +16,6 @@ public class EmailEvaluationForm {
 	}
 	public void setAnswer(String answer) {
 		this.answer = answer;
-	}
-	public String getEvaluationNumber() {
-		return evaluationNumber;
-	}
-	public void setEvaluationNumber(String evaluationNumber) {
-		this.evaluationNumber = evaluationNumber;
 	}
 
 }

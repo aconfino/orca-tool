@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.orca.domain.Evaluation;
 import com.orca.domain.Report;
-import com.orca.domain.ReportForm;
+import com.orca.form.ReportForm;
 import com.orca.service.EvaluationService;
 import com.orca.service.SurveyService;
 

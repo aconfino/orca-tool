@@ -41,7 +41,7 @@ public class UserTests {
 	public void setup(){
 		user = populateUser();
 	}
-
+	
 	@Test
 	public void saveUser(){
 		service.saveUser(user);
@@ -115,6 +115,13 @@ public class UserTests {
 		service.saveUser(user);
 		user = service.getUserByUserName(user.getUsername());
 		assertTrue(user.getEvaluationSet().size()==2);
+	}
+	
+	@Test
+	public void resetPassword(){
+		User savedUser = service.resetUserPassword(user);
+		service.getUserByUserName(user.getUsername());
+		assertTrue(savedUser.getPassword().equals(user.getPassword()));
 	}
 	
 	@After

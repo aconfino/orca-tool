@@ -13,7 +13,8 @@
 				<label path="username">User name:</label>	
 				<input name="j_username"></input><br><br> 
 				<label path="password">Password:</label>	
-				<input type="password" name="j_password"></input><br><br> 
+				<input type="password" name="j_password"></input><br><br>
+				<span id"resetPassword"><a href="resetPassword.html">Reset password</a></span>		 
 				<input type="submit" name="submit" value="Submit" /><br><br>
 				</span>		
 			</form>

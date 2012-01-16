@@ -1,4 +1,4 @@
-package com.orca.domain;
+package com.orca.form;
 
 public class ReportForm {
 	

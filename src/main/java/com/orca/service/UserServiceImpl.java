@@ -1,5 +1,7 @@
 package com.orca.service;
 
+import org.apache.commons.lang.RandomStringUtils;
+import org.apache.commons.lang.math.RandomUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -17,7 +19,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	public void saveUser(User user) {
-		if (userNameAvailable(user.getUsername())){
+		if (emailAvailable(user.getUsername())){
 			saveNewUser(user);
 		} else {
 			saveExistingUser(user);
@@ -25,9 +27,8 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	public void saveNewUser(User unsavedUser){
-		String encryptedPassword = new Md5PasswordEncoder().encodePassword(unsavedUser.getPassword(), null);
-		unsavedUser.setPassword(encryptedPassword);
-		unsavedUser.setConfirmPassword(encryptedPassword);
+		unsavedUser.setPassword(encryptString(unsavedUser.getPassword()));
+		unsavedUser.setConfirmPassword(encryptString(unsavedUser.getConfirmPassword()));
 		dao.saveUser(unsavedUser);
 	}
 	
@@ -35,7 +36,7 @@ public class UserServiceImpl implements UserService {
 		dao.saveUser(user);
 	}
 	
-	public Boolean userNameAvailable(String userName){
+	public Boolean emailAvailable(String userName){
 		User user = dao.userNameExists(userName);
 		if (user != null)
 			return false;
@@ -46,6 +47,26 @@ public class UserServiceImpl implements UserService {
 
 	public void removeUser(User user) {
 		dao.removeUser(user);
+	}
+	
+	public String getRandomString() {
+		    StringBuffer randomString = new StringBuffer(10);
+		    int next = RandomUtils.nextInt(13) + 8;
+		    randomString.append(RandomStringUtils.randomAlphanumeric(next));
+		    return randomString.toString();
+		}
+
+	public String resetUserPassword(User user) {
+		String password = getRandomString();
+		String encryptedPassword = encryptString(password);
+		user.setPassword(encryptedPassword);
+		user.setConfirmPassword(encryptedPassword);
+		saveExistingUser(user);
+		return password;
+	}
+	
+	public String encryptString(String unencriptedString){
+		return new Md5PasswordEncoder().encodePassword(unencriptedString, null);
 	}
 
 }

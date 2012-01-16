@@ -7,6 +7,8 @@ public interface UserService {
 	public void saveUser(User user);
 	public void removeUser(User user);
 	public User getUserByUserName(String userName);
-	public Boolean userNameAvailable(String userName);
-
+	public Boolean emailAvailable(String userName);
+	public String resetUserPassword(User user);
+	public String getRandomString();
+	
 }

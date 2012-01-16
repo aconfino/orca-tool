@@ -19,7 +19,8 @@
 
 	<!-- Validator Classes -->
 	<bean id="userValidator" class="com.orca.validator.UserValidator" />
-
+	<bean id="resetPasswordValidator" class="com.orca.validator.ResetPasswordFormValidator" />
+	
 	<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver"
 		id="viewResolver">
 		<property name="viewClass"

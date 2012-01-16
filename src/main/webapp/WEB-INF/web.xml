@@ -54,7 +54,7 @@
 	
 	<!-- Simple Captcha -->
 	    <servlet>
-        <servlet-name>StickyCaptcha</servlet-name>
+        <servlet-name>SimpleCaptchaServlet</servlet-name>
         <servlet-class>nl.captcha.servlet.StickyCaptchaServlet</servlet-class>
         <init-param>
             <param-name>width</param-name>
@@ -66,7 +66,7 @@
         </init-param>
     </servlet>
     <servlet-mapping>
-        <servlet-name>StickyCaptcha</servlet-name>
+        <servlet-name>SimpleCaptchaServlet</servlet-name>
         <url-pattern>/stickyImg</url-pattern>
     </servlet-mapping>
 
