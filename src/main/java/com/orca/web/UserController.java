@@ -1,8 +1,6 @@
 package com.orca.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -14,10 +12,11 @@ import com.orca.domain.User;
 import com.orca.form.ResetPasswordForm;
 import com.orca.service.EmailService;
 import com.orca.service.UserService;
+import com.orca.validator.ChangePasswordValidator;
 import com.orca.validator.ResetPasswordFormValidator;
 import com.orca.validator.UserValidator;
 
-@SessionAttributes({ "user", "resetPasswordForm" })
+@SessionAttributes({ "user", "resetPasswordForm"})
 @Controller
 public class UserController {
 
@@ -27,6 +26,8 @@ public class UserController {
 	UserValidator userValidator;
 	@Autowired
 	ResetPasswordFormValidator resetPasswordValidator;
+	@Autowired
+	ChangePasswordValidator changePasswordValidator;
 	@Autowired
 	EmailService emailService;
 
@@ -65,18 +66,10 @@ public class UserController {
 
 	@RequestMapping(value = "myAccount.html")
 	public ModelAndView myAccount() {
-		String username = SecurityContextHolder.getContext()
-				.getAuthentication().getName();
-		if (!username.contentEquals("anonymousUser")) {
-			User user = (User) SecurityContextHolder.getContext()
-					.getAuthentication().getPrincipal();
-			for (GrantedAuthority authority : user.getAuthorities())
-				if (("ROLE_USER").equals(authority.getAuthority())) {
-					ModelAndView mav = new ModelAndView("myAccount");
-					mav.addObject("user",
-							userService.getUserByUserName(username));
-					return mav;
-				}
+		if (userService.authenticatedUser()) {
+				ModelAndView mav = new ModelAndView("myAccount");
+				mav.addObject("user", userService.getUserByUserName(userService.getUsernameFromSecurityContext()));
+				return mav;
 		}
 		ModelAndView mav = new ModelAndView("login");
 		mav.addObject("user", new User());
@@ -103,6 +96,34 @@ public class UserController {
 		String newPassword = userService.resetUserPassword(user);
 		emailService.sendEmail(form.getEmail(), resetPasswordSubject(), resetPasswordBody(newPassword));
 		return new ModelAndView("resetPasswordConfirmation");
+	}
+	
+	@RequestMapping(value = "changePassword.html")
+	public ModelAndView changePassword(){
+		if (userService.authenticatedUser()) {
+			ModelAndView mav = new ModelAndView("changePassword");
+			mav.addObject("user", userService.getUserByUserName(userService.getUsernameFromSecurityContext()));
+			return mav;
+		}
+		ModelAndView mav = new ModelAndView("login");
+		mav.addObject("user", new User());
+		return mav;
+	}
+	
+	@RequestMapping(value = "changePasswordVerify.html")
+	public ModelAndView changePasswordVerify(@ModelAttribute("user") User user, BindingResult result){
+		
+		changePasswordValidator.validate(user, result);
+		if (result.hasErrors()) {
+			ModelAndView mav = new ModelAndView("changePassword");
+			mav.addObject("user", user);
+			return mav;
+		}
+		userService.updateUserPassword(user);
+		ModelAndView mav = new ModelAndView("myAccount");
+		mav.addObject("user", user);
+		return mav;
+		
 	}
 	
 	public String resetPasswordSubject(){

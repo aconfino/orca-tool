@@ -4,6 +4,8 @@ import org.apache.commons.lang.RandomStringUtils;
 import org.apache.commons.lang.math.RandomUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.encoding.Md5PasswordEncoder;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import com.orca.dao.UserDAO;
 import com.orca.domain.User;
@@ -20,13 +22,13 @@ public class UserServiceImpl implements UserService {
 
 	public void saveUser(User user) {
 		if (emailAvailable(user.getUsername())){
-			saveNewUser(user);
+			updateUserPassword(user);  // new user, encrypt the password
 		} else {
 			saveExistingUser(user);
 		}
 	}
 	
-	public void saveNewUser(User unsavedUser){
+	public void updateUserPassword(User unsavedUser){
 		unsavedUser.setPassword(encryptString(unsavedUser.getPassword()));
 		unsavedUser.setConfirmPassword(encryptString(unsavedUser.getConfirmPassword()));
 		dao.saveUser(unsavedUser);
@@ -58,15 +60,33 @@ public class UserServiceImpl implements UserService {
 
 	public String resetUserPassword(User user) {
 		String password = getRandomString();
-		String encryptedPassword = encryptString(password);
-		user.setPassword(encryptedPassword);
-		user.setConfirmPassword(encryptedPassword);
-		saveExistingUser(user);
+		user.setPassword(password);
+		user.setConfirmPassword(password);
+		updateUserPassword(user);
 		return password;
 	}
 	
 	public String encryptString(String unencriptedString){
 		return new Md5PasswordEncoder().encodePassword(unencriptedString, null);
 	}
+
+	public Boolean authenticatedUser() {
+		String username = SecurityContextHolder.getContext().getAuthentication().getName();
+		if (!username.contentEquals("anonymousUser")) {
+			return true;
+		}
+		return false;
+	}
+
+	public String getUsernameFromSecurityContext() {
+		User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		for (GrantedAuthority authority : user.getAuthorities())
+			if (("ROLE_USER").equals(authority.getAuthority())) {
+				return user.getUsername();
+			}
+		return null;
+	}
+	
+	
 
 }

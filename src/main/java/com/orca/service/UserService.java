@@ -10,5 +10,8 @@ public interface UserService {
 	public Boolean emailAvailable(String userName);
 	public String resetUserPassword(User user);
 	public String getRandomString();
+	public void updateUserPassword(User unsavedUser);
+	public Boolean authenticatedUser();
+	public String getUsernameFromSecurityContext();
 	
 }

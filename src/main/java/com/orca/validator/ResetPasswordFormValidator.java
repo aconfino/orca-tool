@@ -15,7 +15,7 @@ public class ResetPasswordFormValidator {
 	private Captcha captcha;
 	
 	public boolean supports(Class <?> clazz) {
-		return ResetPasswordFormValidator.class.equals(clazz);
+		return ResetPasswordForm.class.equals(clazz);
 	}
 
 	public void validate(Object object, Errors e) {

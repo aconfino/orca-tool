@@ -4,7 +4,7 @@
 	<div class="post">
 		<div class="entry">
 			<h2>My Account</h2>
-				<h3>Email:  <c:out value="${user.username}"/></h3>
+				<h3>Email:  <c:out value="${user.username}"/> - <a href="changePassword.html">change password</a></h3>
 			<div class="evaluationList">	
 			<h2>My Evaluations</h2>
 				<ol>
