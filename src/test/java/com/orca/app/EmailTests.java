@@ -17,13 +17,15 @@ public class EmailTests  {
 	@Test
 	public void emailTest(){
 		String messageBody = "This is a test message. \n\n  Oh yeah, and I rock. \n\n\n\n The Orca Project.";
-		service.sendEmail("aconfino@gmail.com", "This is a test", messageBody);
+		// don't want to get blacklisted for spam, so I'm running this sparingly
+		//	service.sendEmail("aconfino@gmail.com", "This is a test", messageBody);
 	}
 	
 	@Test
 	public void emailTest2(){
 		String messageBody = "The Orca Project is straight ballin'.";
-		service.sendEmail("aconfino@gmail.com", "This is a test", messageBody);
+		// don't want to get blacklisted for spam, so I'm running this sparingly
+	//	service.sendEmail("aconfino@gmail.com", "This is a test", messageBody);
 	}
 		
 }

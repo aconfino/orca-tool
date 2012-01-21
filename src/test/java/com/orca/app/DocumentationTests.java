@@ -41,7 +41,7 @@ public class DocumentationTests  {
 		community.setWebsite(4);
 		assertTrue(community.getCalculatedValue()==new Double(5.34));
 		Evaluation evaluation = factory.createEvalution();
-		evaluation.setCodeWeight(50);
+		evaluation.setCommunityWeight(50);
 		Survey survey = evaluation.getSurveyList().get(0);
 		survey.setCommunity(community);
 		assertTrue((community.getWeightedValue(survey)==(new Double (2.67))));	

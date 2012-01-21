@@ -54,7 +54,7 @@ public class UserTests {
 		assertTrue(user.getUsername().equals(selectedUser.getUsername()));
 		assertTrue(user.getPassword().equals(selectedUser.getPassword()));
 		assertTrue(user.getIsAdmin()==(selectedUser.getIsAdmin()));
-		Boolean userNameAvailable = service.userNameAvailable(user.getUsername());
+		Boolean userNameAvailable = service.emailAvailable(user.getUsername());
 		assertFalse(userNameAvailable);
 	}
 	
@@ -119,9 +119,10 @@ public class UserTests {
 	
 	@Test
 	public void resetPassword(){
-		User savedUser = service.resetUserPassword(user);
-		service.getUserByUserName(user.getUsername());
-		assertTrue(savedUser.getPassword().equals(user.getPassword()));
+		String newPassword = service.resetUserPassword(user);
+		service.saveUser(user);
+		User savedUser = service.getUserByUserName(user.getUsername());
+		assertTrue(service.encryptString(newPassword).equals(savedUser.getPassword()));
 	}
 	
 	@After

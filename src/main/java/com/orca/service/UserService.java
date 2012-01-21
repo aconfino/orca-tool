@@ -13,5 +13,5 @@ public interface UserService {
 	public void updateUserPassword(User unsavedUser);
 	public Boolean authenticatedUser();
 	public String getUsernameFromSecurityContext();
-	
+	public String encryptString(String unencriptedString);
 }

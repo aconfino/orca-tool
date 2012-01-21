@@ -34,7 +34,7 @@ public class LicenseTests  {
 		license.populate();
 		assertTrue(license.getCalculatedValue()==new Double(10));
 		Evaluation evaluation = factory.createEvalution();
-		evaluation.setCodeWeight(50);
+		evaluation.setLicenseWeight(50);
 		Survey survey = evaluation.getSurveyList().get(0);
 		survey.setLicense(license);
 		assertTrue((license.getWeightedValue(survey)==(new Double (5))));	
