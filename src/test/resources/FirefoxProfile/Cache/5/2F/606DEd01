@@ -1,0 +1,613 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+
+<head>
+  <base href="http://www.pushtotest.com/selenium-tutorial-full" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="Free, Selenium, tutorial, ajax, performance, load, htmlunit, debugging, selenese" />
+  <meta name="title" content="Selenium Tutorial Full" />
+  <meta name="author" content="Frank Cohen" />
+  <meta name="description" content="Free Selenium Tutorial to build web applications using Ajax and PushtoTest" />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Selenium Tutorial Full</title>
+  <link href="/templates/cloudbase/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="/media/system/js/caption.js"></script>
+  <script type="text/javascript" src="modules/mod_rokslideshow/tmpl/rokslideshow.js"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+	var imgs = [];
+	imgs.push({file: 'cust_aerospace.gif', title: '', desc: '', url: 'customer-case-study-papers.html'});
+	imgs.push({file: 'cust_bellaliant.gif', title: '', desc: '', url: 'customer-case-study-papers.html'});
+	imgs.push({file: 'cust_bestbuy.gif', title: '', desc: '', url: 'customer-case-study-papers.html'});
+	imgs.push({file: 'cust_deloitte.gif', title: '', desc: '', url: 'customer-case-study-papers.html'});
+	imgs.push({file: 'cust_deutschebank.gif', title: '', desc: '', url: 'customer-case-study-papers.html'});
+	imgs.push({file: 'cust_emma.gif', title: '', desc: '', url: 'customer-case-study-papers.html'});
+	imgs.push({file: 'cust_pepsico.gif', title: '', desc: '', url: 'customer-case-study-papers.html'});
+	imgs.push({file: 'cust_wellsfargo.gif', title: '', desc: '', url: 'customer-case-study-papers.html'});
+	var myshow = new Slideshow('slideshow', { 
+		type: 'fade',
+		externals: 0,
+		showTitleCaption: 0,
+		captionHeight: 45,
+		width: 185, 
+		height: 88, 
+		pan: 50,
+		zoom: 50,
+		loadingDiv: 1,
+		resize: true,
+		duration: [2000, 9000],
+		transition: Fx.Transitions.Expo.easeOut,
+		images: imgs, 
+		path: 'http://www.pushtotest.com/images/stories/slideshow/'
+	});
+
+	myshow.caps.h2.setStyles({color: '#fff', fontSize: '13px'});
+	myshow.caps.p.setStyles({color: '#ccc', fontSize: '11px'});
+});
+  </script>
+
+
+<script type="text/javascript" src="/media/system/js/mootools130-disable.js"></script>
+
+<link rel="stylesheet" href="http://www.pushtotest.com/templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="http://www.pushtotest.com/templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="http://www.pushtotest.com/templates/cloudbase/css/addons.css" type="text/css" />
+<link rel="stylesheet" href="http://www.pushtotest.com/templates/cloudbase/css/layout.css" type="text/css" />
+<link rel="stylesheet" href="http://www.pushtotest.com/templates/cloudbase/css/template.css" type="text/css" />
+<link rel="stylesheet" href="http://www.pushtotest.com/templates/cloudbase/css/typo.css" type="text/css" />
+
+
+<!--[if IE]>
+<link rel="stylesheet" href="http://www.pushtotest.com/templates/cloudbase/css/ie.css" type="text/css" />
+<![endif]-->
+
+<!--[if lt IE 7.0]>
+<link rel="stylesheet" href="http://www.pushtotest.com/templates/cloudbase/css/ie7minus.css" type="text/css" />
+<style>
+.main { width: expression(document.body.clientWidth < 770? "770px" : document.body.clientWidth > 1200? "1200px" : "auto"); }
+</style>
+<![endif]-->
+
+<!--[if IE 7.0]>
+<style>
+.clearfix { display: inline-block; } /* IE7xhtml*/
+</style>
+<![endif]-->
+
+<script type="text/javascript">
+var siteurl='http://www.pushtotest.com/';
+var tmplurl='http://www.pushtotest.com/templates/cloudbase';
+</script>
+
+<script language="javascript" type="text/javascript" src="http://www.pushtotest.com/templates/cloudbase/js/ja.script.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.pushtotest.com/templates/cloudbase/js/ja.ddmod.js"></script>
+<script language="javascript" type="text/javascript" src="http://www.pushtotest.com/templates/cloudbase/js/height.js"></script>
+
+
+  <link href="http://www.pushtotest.com/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="http://www.pushtotest.com/facebox/example.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="http://www.pushtotest.com/media/system/js/jquery.js" type="text/javascript"></script>
+  <script src="http://www.pushtotest.com/facebox/facebox.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('a[rel*=facebox]').facebox({
+        loadingImage : 'http://www.pushtotest.com/facebox/loading.gif',
+        closeImage   : 'http://www.pushtotest.com/facebox/closelabel.png'
+      })
+    })
+  </script>
+
+
+<link href="http://www.pushtotest.com/templates/cloudbase/css/menu/mega.css" rel="stylesheet" type="text/css" /><script src="http://www.pushtotest.com/templates/cloudbase/js/menu/mega.js" language="javascript" type="text/javascript"></script>
+
+
+<!--Width of template -->
+<style type="text/css">
+.main {width: 930px;margin: 0 auto;}
+#ja-wrapper {min-width: 931px;}
+</style>
+
+<link href="http://www.pushtotest.com/templates/cloudbase/css/colors/grey.css" rel="stylesheet" media="all" type="text/css" />
+</head>
+
+<body id="bd" class="fs3 FF grey">
+	<div id="ja-wrapper">
+		<a name="Top" id="Top"></a>
+		<div class="ja-header-top">		
+			<div class="ja-header-top-inner">
+				
+<form action="index.php"  method="post" class="search float_right">
+	<label for="mod_search_searchword" style="display:none;">
+			</label>
+	<input name="searchword" id="mod_search_searchword" class="inputbox float_right" type="text" size="20" value="search..." onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" />	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="task"   value="search" />
+</form>
+<table width="100%" border="0" cellpadding="0" cellspacing="1"><tr><td nowrap="nowrap"><a href="/sitemap.html" class="mainlevel" >Site Map</a><a href="/accessibility.html" class="mainlevel" >Accessibility</a><a href="/contacts.html" class="mainlevel" >Contact Us</a></td></tr></table>
+			</div>
+		</div>
+		<div class="main-content-top"></div>
+		<div class="main-content-repeat">
+		<!-- HEADER -->
+		<div id="ja-header" class="wrap">
+	<div class="main">
+			
+		<div class="inner clearfix">
+			
+	    		    	<h1 class="logo">
+	    		    		    		    					<a href="index.php" title="PushToTest - Open Source Test"><img src="/images/logo/logo.gif" alt="PushToTest - Open Source Test" /></a>
+	    		    	
+	    	</h1>
+	    		    	
+	    		    	
+	    		    </div>
+	</div>
+</div>
+		<!-- //HEADER -->
+	
+		<!-- MAIN NAVIGATION -->
+		<div id="ja-mainnav" class="wrap">
+<div class="main clearfix">
+	
+	<div class="ja-megamenu clearfix">
+<ul class="megamenu level0"><li class="mega first"><a href="http://www.pushtotest.com/" class="mega first" id="menu1" title="Home"><span class="menu-title">Home</span></a></li><li class="mega"><a href="/products.html" class="mega" id="menu475" title="Products"><span class="menu-title">Products</span></a></li><li class="mega"><a href="/service.html" class="mega" id="menu476" title="Services"><span class="menu-title">Services</span></a></li><li class="mega"><a href="/customer-case-study-papers.html" class="mega" id="menu66" title="Customers"><span class="menu-title">Customers</span></a></li><li class="mega"><a href="/support.html" class="mega" id="menu67" title="Support"><span class="menu-title">Support</span></a></li><li class="mega"><a href="/community.html" class="mega" id="menu30" title="Community"><span class="menu-title">Community</span></a></li><li class="mega last"><a href="/about-us.html" class="mega last" id="menu68" title="About"><span class="menu-title">About</span></a></li></ul>
+</div>			<script type="text/javascript">
+			var megamenu = new jaMegaMenuMoo ('ja-mainnav', {
+				'bgopacity': 0, 
+				'delayHide': 1000, 
+				'slide': 1, 
+				'fading': 1,
+				'direction':'down',
+				'action':'mouseover',
+				'tips': false,
+				'duration': 300,
+				'hidestyle': 'fastwhenshow'
+			});			
+			</script>
+			</div>
+</div>
+
+
+<ul class="no-display">
+    <li><a href="/selenium-tutorial-full#ja-content" title="Skip to content">Skip to content</a></li>
+</ul>
+		<!-- //MAIN NAVIGATION -->
+		
+		<div id="ja-rotator" class="wrap">
+	<div class="main clearfix">
+			</div>
+</div>		
+			
+		<!-- MAIN CONTAINER -->
+		        
+		<div id="ja-container" class="wrap ja-r1">
+		
+		<div class="main clearfix"  >
+			
+			<div id="ja-mainbody" style="width:78%">
+				<!-- CONTENT -->
+		        
+<div id="ja-main" style="width:100%">
+<div class="inner clearfix">
+	
+	
+
+	
+	
+	<div id="ja-contentwrap" class="">
+				<div id="ja-content" class="column" style="width:100%">
+
+			<div id="ja-current-content" class="column" style="width:100%">
+								
+								<div class="ja-content-main clearfix">
+					
+
+
+
+
+
+
+
+<div class="article-content">
+<div style="width: 650px; padding-left: 35px;"><br style="font-family: Helvetica,Arial,sans-serif;" />
+<div style="text-align: center; font-family: Helvetica,Arial,sans-serif;">The Selenium TestMaker Tutorial</div>
+<div style="text-align: center; font-family: Helvetica,Arial,sans-serif;"></div>
+<div style="text-align: center; font-family: Helvetica,Arial,sans-serif;">
+<h1>Build A Test of a Rich Internet Application<br /> In 30 Minutes Or Less.</h1>
+<br /> <br />
+
+<div style="text-align: left;">This article shows how to build a test of a Rich Internet Application (RIA) using Ajax in PushToTest TestMaker and Selenium in minutes. This article then shows the tremendous power to repurpose the test as a load and performance test and a business service monitor with no extra coding.<br /> <br /> 
+
+<a href="http://www.pushtotest.com/products-comparison"><img style="border: 4px solid ; width: 300px; height: 60px;" alt="Download TestMaker and Run Selenium Tests" src="http://www.pushtotest.com/images/downloadtestmaker.jpg"></a>&nbsp;&nbsp;<a href="http://www.pushtotest.com/selenium-load-testing-monitoring-workshop-form"><img style="border: 4px solid ; width: 300px; height: 60px;" alt="Watch the Tutorial Screencast" src="http://www.pushtotest.com/images/watchthetutorialscreencast.jpg"></a>
+<br />
+<br />
+
+Note: Find all of the code and data described in this article in TestMaker_home/example_agents/AjaxRIASeleniumTest. <br /> <br /> Enterprises are challenged to surface performance and load issues, regression and functional issues, and to accomplish business service monitoring in Rich Internet Application (RIA) environments that use Ajax technology. Successful Internet applications - Google Docs, Flikr, Facebook, and Google Maps - are driving users and managers to expect Ajax functions in an organization's Web applications. For instance, the following Calendar application has the look-and-feel of a desktop application, but it is running entirely in a Web browser.<br /> <br /> <br />
+<div style="text-align: center;"><img style="border: 1px solid; width: 517px; height: 413px;" alt="Calendar Ajax example application" src="http://images.pushtotest.com/images_selenium/calendar_with_events.png" /></div>
+<br /> This tutorial builds a test of the Calendar application. The tutorial will show how to use the test for regression and smoke testing. Then the tutorial will repurpose the test as a load and performance test and business service monitor.<br /> <br /> The tutorial will make use of Selenium support in PushToTest TestMaker. <a href="http://selenium.pushtotest.com">Selenium</a> is a popular and widely used open-source Web test suite development tool that works well with Ajax applications. Selenium enables testers to build functional tests of Ajax applications in a Firefox-based graphical test development environment. Playback these tests in Firefox, Internet Explorer, Opera, Safari and other browsers. Then repurpose the same tests as functional tests, load and performance tests, and business service monitors in the TestMaker distributed test environment.<br /> <br /></div>
+</div>
+<h2 style="font-family: Helvetica,Arial,sans-serif;">Tasks and Scenario</h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">Our challenge in this tutorial is to build a test of the Calendar application. The tutorial will show how to use the test for regression and smoke testing. Then the tutorial will repurpose the test as a load and performance test and business service monitor.</span><br style="font-family: Helvetica,Arial,sans-serif;" /> <ol style="font-family: Helvetica,Arial,sans-serif;">
+<li><a href="index.php?option=com_content&view=article&id=143:building-tests-of-rich-internet-applications-using-ajax-and-selenium&catid=57&Itemid=119">Build and run a functional test of the Calendar application.</a></li>
+<li><a href="#task2">Run the test in a TestNode using the HTMLUnit browser</a></li>
+<li><a href="#taskrc">Run the test in a TestNode using Selenium RC and a browser.</a></li>
+<li><a href="#task3">Reuse the test as a data-driven test with a Data Production Library that reads data from a Comma-Separated-Value (CSV) file.</a></li>
+<li><a href="#task4">Reuse the test as a load and performance test.</a></li>
+<li><a href="#task5">Reuse the test as a business service monitor.</a></li>
+<li><a href="#task6">Transform the test into a Jython script and Java test class.</a></li>
+<li><a href="#debug">Debugging Ajax Applications: Tips and Techniques</a><br /> <br /> </li>
+</ol>
+<h2 style="font-family: Helvetica,Arial,sans-serif;">Test Use Case</h2>
+<span style="font-family: Helvetica,Arial,sans-serif;"> A software quality tester needs to test an Calendar system. The tester follows these steps:</span><br style="font-family: Helvetica,Arial,sans-serif;" /> <ol style="font-family: Helvetica,Arial,sans-serif;">
+<li>Schedule an event using the Calendar application.</li>
+<li>Confirm that the event appears in the Calendar in a list of events.</li>
+</ol> <br style="font-family: Helvetica,Arial,sans-serif;" /> <span style="font-family: Helvetica,Arial,sans-serif;"> </span>
+<h2 style="font-family: Helvetica,Arial,sans-serif;">Implementation</h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">We have already built the test and provide the test in a set of files available in the TestMaker_home/example_agents/AjaxRIASeleniumTest directory. See the following files for the implementation:</span><br style="font-family: Helvetica,Arial,sans-serif;" /> <span style="font-family: Helvetica,Arial,sans-serif;">dat<br /> </span>
+<h2 style="font-family: Helvetica,Arial,sans-serif;">Preparation To Use This Tutorial</h2>
+<span style="font-family: Helvetica,Arial,sans-serif;"> This tutorial uses the Calendar application that ships with TestMaker 5.2 and later. TestMaker Installer automatically installs the Calendar tutorial service. In the event you chose not to install the Calendar tutorial service, follow these steps:<br /> </span> <ol style="font-family: Helvetica,Arial,sans-serif;">
+<li>Copy the file<br /> TestMaker_home/example_agents/Miscellaneous/ExampleServices/calendar.war<br /> to<br /> TestMaker_home/TestNetwork/TestNode/webapps<br /> <br /> </li>
+<li>Exit and start TestMaker again. Calendar will cause TestMaker to take a few more seconds than normal to start-up. You can see Calendar's start-up messages in the Local TestNode Output tab of the Output panel in TestMaker. <br /> <br /> </li>
+<li>Access Calendar in a browser at <a href="http://localhost:8080/calendar">http://localhost:8080/calendar</a></li>
+</ol> <span style="font-family: Helvetica,Arial,sans-serif;"><br /> Calendar is an example application built with <a href="http://www.appcelerator.com/index.html">Appcelerator</a>, an excellent Ajax development environment.<br /> <br /> This tutorial uses the following file name conventions:<br /> </span> 
+<ul>
+<li><span> </span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">Test Scenario files end in .scenario</span></li>
+</ul>
+<span style="font-family: Helvetica,Arial,sans-serif;"><br /> </span>
+<h2 style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;"><a href="#task1" name="task1"></a>Task 1: Record and Playback A Web Application Functional Test</span></h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">In this task we will create a test of the Ajax application using the Selenium record/playback utility.<br /> </span> <ol style="font-family: Helvetica,Arial,sans-serif;">
+<li>The PushToTest installer adds Selenium IDE to your Firefox browser. Open Firefox.<br /> <br /> </li>
+<li>From the Tools drop-down menu choose Selenium IDE. A special Selenium IDE window opens above the main Firefox window.<br /> <br /> <img style="border: 1px solid; width: 400px; height: 542px;" alt="Selenium IDE main window1" src="http://images.pushtotest.com/images_selenium/SeleniumIDE.png" /><br /> <br /> <br /> <br /> </li>
+<li>Click back to the main Firefox window. Point Firefox to http://localhost:8080/calendar. You will see the Calendar user interface.<br /> <br /> <img style="border: 1px solid; width: 517px; height: 413px;" alt="Calendar Ajax example application" src="http://images.pushtotest.com/images_selenium/calendar.png" /><br /> <br /> <br /> </li>
+<li>By default Selenium IDE opens in its recording mode. Selenium IDE is ready to record your use of the Calendar application.<br /> <br /> </li>
+<li>Click the New Event menu item. Note that Selenium IDE records two steps: open the Calendar and click on app_6 (the New Event element ID.)<br /> <br /> <img style="border: 1px solid; width: 517px; height: 387px;" alt="Creating a new event in Calendar" src="http://images.pushtotest.com/images_selenium/calendar1.png" /><br /> <br /> <br /> <br /> </li>
+<li>Type Work On Homework in the Event text box. Enter today's date in the mm/dd/yy format (or click the Calendar icon and click today's date. Then click the Save Event button. You will see the event in the Today's Events list.<br /> <br /> <img style="border: 1px solid; width: 517px; height: 388px;" alt="After creating the new Event" src="http://images.pushtotest.com/images_selenium/calendar2.png" /><br /> <br /> <br /> <br /> </li>
+<li>As a final step, right click on the Work On Homework entry in Today's Event's. Selenium IDE will show commands to assert the event inserted correctly into the Today's Events list.<br /> <br /> <img style="border: 1px solid; width: 517px; height: 388px;" alt="Pop-up menu to verify the event" src="http://images.pushtotest.com/images_selenium/calendar3.png" /><br /> <br /> <br /> </li>
+<li>Click the Record icon in the upper right of the Selenium IDE window to stop recording the test.<br /> <br /> </li>
+<li>Notice the Selenium IDE window displays the steps for the test.<br /> <br /> <img style="border: 1px solid; width: 400px; height: 542px;" alt="Selenium IDE with the recorded test" src="http://images.pushtotest.com/images_selenium/SeleniumIDE_withtest.png" /><br /> <br /> <br /> </li>
+<li>Next we will see the test operate in play-back mode. Click and drag the horizontal slider in Selenium IDE to the mid-point between Fast and Slow. Click the Play Current Test Case icon in the Selenium IDE window. It can be useful (and entertaining) to see the play-back.<br /> <br /> In the above steps you operated the test of an Ajax application using a Web browser. The Selenium IDE reads the Selenese test instructions and operates the test in the Firefox Web browser. This works well when building and debugging tests.<br />
+<div style="text-align: center;"><img style="width: 230px; height: 395px;" alt="How it works" src="http://images.pushtotest.com/images_selenium/TestSeleniumIDE.png" /></div>
+<br /> In the next part of this tutorial you will operate the recorded test in the PushToTest TestMaker test automation platform. TestMaker automates operation of the Selenium test, data-enables the Selenium test, produces reports for the operation of the Selenium test, enables the Selenium test to be a step within a larger use case, and repurposes the Selenium to be a load and performance test and business service monitor from the same single Selenium test.</li>
+</ol> <br style="font-family: Helvetica,Arial,sans-serif;" /> <br style="font-family: Helvetica,Arial,sans-serif;" />
+<h2 style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;"><a name="task2"></a>Task 2: Run The Test In A TestNode</span></h2>
+<span> </span><br style="font-family: Helvetica,Arial,sans-serif;" />
+<div style="text-align: center; font-family: Helvetica,Arial,sans-serif;"><img style="width: 417px; height: 306px;" alt="PushToTest distributed test environment" src="http://images.pushtotest.com/images_selenium/FocusOnNodes.png" /></div>
+<br /> <br />
+<div style="text-align: center; font-family: Helvetica,Arial,sans-serif;"><img style="width: 259px; height: 354px;" alt="Operating a test using the internal HTMLUnit browser" src="http://images.pushtotest.com/images_selenium/TestSeleniumHTMLUnit.png" /></div>
+<br style="font-family: Helvetica,Arial,sans-serif;" /> <span style="font-family: Helvetica,Arial,sans-serif;"> The PushToTest console identifies the operating parameters of a functional test, load and performance test, and business service monitor in a TestScenario. Use the TestMaker Editor to define a TestScenario. Find a TestScenario document already created for you in AjaxRIASeleniumTest/Calendar_Functional_Test.scenario.<br /> </span> <ol style="font-family: Helvetica,Arial,sans-serif;">
+<li>Start TestMaker using TestMaker_home/TestMaker.bat (or .sh for Unix and Mac environment.)<br /> <br /> </li>
+<li>Choose File -> Open and select the file TestMaker_home/example_agents/AjaxRIASeleniumTest/<span style="font-family: Helvetica,Arial,sans-serif;">Calendar_Functional_Test.scenario</span><br /> <br /> </li>
+<li>TestMaker opens a new controller panel for the TestScenario. The controller panel includes icons to run, pause, and stop the test.<br /> <br />
+<div style="text-align: left;"><img style="border: 1px solid; width: 400px; height: 700px;" alt="Controller panel shows the TestScenario" src="http://images.pushtotest.com/images_selenium/cal_functionaltest.png" /></div>
+</li>
+<li>Click the Edit icon in the controller panel to view the source of the TestScenario document. This action opens the Editor.<br /> <br /> <img style="border: 1px solid; width: 600px; height: 387px;" alt="Editor for building TestScenarios" src="http://images.pushtotest.com/images_selenium/editor1.png" /><br /> <br /> <br /> </li>
+<li>Editor displays the TestScenario. Use the tabs to view the parts of the TestScenario. For example, the TestScenario defines use of the Selenium test in the Use Cases tab.<br /> <br /> <img style="border: 1px solid; width: 600px; height: 387px;" alt="Editor use case tab" src="http://images.pushtotest.com/images_selenium/editor_usecase.png" /><br /> <code style="font-family: Helvetica,Arial,sans-serif;"></code><br /> The TestNodes tab tells TestMaker to send the Selenium recorded test to the TestNode(s) that will operate the test.<code></code><br /> <br /> The UseCases tab tells TestMaker to run a use case that runs the Selenium test in CalendarTest.selenium.<br /> <br /> The General tab tells TestMaker that this is a functional test and to run the use case once.<br /> <br /> </li>
+<li>Click the Run button and watch the results.<br /> <br /> <img style="border: 1px solid; width: 400px; height: 700px;" alt="Results of running the functional test" src="http://images.pushtotest.com/images_selenium/calendar_node_test1.png" /><br /> <br /> <br /> Functional tests run a test as a single user. TestMaker displays check-marks next to each step of the Selenium test that operate successfully. TestMaker shows the amount of time to operate the use case and each step in the Selenium test.<br /> <br /> TestMaker displays an X mark for a step that fails. Use the Windows menu -> Output command to view the logs to learn the cause of the failure. Click the Local TestNode Error and Local TestNode Output tabs.<br /> <br /> See <a href="#debug">tips and techniques</a> to solve failures.</li>
+</ol> <span style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;">Please note</span>: Selenium IDE's recording of the Calendar test lacks a few important changes to run in TestMaker. We made the following changes to the CalendarTest.selenium:</span><br style="font-family: Helvetica,Arial,sans-serif;" /> <ol style="font-family: Helvetica,Arial,sans-serif;">
+<li>Add a setSpeed command as the first line. Right click on the first line of the test, choose Insert New Command. Set the command as setSpeed and enter 3000 in the value field. This value is in milliseconds (1000 milliseconds = 1 second.)<br /> <br /> </li>
+<li>Change the base URL to include the domain name: http://localhost:8080/<br /> <br /> </li>
+<li>Add a waitForElementPresent command. This makes sure the test waits until the JavaScript finishes updating the page to show the New Event form.</li>
+<li>Add an Open command. This makes sure the assertion tests the main page content, and not just the New Event form content.</li>
+</ol> <span style="font-family: Helvetica,Arial,sans-serif;"> </span> <br style="font-family: Helvetica,Arial,sans-serif;" />
+<h2 style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;"><a name="taskrc"></a>Optional Task: Run A Test In A TestNode Using Selenium RC</h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">Task 2 shows how to operate a test in a TestNode using the internal HTMLUnit browser. PushToTest supports operating a test in a TestNode using Selenium Remote Control (RC) and a browser of your choice for</span><span style="font-family: Helvetica,Arial,sans-serif;"> smoke tests and regression tests</span><span style="font-family: Helvetica,Arial,sans-serif;">. This enables test automation of functional testing across multiple browsers and operating environments. PushToTest TestMaker operates tests in a grid of browsers.</span><br style="font-family: Helvetica,Arial,sans-serif;" /> <br style="font-family: Helvetica,Arial,sans-serif;" />
+<div style="text-align: center; font-family: Helvetica,Arial,sans-serif;"><img style="width: 255px; height: 400px;" alt="Using Selenium RC and a browser to run a test" src="http://images.pushtotest.com/images_selenium/TestSeleniumRC.png" /></div>
+<br style="font-family: Helvetica,Arial,sans-serif;" /> <ol style="font-family: Helvetica,Arial,sans-serif;">
+<li>In the TestMaker window use the File -> Open TestScenario command. Use the file selector to choose AjaxRIASeleniumTest/Calendar_Functional_Test_RC.scenario<br /> <br /> </li>
+<li>TestMaker opens a new controller panel for the TestScenario. The controller panel includes icons to run, pause, and stop the test.<br /> <br /> </li>
+<li>Click the Edit icon in the controller panel. We only made 1 change from the TestScenario that operates the Selenium test with the internal HTMLUnit browser:<br /> <br /> <img src="http://images.pushtotest.com/images_selenium/editor_rc2.png" alt="Editing a Selenium RC test" height="422" width="654" /> <br /> <br /> </li>
+<li>That's all! With Firefox installed, click the PushToTest Run button and watch the test operate.<br /> <br /> <span style="font-family: Helvetica,Arial,sans-serif;"><img style="border: 1px solid; width: 520px; height: 217px;" alt="TestMaker running a test in the Firefox browser" src="http://images.pushtotest.com/images_selenium/rcwindow.png" /></span></li>
+</ol> <span style="font-family: Helvetica,Arial,sans-serif;"> <br /> By the way, TestMaker supports Selenium RC with other browsers too. For example the method attribute may be any of the following installed browsers: chrome, konqueror, piiexplore, iehta, mock, opera, pifirefox, safari, iexplore and custom. The * is important.<br /> <br /> Some operating environments require the method attribute to identify the path to the browser. Use the Editor's XML view to set the path to the browser. Click the Form/XML view icon at the bottom of the Editor. Find the <run> statement and add the path to the method attribute. For example, the following example works for Firefox on Ubuntu 7:<br /> <br /> <run name="CalendarTest" testclass="CalendarTest.selenium"><br /> method="*firefox /usr/lib/firefox-3.0.3/firefox" langtype="seleniumrc"><br /> </run></run></span><span style="font-family: Helvetica,Arial,sans-serif;"> </span><br style="font-family: Helvetica,Arial,sans-serif;" /> <span style="font-family: Helvetica,Arial,sans-serif;"> </span><br style="font-family: Helvetica,Arial,sans-serif;" />
+<h2 style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;"><a name="task3"></a>Task 3: Make A Data-Driven Functional Test</span></h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">Task 3 enhances the functional test of the Calendar application from Task 1 and 2 to use a Data Production Library (DPL.) The DPL reads data from a comma separated value (CSV) flat file. The values provide input to the test (id, password, product number for search) and validation data (the Assert-Text-Exists) value.</span> <ol style="font-family: Helvetica,Arial,sans-serif;">
+<li>Create a Comma-Separated-Value file. Use your favorite text editor or spreadsheet program. Name the file data.csv. The contents must be in the following form.<br /> <br /> <img style="border: 1px solid; width: 496px; height: 181px;" alt="Comma separate value (CSV) file" src="http://images.pushtotest.com/images_selenium/testdpldata.png" /><br /> <br /> <span style="font-style: italic;">A quick explanation</span>: The first row of the data file contains column names. These will be used to map values into the Selenium test.<br /> <br /> <br /> </li>
+<li>Change the Selenium test to refer to the column of data. In Selenium IDE change test step 4 from:<br /> <br /> type, event, Work On Homework<br /> <br /> to<br /> <br /> type, event, EventName<br /> <br /> <br /> <img style="border: 1px solid; width: 467px; height: 673px;" alt="Edited Selenium test" src="http://images.pushtotest.com/images_selenium/dplentered.png" /><span style="font-style: italic;"><br /> <br /> <br /> A quick explanation</span>: PushToTest maps the data from the named column in the CSV data file to the Selenium test data using the name you just entered.<br /> <br /> </li>
+<li>Connect the Data Production Library (DPL) to the Selenium test. Open the AjaxRIASeleniumTest/Calendar_Functional_DataDriven.scenario in the Editor. Click the Use Cases tab.<br /> <br /> <br /> </li>
+<li>Click the Add DPL link. Set the DPL type to HashDPL. HashDPL reads data from a comma separated value (CSV) file and provides it at test run time to the ScriptRunner. Set the Action to Get Next Row of Data.<br /> <br /> <img style="border: 1px solid; width: 600px; height: 387px;" alt="Setting a DPL in the use case" src="http://images.pushtotest.com/images_selenium/dpl_usecase.png" /><br /> <br /> <br /> <span style="font-family: Helvetica,Arial,sans-serif;"> </span></li>
+<li>By default TestMaker runs the use case in a Functional Test once. Click the General tab and set the Repeat value to a higher value to repeat the use case for the additional rows of data in the data.csv file.<br /> <br /> <br /> <span style="font-family: Helvetica,Arial,sans-serif;"> </span></li>
+<li><span style="font-family: Helvetica,Arial,sans-serif;">That's all! Click the PushToTest Run button and watch the results.<br /> <br /> <img style="border: 1px solid; width: 400px; height: 700px;" alt="Showing the results of a data driven test" src="http://images.pushtotest.com/images_selenium/DPLExample.png" /><br /> <br /> </span></li>
+</ol> <span style="font-family: Helvetica,Arial,sans-serif;"> </span><span style="font-style: italic; font-family: Helvetica,Arial,sans-serif;">A quick explanation</span><span style="font-family: Helvetica,Arial,sans-serif;">: The TestScenario operates a functional test by running the Selenium test once. The data file we created contains 5 rows of data. Change the repeat value to 5 to have TestMaker repeat the test for each row of data.</span><span style="font-family: Helvetica,Arial,sans-serif;"> </span><br style="font-family: Helvetica,Arial,sans-serif;" /> <span style="font-family: Helvetica,Arial,sans-serif;"><br /> </span><br style="font-family: Helvetica,Arial,sans-serif;" />
+<h2 style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;"><a name="task4"></a>Task 4: Repurpose A Functional Test As A Load And Performance Tests</span></h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">The test we built in Task 3 operated a functional test by a single user. Load and performance testing identifies the scalability index of a target host application by operating a test with multiple simultaneous concurrently running users. PushToTest reuses functional tests as load and performance tests without requiring any change to the test!<br /> </span> <ol style="font-family: Helvetica,Arial,sans-serif;">
+<li>In the TestMaker window use the File -> Open TestScenario command. Use the file selector to choose AjaxRIASeleniumTest/Calendar_Load_Test.scenario.<br /> <br /> </li>
+<li>Click the Edit icon in the TestScenario Controller panel.<br /> <br /> </li>
+<li>Set the test to be a load test in the General tab.<br /> <br /> <img style="border: 1px solid; width: 600px; height: 387px;" alt="Editing a load test" src="http://images.pushtotest.com/images_selenium/loadtest_editor.png" /><br /> <br /> <br /> The settings tells TestMaker to operate a load and performance test at three levels of concurrently running simulated users (crlevel.) The test operates 1 user, then 2 users, and then 4.<br /> <br /> <br /> </li>
+<li>That's all! Click the PushToTest Run button and watch the results.<br /> <br /> <img style="border: 1px solid; width: 400px; height: 700px;" alt="Test results from a load test" src="http://images.pushtotest.com/images_selenium/calendar_load_test.png" /><br /> <span style="font-weight: bold;"><br /> </span>PushToTest operates the test in 1 concurrently running simulated users, then 2 users, then 4 users. The Real Time Scalability Index contrasts the Transaction Per Second (TPS) for each of the three user levels. A perfectly scalable system will increase TPS in linear proportion to the increase in users. For example, at 2 users doing 0.03 TPS a 4 user level should be twice the TPS, or 0.06 or higher. The above chart shows an application with linear scalability. The Step Times chart shows the amount of time each step took to operate as the test proceeded.<br /> <br /> <br /> <br /> </li>
+</ol>
+<h2 style="font-family: Helvetica,Arial,sans-serif;"><span style="font-weight: bold;"><a name="task5"></a>Task 5: Repurpose A Functional Test As A Business Service Monitor</span></h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">Business Service Monitor (BSM) testing enforces and proves a Service Level Agreement (SLA) by operating a test periodically. For example, a monitor runs a test every 30 minutes. TestMaker reuses functional tests as a monitor with no changes to the Selenium test and one change .</span><br style="font-family: Helvetica,Arial,sans-serif;" /> <ol style="font-family: Helvetica,Arial,sans-serif;">
+<li>In the TestMaker window use the File -> Open TestScenario command. Use the file selector to choose AjaxRIASeleniumTest/Calendar_Monitor.scenario.<br /> <br /> </li>
+<li>Click the Edit icon in the TestScenario Controller panel.<br /> <br /> <img style="border: 1px solid; width: 600px; height: 387px;" alt="Editing a business service monitor" src="http://images.pushtotest.com/images_selenium/Editor_monitor.png" /><br /> <br /> <br /> This TestScenario runs the test use case as a business service monitor. The monitor operates the test use case every 10 minutes. The monitor keeps running until it encounters an exception.<br /> <br /> </li>
+<li>That's all! Click the PushToTest Run button and watch the results.<br /> <br /> <img style="border: 1px solid; width: 517px; height: 351px;" alt="Business Service Monitor (BSM)" src="http://images.pushtotest.com/images_selenium/calendar_monitor.png" /><br /> <br /> The monitor controller panel is a dashboard to the status of the service being tested.<br /> <br /> <br /> </li>
+</ol>
+<h2></h2>
+<span> <br /> </span> <ol style="font-family: Helvetica,Arial,sans-serif;">
+<li>In the TestMaker window use the File -> Open TestScenario command. Use the file selector to choose AjaxRIASeleniumTest/Calendar_ScriptDriven.scenario.<br /> <br /> </li>
+<li>Click the Edit icon in the TestScenario Controller panel.<br /> <br /> <img /><br /> <br /> <br /> <span style="font-style: italic;">A quick explanation</span>: We ran the Transformer utility on the Selenium recording in Task 3. Access the Transformer in the Tools drop-down menu in TestMaker. The Transformer created the TestScenario you just opened.</li>
+<li>That's all! Click the PushToTest Run button and watch the results.<br /> <br /> <img /><br /> <br /> </li>
+</ol> <span> <br /> Add your own custom logging to a test script using the PTTStepListener. Add the following commands to a Jython script:<br /> <br /> from com.pushtotest.tool import PTTStepListener<br /> PTTStepListener.startStep( "setUp" );<br /> PTTStepListener.endStep();<br /> </span>
+<h2><span style="font-family: Helvetica,Arial,sans-serif;"><a name="debug"></a>8. Debugging Ajax Applications: Tips and Techniques</span></h2>
+<span style="font-family: Helvetica,Arial,sans-serif;"> </span><span style="font-family: Helvetica,Arial,sans-serif;">Ajax applications provide rich user experiences. In an Ajax application components may update themselves asynchronously. Ajax applications communicate to information sources external to the browser - like the backend server - or even with other components running on the same page. This flexibility challenges the tests we write. Our Ajax tests must work within the asynchronous nature of the Ajax application. And, we often need to make manual changes to the test because of the lack of a standard for Selenium IDE to follow to record an Ajax application.<br /> <br /> You may find the following tips and techniques useful:<br /> <br /> a) When you are not certain of the state of your test and the application, use a special savePage and saveSource commands. The target value is a file. saveSource saves the current HTML.<br /> <br /> b) Set HtmlUnit into "debug" mode. In the Editor use the Options tab to set "Save received responses to temp directory" and SeleniumHtmlUnit log level.<br /> </span><span style="font-family: Helvetica,Arial,sans-serif;"> </span><br style="font-family: Helvetica,Arial,sans-serif;" /></div>
+<br />
+<a href="http://www.pushtotest.com/products-comparison"><img style="border: 4px solid ; width: 300px; height: 60px;" alt="Download TestMaker and Run Selenium Tests" src="http://www.pushtotest.com/images/downloadtestmaker.jpg"></a>&nbsp;&nbsp;<a href="http://www.pushtotest.com/selenium-load-testing-monitoring-workshop-form"><img style="border: 4px solid ; width: 300px; height: 60px;" alt="Watch the Tutorial Screencast" src="http://www.pushtotest.com/images/watchthetutorialscreencast.jpg"></a></div>
+
+
+
+				</div>
+				
+							</div>
+
+			
+		</div>
+		
+			</div>
+
+		<div class="ja-mass ja-mass-bottom clearfix">
+			<div class="ja-moduletable moduletable  clearfix" id="Mod72">
+						<div class="ja-box-ct clearfix">
+		<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1385558-1");
+pageTracker._setDomainName("pushtotest.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>		</div>
+    </div>
+	
+	</div>
+	
+</div>
+</div>
+<!-- //CONTENT -->							</div>
+	
+			<!-- RIGHT COLUMN--> 
+
+
+<div id="ja-right" class="column sidebar" style="width:22%">
+
+	
+		<div class="ja-colswrap clearfix ja-r1">
+
+			<div class="ja-col  column" style="width:100%">
+				<div class="ja-moduletable moduletable_getStarted  clearfix" id="Mod107">
+						<div class="ja-box-ct clearfix">
+		<div style="background: url(templates/cloudbase/images/get_started_right_now.gif) no-repeat scroll 0% 0% transparent; width: 192px; height: 40px; float: left; "></div>
+<ul style="background-color: #fff1cc; padding: 0px 5px 10px 5px; clear: both; font-family: Tahoma;">
+<li><a href="http://www.pushtotest.com/products-comparison">Download TestMaker 6</a></li>
+<li><a href="screencastcentral">Watch Screencasts, Demos</a></li>
+<li><a href="presentations-tutorials-open-source-testing.html">Read Tutorials and Papers</a><br mce_bogus="1" /></li>
+<li><a href="http://www.pushtotest.com/selenium-webinar-series">Selenium Workshops</a></li>
+<li><a href="become-a-software-test-expert-series">Learn To Be A Test Expert</a></li>
+<li><a href="request-for-pricing">Request Price Quote</a></li>
+</ul>		</div>
+    </div>
+		<div class="ja-moduletable moduletable  clearfix" id="Mod108">
+						<div class="ja-box-ct clearfix">
+		<h3 style="border-bottom: 0px; padding-left: 15px; padding-bottom: 10px; font-family: Tahoma;"><a href="customer-case-study-papers.html" style="text-decoration:none">Our Great Customers</a></h3>
+	<div id="slidewrap">
+		<div id="slideshow"></div>
+		<div id="loadingDiv"></div>
+	</div>
+		</div>
+    </div>
+		<div class="ja-moduletable moduletable_getStarted  clearfix" id="Mod102">
+						<div class="ja-box-ct clearfix">
+		
+<div style="background: url('/templates/cloudbase/images/cohen_blog.png') no-repeat scroll 0% 0% transparent; width: 192px; height: 38px; float: left; cursor: pointer; " onclick="window.location='http://www.pushtotest.com/blog'"></div> 
+
+<ul class="latestnews" style="clear: both; ">
+		<li> 
+		<a href="/free-webinar-on-agile-web-performance-testing.html" class="latestnews">
+			<span style="text-decoration:underline;">Free Webinar on Agile Web Performance Testing</span></a>
+	</li>
+		<li> 
+		<a href="/free-help-to-learn-testmaker-selenium-sahi-soapui.html" class="latestnews">
+			<span style="text-decoration:underline;">Free Help To Learn TestMaker, Selenium, Sahi, soapUI</span></a>
+	</li>
+	</ul>
+		</div>
+    </div>
+		<div class="ja-moduletable moduletable_getStarted  clearfix" id="Mod111">
+						<div class="ja-box-ct clearfix">
+		<div style="background: url(templates/cloudbase/images/upcoming-events.png) no-repeat scroll 0% 0% transparent; width: 192px; height: 38px; float: left;"></div>
+<ul class="upcomingevents" style="clear: both; background: none !important; margin-bottom: 6px;">
+
+
+<li><a href="http://www.pushtotest.com/agileforciosctos" class="os1">Agile Open Source Performance Test Workshop for CIOs, CTOs, Business Managers<br />January 4, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/agilefordevelopers" class="os1">Agile Open Source Performance Test Workshop for Developers, Testers, IT Managers<br />January 5, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/help-for-testmaker-installation-test-scripting-load-testing" class="os2">Free Help For TestMaker Installation, Test Scripting, Load Testing<br />January 5, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/workshopcio" class="os3">Open Source Test Workshop for CIOs, CTOs, Business Managers<br />January 11, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/workshoptech" class="os3">Selenium, soapUI, Sahi, TestMaker Workshop for Testers, Developers, IT Ops<br />January 12, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/help-for-testmaker-installation-test-scripting-load-testing" class="os2">Free Help For TestMaker Installation, Test Scripting, Load Testing<br />January 12, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/help-for-testmaker-installation-test-scripting-load-testing" class="os2">Free Help For TestMaker Installation, Test Scripting, Load Testing<br />January 19, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/agileforciosctos" class="os1">Use Selenium, soapUI, Sahi, TestMaker Performance Testing In Your Organization<br />January 25, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/agilefordevelopers" class="os1">Agile Open Source Performance Test Workshop for Developers, Testers, IT Managers<br />January 26, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/help-for-testmaker-installation-test-scripting-load-testing" class="os2">Free Help For TestMaker Installation, Test Scripting, Load Testing<br />January 26, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/agileforciosctos" class="os1">Agile Open Source Performance Test Workshop for CIOs, CTOs, Business Managers<br />February 14, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/agilefordevelopers" class="os1">Agile Open Source Performance Test Workshop for Developers, Testers, IT Managers<br />February 16, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/workshopcio" class="os3">Free Webinar: Solve Performance Bottlenecks and Function Problems In Your Web Applications<br />February 22, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+<li><a href="http://www.pushtotest.com/workshoptech" class="os3">Open Source Test Workshop for Developers, Testers, IT Ops<br />February 23, 2012</a>
+<ul class="upcomingevents" style="height: 7px;">
+<li>&nbsp;</li>
+</ul>
+</li>
+
+</ul>		</div>
+    </div>
+		<div class="ja-moduletable moduletable_social  clearfix" id="Mod106">
+						<div class="ja-box-ct clearfix">
+		<ul id="social-media-new">
+<li style="text-align: left;" class="twitter"> <a href="http://twitter.com/fcohen" mce_href="http://twitter.com/fcohen">Twitter</a></li>
+<li class="rss20"> <a href="index.php?option=com_ninjarsssyndicator&amp;feed_id=1&amp;format=raw" mce_href="http://pushtotest.com/thecohenblog/feed">Rss</a></li>
+<li class="facebook"> <a href="http://www.facebook.com/pages/PushToTest/150521651658910" mce_href="http://www.facebook.com/pages/PushToTest/68841849052">Facebook</a></li>
+<li class="linkedin"> <a href="http://www.linkedin.com/groups?mostPopular=&amp;gid=2134116&amp;trk=myg_ugrp_ovr" mce_href="http://www.linkedin.com/profile?viewProfile=&amp;key=211589">Link</a></li>
+</ul>		</div>
+    </div>
+	
+		</div>
+	
+	
+	</div>
+	
+	
+</div>
+<!-- RIGHT COLUMN--> 
+	
+		</div>
+		</div>
+		<!-- //MAIN CONTAINER -->
+	
+				</div>
+		<div class="main-content-bottom"></div>
+		
+		<!-- FOOTER -->
+		<div class="ja-navhelper wrap">
+<div class="main clearfix">
+    
+    <ul class="ja-links">
+		<li class="layout-switcher">&nbsp;</li>
+		<li class="top"><a href="/selenium-tutorial-full#Top" title="Back to Top">Top</a></li>
+	</ul>
+	
+	<ul class="no-display">
+		<li><a href="/selenium-tutorial-full#ja-content" title="Skip to content">Skip to content</a></li>
+	</ul>
+
+</div>
+</div>
+
+<div id="ja-footer" class="wrap">
+	<div class="main clearfix">
+		<div class="inFooter clearfix">
+						<div class="ca-footermiddle" style="width: 96%; padding: 0px;"	>
+				<div class="ja-copyright">
+					<div class="bannergroup">
+
+
+</div><table width="100%" border="0" cellpadding="0" cellspacing="1"><tr><td nowrap="nowrap"><a href="/selenium-tutorial-full.html" class="mainlevel" >Home</a><a href="/products.html" class="mainlevel" >Products</a><a href="/services.html" class="mainlevel" >Services</a><a href="/customers.html" class="mainlevel" >Customers</a><a href="/support.html" class="mainlevel" >Support</a><a href="/community.html" class="mainlevel" >Community</a><a href="/about-us-.html" class="mainlevel" >About Us</a><a href="/component/xmap/?sitemap=1&amp;view=xml" class="mainlevel" >Sitemap</a></td></tr></table>
+				</div>
+				
+			</div>
+				
+		</div>
+	</div>
+</div>
+		<!-- //FOOTER -->
+	
+	</div>
+	
+
+
+
+<!-- Start of HubSpot Logging Code -->
+<script type="text/javascript" language="javascript">
+var hs_portalid=39167;
+var hs_salog_version = "2.00";
+var hs_ppa = "pushtotest.app3.hubspot.com";
+document.write(unescape("%3Cscript src='" + document.location.protocol + "//" + hs_ppa + "/salog.js.aspx' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!-- End of HubSpot Logging Code --> 
+<!-- Start of Google Analytics Code -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1385558-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End of Google Analytics Code -->
+<script type="text/javascript">
+
+(function() {
+
+ var p = document.createElement('script');
+
+ p.type = 'text/javascript'; p.async = true;
+
+ p.src = '//d2f7h8c8hc0u7y.cloudfront.net/performable/pax/648x3U.js';
+
+ var s = document.getElementsByTagName('script')[0];
+
+ s.parentNode.insertBefore(p, s);
+
+})();
+
+</script>
+
+</body>
+</html>

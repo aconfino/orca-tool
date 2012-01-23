@@ -1,0 +1,764 @@
+
+
+var _post_tooltip_enabled = true;
+
+function enable_post_tooltip() {
+    _post_tooltip_enabled = true;
+}
+
+function disable_post_tooltip() {
+    _post_tooltip_enabled = false;
+}
+// feedback functions
+function form_submit_feedback() {
+    frm = this.document.getElementsByTagName('form');
+    for (i=0;i<document.fbform.grade.length;i++) {
+        if (document.fbform.grade[i].checked==true) {
+            $('rating').value=document.fbform.grade[i].value;
+        }
+    }
+    if ($('rating').value == '') {
+        alert( I18n.t('select_a_rating') );
+        return;
+    }
+    if ($('comment').value == '') {
+        alert( I18n.t('enter_a_comment') );
+        return;
+    }
+    showWorking();
+    
+    frm[0].submit();
+}
+
+function show_lcfeedbackform() {
+	Element.hide($("feedback_content"));
+	Element.show($("feedback_livecommunity"));
+}
+
+function _feedback(e, skip_routing) {
+    var url = "/app/feedback";
+    if (!e)  var e = window.event;
+
+    if (skip_routing) {
+        url += "?skip_routing=true";
+    }
+
+    e.cancelBubble = true;
+    if (e.stopPropagation) e.stopPropagation();
+
+    popUp( url, "__feedbackPopUp", 630, 455, "scrollbars=1" );
+    
+    return false;
+}    
+
+function feedback(e) {
+    return _feedback(e, false);
+}
+
+function feedback_skip_routing(e) {
+    return _feedback(e, true);
+}
+
+// leaderboard
+function showLeaderBoard() {
+    var url = "/app/show_leader_board";
+
+    if( !LCCommon.getCCCookie() ) {
+        pleaseEnableCookies();
+        
+        return false;
+    }    
+
+    popUp( url, "__leaderboardPopUp", 580, 650 );
+    
+    return false;
+}
+
+// explain this
+function explainThis() {
+    return popUp( '/explainthis.html', "__etPopUp", 640, 720 );
+}
+
+function explainThisNew(url) {
+    if( url === undefined )
+     return popUp( '/explainthisnew.html', "__etPopUp", 640, 720 );
+    else
+     return popUp( url , "__etPopUp", 640, 720 );
+}
+
+// how to ask a question
+function howtoAskQuestion() {
+    return popUp( '/askaquestion.html', "__etPopUp", 640, 740 );
+}
+function howtoAskQuestionNew() {
+    return popUp( '/askaquestionnew.html', "__etPopUp", 640, 740 );
+}
+
+// working animation
+function showWorking() {
+    var e = top.document.getElementById('working');
+    if( e ) {
+        e.style.display = 'block';
+    }
+}
+
+function hideWorking() {
+    var e = top.document.getElementById('working');
+    if( e ) {
+        e.style.display = 'none';
+    }
+}
+  
+// e-mail 
+function showEditEmail(user_id) {
+    var url = '/app/show_edit_email'+'?user_id='+user_id;
+    
+    popUp( url, "__editEmailPopUp", 400, 300 );
+
+    return false;
+}
+
+function validateEmail(addr,db) {
+    if (addr == '') {
+        if (db) alert( I18n.t('enter_a_valid_email') );
+        return false;
+    }
+    var invalidChars = '\/\'\\ ";:?!()[]\{\}^|';
+    for (i=0; i<invalidChars.length; i++) {
+        if (addr.indexOf(invalidChars.charAt(i),0) > -1) {
+            if (db) alert(I18n.t('email_contains_invalid_characters'));
+            return false;
+        }
+    }
+    for (i=0; i<addr.length; i++) {
+        if (addr.charCodeAt(i)>127) {
+            if (db) alert(I18n.t('email_containts_non_ascii_characters'));
+            return false;
+        }
+    }
+
+    var atPos = addr.indexOf('@',0);
+    if (atPos == -1) {
+        if (db) alert(I18n.t('email_must_contatin_@'));
+        return false;
+    }
+    if (atPos == 0) {
+        if (db) alert(I18n.t('email_cannot_start_with_@'));
+        return false;
+    }
+    if (addr.indexOf('@', atPos + 1) > - 1) {
+        if (db) alert(I18n.t('email_must_contain_only_one_@'));
+        return false;
+    }
+    if (addr.indexOf('.', atPos) == -1) {
+        if (db) alert(I18n.t('email_must_contain_a_period_before_the_domain_name'));
+        return false;
+    }
+    if (addr.indexOf('@.',0) != -1) {
+        if (db) alert(I18n.t('email_must_not_have_period_immediately_after_@'));
+        return false;
+    }
+    if (addr.indexOf('.@',0) != -1){
+        if (db) alert(I18n.t('email_must_not_have_period_immediately_before_@'));
+        return false;
+    }
+    if (addr.indexOf('..',0) != -1) {
+        if (db) alert(I18n.t('email_must_not_have_two_adjacent_periods'));
+        return false;
+    }
+    var suffix = addr.substring(addr.lastIndexOf('.')+1);
+    suffix = suffix.toLowerCase();
+    if (suffix.length != 2 && suffix != 'com' && suffix != 'net' && suffix != 'org' && suffix != 'edu' && suffix != 'int' && suffix != 'mil' && suffix != 'gov' & suffix != 'arpa' && suffix != 'biz' && suffix != 'aero' && suffix != 'name' && suffix != 'coop' && suffix != 'info' && suffix != 'pro' && suffix != 'museum') {
+        if (db) alert(I18n.t('email_primary_domain_invalid'));
+        return false;
+    }
+    return true;
+}
+
+// common popup    
+function popUp( url, winName, width, height, props ) {                                
+    var w = width;
+    var h = height;
+    var _url = "/blank.htm"
+    
+    // set the optional parameter, if needed
+    if( props === undefined ) {
+      props = "toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable,alwaysRaised,dependent,titlebar=no";
+    }
+
+    // place it in the middle of the screen
+    var winl = (screen.width - w) / 2;
+    var wint = (screen.height - h) / 2;
+
+    if( url.length > 0 ) {
+        _url = url;
+    }
+
+    try {
+        var win = window.open(_url,winName,props+",width="+w+",height="+h+",screenX="+winl+",left="+winl+",screenY="+wint+",top="+wint);
+
+        if(!win || win.closed || typeof win.closed=='undefined')
+		    {
+			if (navigator.userAgent.indexOf("Firefox") >= 0) 
+			  alert(I18n.t('disable_popup_blocker')); 
+			else
+              show_err_msg();
+            return false;		  
+        } else {
+            win.focus();
+        }
+    } catch(e) {
+        show_err_msg();
+    }
+                                    
+    return false;                                            
+}
+
+function post_reply_or_comment(_post_id, param_str, ispopup)
+{
+    url = '/reply/new_mini/' + _post_id;
+
+    more_than_one_param = false;
+  
+    if (param_str != '')
+    {
+        url += '?' + param_str;
+        more_than_one_param = true;
+    }
+    
+    if (ispopup == '1') {
+        if (more_than_one_param)
+        {
+            url += '&';
+        }
+        else
+        {
+            url += '?';
+        }
+        url += 'rpoc=true'; //popup params
+        popUp( url, "__postPopUp", 690, 650 );
+    } else {
+        window.location = url;
+    }
+}
+
+function dt(e, msg, offX, offY) {
+    if ( typeof Tooltip == "undefined" || !Tooltip.ready ) return;
+    if (typeof _post_tooltip_enabled != "undefined") {
+        if (false == _post_tooltip_enabled) return; //dont show the tooltip if we've disabled it via the variable
+    }
+    
+    if (offX && offY) {
+      // Override the default tooltip offset
+      Tooltip.offX = offX;
+      Tooltip.offY = offY;
+    }
+    
+    Tooltip.show(e, msg);
+}
+
+function ht() {
+    if ( typeof Tooltip == "undefined" || !Tooltip.ready ) return;
+    Tooltip.hide();
+}
+
+    
+function dt_icn(e, msg) {
+    if ( typeof mTooltip == "undefined" || !mTooltip.ready ) return;
+    mTooltip.show(e, msg);
+}
+
+function ht_icn() {
+    if ( typeof mTooltip == "undefined" || !mTooltip.ready ) return false;
+    mTooltip.hide();
+    return false;
+}
+
+function ht_instant() {
+    if ( typeof mTooltip == "undefined" || !mTooltip.ready ) return false;
+    mTooltip.hideDelay = 0;
+    mTooltip.hide();
+    return false;
+}
+
+
+
+function not_logged_in()
+{
+    alert(I18n.t('you_must_sign_in_to_use_this_feature'));
+  
+    return false
+}
+
+// string trim functions
+function LTrim(str) {
+    for (var i=0; ((str.charAt(i)<=" ")&&(str.charAt(i)!="")); i++);
+    return str.substring(i,str.length);
+}
+
+function RTrim(str) {
+    for (var i=str.length-1; ((str.charAt(i)<=" ")&&(str.charAt(i)!="")); i--);
+    return str.substring(0,i+1);
+}
+
+function Trim(str) {
+    return LTrim(RTrim(str));
+}
+
+// refactored function from app_mini.js & mini_dlg.js
+function evalTextLength(subject_id, char_remain, subject_length) {
+    var ps = $(subject_id);
+    var cr = $(char_remain);
+    if( ps != null && cr != null ) {
+        var max_len = subject_length;
+        var str = ps.value;
+        if ((max_len - str.length) > 0) {
+            cr.innerHTML =  I18n.t('chars_left', {'count' : (max_len - str.length).toString()});
+        } else {
+            cr.innerHTML =  I18n.t('chars_left', {'count' : '0'});
+            ps.value = str.substring(0, max_len);
+        }
+    }
+}
+
+// cookie functions
+function getCookie( n ) {
+    var d = document, srch = n+'=', p, e;
+    
+    if( d.cookie.length > 0 ) {
+        p = d.cookie.indexOf( srch )
+        
+        if( -1 != p ) {
+            p += srch.length;
+            e = d.cookie.indexOf( ';',p );
+            if( -1 == e ) {
+                e = d.cookie.length;
+            }
+            
+            return unescape( d.cookie.substring( p,e ) );
+        }
+    }
+    
+    d = null
+    
+    return "";
+}
+
+function getUserIdCookie() {
+    return getCookie( 'user_id' );
+}
+
+//function getSessionIdCookie() {
+//    return getCookie( '_session_id' );
+//}
+
+function pleaseEnableCookies() {
+    alert( I18n.t('enable_cookies', {'community_name' : ProductLogic.community_name}) );
+}
+
+function popup_with_sec_check(url) {
+    try {
+        var win = window.open(url,"__postsWindow");
+
+        if (win == null || typeof(win) == 'undefined') {
+            show_err_msg();
+            return false;
+        } else {
+            win.focus();
+        }
+    } catch (e) {
+        show_err_msg();
+    }
+}
+    
+// feedback callback for non-popup helpful q&a section
+function yesnoFeedback( request ) {
+    var e = $('hqa-content')
+  
+    if( e ) {
+        e.innerHTML = "<h3>" + request.responseText + "</h3>";
+    }
+}
+
+function edit_post(post_id, param_str, ispopup) {  
+    var url = '/post/user_edit'
+    var w = 690;
+    var h = 650;
+  
+    url += '?id=' + post_id;
+    if (ispopup == '0') {
+        return popUp( url, "__postPopUp", w, h );
+    } else {
+        url += '&' + param_str;
+        window.location = url;
+        return false;
+    }
+}
+
+
+function edit_post_and_classification(post_id, param_str, ispopup) {
+    var url = '/post/user_edit'
+    var w = 690;
+    var h = 650;
+
+    var buttons = edit_post_form.getInputs('radio', 'q_classifier');
+    var classification = '';
+
+    for (i=0; i < buttons.length; i++) {
+        if (buttons[i].checked == true)
+            classification = buttons[i].value;
+    }
+
+    url += '?id=' + post_id;
+
+    if (classification != '')
+       url += '?&classification=' + classification;
+
+    if (ispopup == '0') {
+        return popUp( url, "__postPopUp", w, h );
+    } else {
+        url += '&' + param_str;
+        window.location = url;
+        return false;
+    }
+}
+
+function edit_reply(reply_id, param_str, ispopup) {  
+    var url = '/reply/user_edit'
+    var w = 690;
+    var h = 650;
+  
+    url += '?id=' + reply_id;
+    if (ispopup == '0') {
+        return popUp( url, "__postPopUp", w, h );
+    } else {
+        url += '&' + param_str;
+        window.location = url;
+        return false;
+    }
+}
+
+// function to view other users profile
+function goto_user_profile(userid, launch_mini, type) {
+    if (type == null) {
+        type = 'answer'
+    }
+
+    var url = '/app/userqna?bu='+userid +'&page=1&sort=0&type='+type;
+
+    if (launch_mini != "true") {
+        window.location = url;
+    } else {
+        // mini view dialog
+        url = '/app/userqna?usermv=true&page=1&sort=0&bu='+userid+"&type="+type;
+        window.location = url;
+    }
+    return false;
+}
+  
+var mTooltip = {
+    followMouse: false,
+    offX: 0,
+    offY: 12,
+    tipID: "tipDiv",
+    showDelay: 100,
+    hideDelay: 200,
+    ready:false,
+    timer:null,
+    tip:null,
+    target: "",
+    init:function( id ) {
+        if( id ) {
+            this.tipID = id;
+        }
+        if(document.createElement&&document.body&&typeof document.body.appendChild!="undefined"){
+            if(!document.getElementById(this.tipID)){
+                var el=document.createElement("DIV");
+                el.id=this.tipID;
+                document.body.appendChild(el);
+            }
+            this.ready=true;
+        }
+    },
+    show:function(e,msg) {
+        var _appName = navigator.appName;
+        var _appIE = (_appName && _appName.match(/^Microsoft Internet Explorer/i));
+        if (_appIE) {
+            if (e.srcElement != null && e.srcElement.id == '')
+                return;
+        } else {
+            if (e.target != null && e.target.id == '') {
+                return;
+            }
+        }
+        if(this.timer){
+            clearTimeout(this.timer);
+            this.timer=0;
+        }
+        this.tip=document.getElementById(this.tipID);
+        if (this.followMouse == true) {
+            dw_event.add(document,"mousemove",this.trackMouse,true);
+        }
+        this.writeTip("");
+        this.positionTip(e);
+        this.writeTip(msg);
+        viewport.getAll();
+        this.timer=setTimeout("Tooltip.toggleVis('"+this.tipID+"', 'visible')",this.showDelay);
+    },
+    writeTip:function(msg){
+        if(this.tip&&typeof this.tip.innerHTML!="undefined")this.tip.innerHTML=msg;
+    },
+    positionTip:function(e)
+    {
+        var _appName = navigator.appName;
+        var _appIE = (_appName && _appName.match(/^Microsoft Internet Explorer/i));
+        if(this.tip&&this.tip.style){
+            var x = 0;
+            var y = 0;
+            if (_appIE) {
+                if (e.srcElement != null && e.srcElement.id == this.target && e.srcElement.id != '') {
+                    // alert(e.srcElement.id);
+                    x = (e.srcElement.offsetLeft + e.srcElement.offsetWidth);
+                    y = e.srcElement.offsetTop ;
+                    this.tip.style.left=x+"px";
+                    this.tip.style.top=y+"px";
+                }
+            } else {
+                if (e.target != null && e.target.id == this.target && e.target.id != '') {
+                    //alert(e.target.id);
+                    x = (e.target.offsetLeft + e.target.offsetWidth);
+                    y = e.target.offsetTop ;
+                    this.tip.style.left=x+"px";
+                    this.tip.style.top=y+"px";
+                }
+            }
+        }
+    },
+    hide:function(){
+        if(this.timer){
+            clearTimeout(this.timer);
+            this.timer=0;
+        }
+        this.timer=setTimeout("Tooltip.toggleVis('"+this.tipID+"', 'hidden')",
+            this.hideDelay);
+        if(this.followMouse)
+            dw_event.remove(document,"mousemove",this.trackMouse,true);
+        this.tip=null;
+    },
+    toggleVis:function(id,vis){
+        var el=document.getElementById(id);if(el)el.style.visibility=vis;
+    },
+    trackMouse:function(e){
+        e=dw_event.DOMit(e);Tooltip.positionTip(e);
+    }
+};
+
+function show_other_sites() {
+    var page = 'https://turbotax.intuit.com/commerce/common/fragments/popup/esd/popup.jsp?content=sitesusingaccount';
+    var page_opts = 'width=600,height=400,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable,alwaysRaised,dependent,titlebar=no';
+    window.open(page,'win1',page_opts);
+}
+
+function redir_parent_and_close(url)
+{
+    window.opener.location = url;
+    self.close();
+}
+
+function close_and_rpoc()
+{
+    if (window.opener != null)
+    {
+        try
+        {
+            window.opener.location.reload();
+        }
+        catch(err)
+        {
+
+        }
+    }
+
+    self.close();
+}
+
+function voteResponse(transport) {
+    try {
+        var response = eval("(" + transport.responseText + ")");
+        if (response.error.code == 0) {
+            var helpful_votes_color = response.helpful_votes > 0 ? "#347C2C" : "#333333";
+            $("helpful_votes_" + response.ctrl_id).innerHTML =
+                "<font color=\"" + helpful_votes_color + "\">" + response.helpful_votes + "</font>";
+
+            var unhelpful_votes_color = response.unhelpful_votes > 0 ? "#C11B17" : "#333333";
+            $("unhelpful_votes_" + response.ctrl_id).innerHTML =
+                "<font color=\"" + unhelpful_votes_color + "\">" + response.unhelpful_votes + "</font>";
+        } else {
+            alert(response.error.message);
+        }
+    } catch(ex) {
+        alert(I18n.t("error_occurred"));
+    }
+}
+
+// report to moderator functions
+function form_submit_abuse( _id, _controller, _reply_number, _admin_view ) {
+		
+    var form = $('fsaform-'+_id);
+    var buttons = form.getInputs('radio', 'flag_type');
+    var flagValue="";
+	
+    for (i=0;i<buttons.length;i++) {
+        if (buttons[i].checked==true)
+            flagValue = buttons[i].value;
+    }
+    if (flagValue == '') {
+        alert (I18n.t('select_type_of_problem_reporting'));
+        return;
+    }
+    var detailsValue= form.getInputs('text','abuse_details');
+    var	abuse_details = encodeURI(detailsValue[0].value);
+    if ((flagValue == 'Other') && (abuse_details == '')) {
+        alert (I18n.t('enter_details'));
+        return;
+    }
+	
+    var success_string = "abuse-ct-" + _reply_number;  
+    var pars ='flag_type='+ flagValue + '&abuse_details=' + abuse_details + '&id='+ _id;      
+    
+    if (_admin_view == 'true') {    
+        var url= "/" + _controller + "/flag_admin";
+		      
+        new Ajax.Updater( {
+            success: success_string,
+            failure:success_string
+        }, url,
+
+        {
+            method: 'post',
+            parameters: pars,
+            onComplete: function( request ) {
+                window.location.reload();
+            }
+        } )
+    } else {
+        var url= "/" + _controller + "/report_abuse";      
+         
+        new Ajax.Request( url, { 
+            method: 'post',
+            parameters: pars,
+            onSuccess: reportResponse
+        } );
+    }
+}
+
+function reportResponse( transport ) {  
+    var response = null;
+  
+    menuLayers.hide();
+
+    try {
+        response = eval( '(' + transport.responseText + ')' );
+    } catch(e) {
+        alert( I18n.t('error_occurred') )
+    
+        return false;
+    }
+  
+    if( response.error.code > 0 ) {
+        alert( response.error.message );
+    } else {
+        var e = $("abuse-ct-" + response.id  );
+    
+        e.innerHTML = response.text;
+    }
+  
+    return false;
+}
+
+// functions to send thanks and avoid multiple clicks 
+_enable_thx_actions_btn = true;
+
+function send_thx( url, success_div, failure_div ) {
+    if (_enable_thx_actions_btn) {
+        _enable_thx_actions_btn = false;
+        
+        new Ajax.Request( url, {
+            method: 'post',
+            parameters: "ctrl_id="+success_div,
+            onSuccess: thxResponse
+        } );
+        
+        setTimeout( "_enable_thx_actions_btn = true", 1000 );
+    }
+  
+    return false;
+}
+
+function thxResponse( transport ) {    
+    var response = null;
+  
+    try {
+        response = eval( '(' + transport.responseText + ')' );
+    } catch(e) {
+        alert( I18n.t('error_occurred') )
+    
+        return false;
+    }
+  
+    if( response.ctrl_id != undefined ) {
+        new Effect.Highlight( response.ctrl_id );
+    }
+  
+    if( response.error.code > 0 ) {
+        alert( response.error.message );
+    }  else {
+        var e = $( response.ctrl_id  );
+  
+        e.innerHTML = response.text;
+    }
+  
+    return false;
+}
+
+// watchlist function
+function watchResponse( transport ) {  
+    var response = null;
+    
+    try {
+        response = eval( '(' + transport.responseText + ')' );
+    } catch(e) {
+        alert( I18n.t('error_occurred') )
+
+        return false;
+    }
+    
+    if( response.error.code > 0 ) {
+      alert( response.error.message );
+    } else if(response.action == 'unwatching') {
+      var e = $(response.ctrl_id);
+      s = response.text;
+      e.innerHTML = s;
+    } else {
+      var e = $('watchlist_count_number');
+      e.innerHTML = response.watcher_count;
+    }
+  
+    return false;
+}
+
+// open a window to post to facebook
+var LCCommon = {
+    getCCCookie: function () {
+        return getCookie( 'cc' );
+    }
+
+}
+
+function newPostWrapper(tagset_id, category_id) {
+    if (typeof(_ask_context) != "undefined" && _ask_context == "mini") {
+        AppMiniSE.newPostButtonBar();
+    } else {
+        return new_post_from_full(tagset_id, category_id);
+    }
+}

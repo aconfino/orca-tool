@@ -1,0 +1,594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>TurboTax&reg; Tax Preparation Software - Try for FREE, File Taxes Online</title>
+<meta name="robots" content="noindex,nofollow,noodp" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="author" content="TurboTax &ndash; Taxes, Income Tax" />
+<meta name="copyright" content="Copyright 1997-2012 Intuit, Inc. All Rights Reserved." />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="slurp" content="noydir" />
+<meta name="distribution" content="global" />
+<link href="/favicon.ico" type="image/ico" rel="Shortcut Icon" />
+
+<link href="http://images.turbotax.intuit.com/css/global_colors.css?version=112310" type="text/css" rel="stylesheet" />
+<link href="http://images.turbotax.intuit.com/css/global_layout.css?version=102611" type="text/css" rel="stylesheet" />
+
+<!--[if IE 6]>
+<link href="http://images.turbotax.intuit.com/css/global_ie6fix.css?version=010808" type="text/css" rel="stylesheet" />
+<![endif]-->
+
+<link href="http://images.turbotax.intuit.com/css/global_text.css?version=01172012" type="text/css" rel="stylesheet" />
+<link href="http://images.turbotax.intuit.com/css/tt_global_nav.css?version=101811" type="text/css" rel="stylesheet" />
+<link href="http://images.turbotax.intuit.com/microsite/css/tt_global_nav-overwrites.css" type="text/css" rel="stylesheet" />
+<link href="http://images.turbotax.intuit.com/css/bazaarvoice.css?version=111810" type="text/css" rel="stylesheet" />
+<!--<link href="/microsite/css/microsite-overwrites.css" type="text/css" rel="stylesheet"/>-->
+<link href="http://images.turbotax.intuit.com/microsite/css/efile_green.css" type="text/css" rel="stylesheet" />
+<link href="http://images.turbotax.intuit.com/microsite/css/exitnotfiled.css?version=102010" type="text/css" rel="stylesheet" />
+<link href="http://images.turbotax.intuit.com/microsite/css/exitfiled.css?version=102010" type="text/css" rel="stylesheet" />
+<link href="http://images.turbotax.intuit.com/microsite/css/exitnoauth.css?version=102010" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="http://images.turbotax.intuit.com/js/jquery-ui-1.8.12.custom/css/redmond/jquery-ui-1.8.12.custom.css" />
+<link rel="stylesheet" type="text/css" href="http://images.turbotax.intuit.com/js/jquery-ui-1.8.12.custom/css/redmond/ttcom-custom.css" />
+
+<link href="http://images.turbotax.intuit.com/css/fiveProd-hp.css?version=110911" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="http://images.turbotax.intuit.com/css/fta/fta-global.css" />
+<script type="text/javascript" language="javascript" src="/js/jquery-1.6.2.min.js?version=126"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.12.custom/js/jquery-ui-1.8.12.custom.min.js"></script>	
+<script type="text/javascript" language="javascript" src="/js/jquery.hoverIntent.min.js?version=121707"></script>
+<script type="text/javascript" language="javascript" src="/js/jquery.easing.js?version=121707"></script>
+<script type="text/javascript" language="javascript" src="/js/global.js?version=100907"></script>
+<script type="text/javascript" language="javascript" src="/js/events_resize.js?version=103007"></script>
+<script type="text/javascript" language="javascript" src="/js/events_library.js?version=011711"></script><script type="text/javascript" language="javascript" src="/js/legacy.js?version=103007"></script>
+<script type="text/javascript" src="/js/common/tax.js"></script>
+<script type="text/javascript">
+	Tax.priorityCode = "3468337910";
+	Tax.segment = "39";
+</script>
+<script type="text/javascript" language="javascript" src="/js/common/tax.fta.js"></script>
+<script type="text/javascript" src="/js/common/tax.autobtn.js"></script>
+<script type="text/javascript" src="/js/common/tax.bento.js?version=12302011"></script>
+<script type="text/javascript" src="/js/common/tax.start.js?version=09142011"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+           
+
+		Tax.Start.params.abtest="";
+		
+		
+
+if(Tax.Start.params.hasOwnProperty('abtest')) {
+	Tax.Start.params.abtest += "&amp;random=" + Math.floor(Math.random()*100000);
+}
+else {
+	Tax.Start.params.abtest = "random=" + Math.floor(Math.random()*100000);
+}
+
+
+		Tax.Start.urls.startUrlPaid="https://turbotax.intuit.com/services/authentication/dispatcher.jsp";
+		Tax.Start.urls.startUrlFree="https://turbotax.intuit.com/services/authentication/dispatcher.jsp";
+		Tax.Start.urls.startUrlFFA="https://turbotax.intuit.com/services/authentication/dispatcher.jsp";
+		Tax.Start.urls.continueUrl="https://turbotax.intuit.com/services/authentication/dispatcher.jsp";
+		Tax.Start.urls.createAccountUrl="https://turbotax.intuit.com/services/authentication/dispatcher.jsp";
+		Tax.Start.authContingency = false;
+	
+Tax.Start.addListener(function(exp) {
+	if(Tax.hasOwnProperty("SysReqs") && !Tax.SysReqs.isCookieEnabled) {
+		exp.url = '/system_requirements_check.jsp';
+	}
+});
+
+
+// regular tto skus
+Tax.Start.experiences.free = {
+	selector : '.getstarted_free',
+	url : Tax.Start.urls.startUrlFree,
+	params : {
+		productid : '512',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.basic = {
+	selector : '.getstarted_basic',
+	url : Tax.Start.urls.startUrlPaid,
+	params : {
+		productid : '2',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.deluxe = {
+	selector : '.getstarted_deluxe',
+	url : Tax.Start.urls.startUrlPaid,
+	params : {
+		productid : '16',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.premier = {
+	selector : '.getstarted_premier',
+	url : Tax.Start.urls.startUrlPaid,
+	params : {
+		productid : '8',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.homebiz = {
+	selector : '.getstarted_homebiz',
+	url : Tax.Start.urls.startUrlPaid,
+	params : {
+		productid : '32',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.noproduct = {
+	selector : '.getstarted_noproduct',
+	url : Tax.Start.urls.startUrlPaid,
+	params : {
+		loginpage: 'start'
+	}
+};
+
+// continue
+Tax.Start.experiences.continueReturn = {
+	selector : '.continue_return, .continue_ffa_return, .continue_ffaups_return, .continue_ffacal_return, .continue_ffade_return, .continue_ffa_return_nopcode_override',
+	url : Tax.Start.urls.continueUrl,
+	params : {
+		loginpage: 'continue'
+	}
+};
+
+// create account
+Tax.Start.experiences.createAccount = {
+	selector : '.create_account',
+	url : Tax.Start.urls.createAccountUrl,
+	params : {
+		loginpage: 'create'
+	}
+};
+
+// ffa starts
+Tax.Start.experiences.ffa = {
+	selector : '.getstarted_ffa',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '4', 
+		abtest : '', 
+		priorityCode : '3468342228',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.ffacal = {
+	selector : '.getstarted_ffacal',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '4', 
+		abtest : '', 
+		priorityCode : '3468343755',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.ffade = {
+	selector : '.getstarted_ffade',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '4', 
+		abtest : '', 
+		priorityCode : '4596900000',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.ffa_nopcode_override = {
+	selector : '.getstarted_ffa_nopcode_override',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '4', 
+		abtest : '',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.ffa_return = {
+	selector : '.getstarted_ffa_return',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '4', 
+		abtest : '', 
+		priorityCode : '3468342228',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.ffacal_return = {
+	selector : '.getstarted_ffacal_return',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '4', 
+		abtest : '', 
+		priorityCode : '3468343755',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.ffade_return = {
+	selector : '.getstarted_ffade_return',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '4', 
+		abtest : '', 
+		priorityCode : '4596900000',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.ffa_return_nopcode_override = {
+	selector : '.getstarted_ffa_return_nopcode_override',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '4', 
+		abtest : '',
+		loginpage: 'start'
+	}
+};
+
+// ffa upsell
+Tax.Start.experiences.basic_ffaups = {
+	selector : '.getstarted_basic_ffaups',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '2', 
+		priorityCode : '3468342229',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.deluxe_ffaups = {
+	selector : '.getstarted_deluxe_ffaups',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '16', 
+		priorityCode : '3468342229',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.premier_ffaups = {
+	selector : '.getstarted_premier_ffaups',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '8', 
+		priorityCode : '3468342229',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.homebiz_ffaups = {
+	selector : '.getstarted_homebiz_ffaups',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '32', 
+		priorityCode : '3468342229',
+		loginpage: 'start'
+	}
+};
+Tax.Start.experiences.ffaups_return = {
+	selector : '.getstarted_ffaups_return',
+	url : Tax.Start.urls.startUrlFFA,
+	params : {
+		productid : '', 
+		priorityCode : '3468342229',
+		loginpage: 'start'
+	}
+};
+//]]>
+</script>
+
+<script type="text/javascript" src="/ha/js/common/tax.sys-reqs.js?v=12152011"></script>
+<script type="text/javascript" src="/js/common/tax.tto-cart.js"></script>
+	<script type="text/javascript">
+		// <![CDATA[
+		Tax.TTOCart.cookieName = "tax.ttocart";
+
+		Tax.TTOCart.productFamilies = {BASIC:['US','STATE','SvcAuditDefense','SvcBankProduct','STATEWITHRC'],DELUXE:['US','STATE','SvcAuditDefense','SvcBankProduct','STATEWITHRC'],PREMIER:['US','STATE','SvcAuditDefense','SvcBankProduct','STATEWITHRC','PRFEDPREPB'],HBIZ:['US','STATE','SvcAuditDefense','SvcBankProduct','STATEWITHRC'],FFA:['US','STATE','SvcAuditDefense','SvcBankProduct'],LEO:['US','STATE','SvcAuditDefense','SvcBankProduct','SvcPWYC','STATEWITHRC']};
+
+		// Automatically bind to start experiences
+		if(Tax.Start) {
+			Tax.Start.addListener(function(exp) {
+				if(exp.hasOwnProperty('params') && !exp.params.hasOwnProperty('productid')) {
+					Tax.TTOCart.removeAllItems();
+				}
+				else {
+					var pname = Tax.productIdToName(exp.params.productid);
+					Tax.TTOCart.addItem(pname, 'US');
+				}
+			});
+		}
+		// ]]>
+	</script>
+<script type="text/javascript" src="/js/mbox.js?version=122910"></script><link href="http://images.turbotax.intuit.com/css/index.css?version=102011" type="text/css" rel="stylesheet" />
+<link href="http://images.turbotax.intuit.com/microsite/css/exitfiled.css?version=032008" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+	#content{background-image: none;}
+	#sign_in_box{position:absolute; z-index:5; left:751px; top:17px;}
+	.ftaWidth { width: 450px; }
+	.fta-cta {display: none;}
+	.ftaShow { display: block; }
+	.ftaHide { display: none; }
+	.signback p { float: left; margin-left: 20px; display: inline; }
+
+
+.fta-bubble {display: none !important;}
+
+
+.fta-bubble {display: none !important;}
+</style>
+<!--[if IE 6]>
+<style type="text/css">
+
+</style>
+<![endif]-->
+<script type="text/javascript">
+
+ 
+ $(function(){
+		
+	var prodName = "Deluxe";
+	if (prodName == "" || prodName == null){
+		prodName = "null";
+	}
+		
+	$(".lc-free").click(function(){
+		var thisRef = "https://www.lendingclub.com/landing/partner.action?partnerID=75250";
+		var linkName = "lcborrower:" + prodName;
+		prop14 = linkName + " - "+ s.pageName;
+		Tracking.sendClickEvent(prop14);
+		window.open(thisRef, '_blank');
+	});
+	
+	$(".lc-paid").click(function(){
+		var thisRef = "https://www.lendingclub.com/landing/partner.action?partnerID=75247";
+		var linkName = "lcinvestor:"+prodName;
+		prop14 = linkName + " - "+ s.pageName;
+		Tracking.sendClickEvent(prop14);
+		window.open(thisRef, '_blank');
+	});
+	
+});
+
+function sendCalEvent(calEvent)
+{
+	sendClickEvent(calEvent);
+}
+
+</script>
+</head>
+
+<body class="exit">
+<a name="top" id="top"></a>
+<script language="javascript" type="text/javascript">var s_eVar12="3468337910";</script>
+
+<!-- span around tag to fix layout issue -->
+<span style="float: right;"><script language="JavaScript" src="/js/s_code.js?version=011111" type="text/javascript"></script>
+</span>
+<div id="header">
+	<img width="135" height="39" border="0" src="/images/header/lgo-hdr-turbotax.gif" class="microsite-logo" alt="Prepare Tax Returns and eFile Taxes, Try for Free" name="topnav.img.ttlogo" />
+	<div class="brand_phrase" title="TurboTax - Choose Easy"></div>
+	</div>
+<div id="content">
+		<p style="font-size: 15px;color: #cc0000;font-weight:bold; margin:0; height:30px; padding-top:10px">You have successfully signed out of TurboTax. </p>
+		<div id="sign_in_box">
+
+	<a href="javascript:;" class="hdr_open pointer"><img width="198" height="30" border="0" src="/images/hp/btn-sign-in.gif" alt="Sign in" /></a>
+	
+	<a href="javascript:;" class="hdr_close pointer"><img width="198" height="28" border="0" src="/images/hp/bg-sign-in-hdr.gif" alt="Sign in" /></a>
+		
+	<div class="container fs-small">
+	  	<ul>
+			<li style="line-height:30px;background:url(/images/icn_signin_divider.gif) no-repeat bottom center;"><a href='https://turbotax.intuit.com/system_requirements_check.jsp?continue=true' class="continue_return">Continue a 2011 Return</a></li>
+			<li><a href='https://turbotax.intuit.com/commerce/account/secure/login.jsp?pagecontext=pyreturns'>Access Prior-Year Returns</a></li>
+			<li><a href="https://itsdeductibleonline.intuit.com/Login.htm" title="Log in to ItsDeductible">ItsDeductible</a></li>
+			
+			<li><a href='https://turbotax.intuit.com/efile/efile_status_lookup.jsp'>Check efile Status</a></li>
+			</ul>
+	</div>
+</div>
+<div style="width:930px;height:18px;background-image:url(/microsite/images/exit/bg-exit-greyblue-top.jpg);line-height:0px;"></div>
+		<div style="clear:both"></div>
+		<div id="box-cont">
+			<div id="left-cont">
+
+				<div class="fta-cta ftaShow">
+					<img class="fta-ask-theresa" src="/microsite/images/fta-ask-theresa.gif" alt="" />
+				
+					<div class="signback-container" style="padding-right:6px;">	
+						<p>Did you have a question? Sign back in!</p>
+					</div>
+				</div>
+
+				<div class="main-cta ftaWidth">
+					<h1><span style="color:#007dca;">File with TurboTax today,</span><br />and you could have your refund<br /><span id="refundDate">in 7 days</span>!*</h1>
+					<div class="signback" style="float:none;margin-top:8px;"> 
+						<a href='https://turbotax.intuit.com/system_requirements_check.jsp?continue=true'  class="autobtn-wide fs-larger continue_return">Sign back in now</a>
+						<p>Get your refund in as fast as 7 days.*</p>
+					</div>
+				</div>
+				
+				<div style="clear:both"></div>
+				<div id="cal-cont-sm" style="margin-bottom:15px">
+					<h3>Not quite ready to file yet? Set a reminder.</h3>
+					<p>Have to go to a meeting? Do the dishes? Run an errand? No problem, we can add <br /> a reminder to your calendar to come back and finish in 5 days.</p>
+					<div style="clear:both"></div>
+					<div id="outlook" class="cal-icon"><a href="/microsite/reminder-5-days.jsp?format=outlook" onclick="sendCalEvent('OutlookCalendar')" target="_blank">Outlook Calendar</a></div>
+					<div id="google" class="cal-icon"><a href="/microsite/reminder-5-days.jsp?format=google" onclick="sendCalEvent('GoogleCalendar');" target="_blank">Google Calendar</a></div>
+					<div id="yahoo" class="cal-icon"><a href="/microsite/reminder-5-days.jsp?format=yahoo" onclick="sendCalEvent('YahooCalendar');" target="_blank">Yahoo! Calendar</a></div>
+					<div id="ical" class="cal-icon"><a href="/microsite/reminder-5-days.jsp?format=ical" onclick="sendCalEvent('ICalCalendar');" target="_blank">iCal Calendar</a></div>
+				</div>
+				
+				<p class="sub-disclaimer gray" style="margin:0; font-size:10px">*IRS typically estimates 7-14 days for efile with direct deposit. State refund delivery times vary by state.</p>
+				
+				
+			</div>
+			
+			<div id="lc-box-right">
+				<p style="text-align:center;margin:0 0 5px 0;"><img height="56" width="180" src="/microsite/images/exit/lc-logo.png" alt="Lending Club - Investors earn better returns, borrowers pay lower rates." /></p>
+				<div class="box2">
+					<div class="top"></div>
+					<div class="box2Body">
+						<h3>Invest Your Refund</h3>
+						<ul>
+							<li><strong>9.6%*</strong> Net Annualized Returns</li>
+							<li>Low Volatility</li>
+							<li>Monthly Cash Flow</li>
+						</ul>
+						<p style="margin-bottom:2px"><a href="javascript:void(0);" class="lc-paid"><img src="/microsite/images/exit/lc-box2-btn.gif" alt="Learn More" /></a></p>
+						<p><span>*Notes offered by <a href="https://www.lendingclub.com/info/prospectus.action" target="_blank">prospectus</a> filed with the SEC<br /> Net Annualized Return  as of 8/9/11.</span></p>
+					</div>
+					<div class="bottom"></div>
+				</div>
+			</div>
+			
+			
+<div style="clear:both"></div>
+		</div>
+		<div style="width:930px;height:20px;background-image:url(/microsite/images/exit/bg-exit-greyblue-btm.jpg);line-height:0px;"></div>
+		<div style="clear:both">
+		<!-- push down containing div bgcolor-->
+	</div>
+</div>
+<!-- /fragments/footer.jsp BEGIN -->
+
+<div id="footersitemap">
+	<div class="top">&nbsp;</div>
+	<div class="sideborders darkborders content">
+		<div class="col">
+			<h5>Choosing Tax Preparation Software</h5>
+			<ul>
+				<li><a href="/tax-tools/chooser/online.jsp" title="Find out which TurboTax product is right for you" class="poppy helpMeChoose">Help me choose</a></li>
+				<li><a href="/personal-taxes/compare.jsp" title="Compare TurboTax product features side by side">Compare products</a></li>
+				<li><a href="/personal-taxes/" title="Browse TurboTax products for filing taxes online">Online tax preparation</a></li>
+				<li><a href="/personal-taxes/" title="Order a CD or download TurboTax to your computer">CD/download products</a></li>
+				<li><a href="http://turbotax.intuit.ca" title="Canadian income tax preparation">Canadian income tax preparation</a></li>
+			</ul>
+			<h5>Tax Calculators and Tools</h5>
+			<ul>
+				<li><a href="/personal-taxes/itsdeductible/index.jsp" title="Get accurate values for your donations to charity">Track charitable donations</a></li>
+				<li><a href="/tax-tools/calculators/taxcaster/" title="Estimate how much you&rsquo;ll pay in taxes">Tax refund estimator</a></li>
+				<li><a href="/tax-tools/calculators/ira/" title="Estimate how much you can contribute to an IRA">IRA retirement calculator</a></li>
+				<li><a href="/tax-tools/calculators/lifeevents/" title="Estimate the impact of life events">Life events tax calculator</a></li>
+				<li><a href="/tax-tools/calculators/w4/" title="Estimate your paycheck withholdings">W-4 salary calculator</a></li>
+			</ul>	
+		</div>
+		<div class="col">
+			<h5>Personal Income Tax Preparation</h5>
+			<ul>
+				<li><a href="/irs-tax-extensions/" title="File an IRS tax extension">File an IRS tax extension</a></li>
+				<li><a href="/personal-taxes/online/free-edition.jsp" title="File a simple tax return for free with TurboTax Free Edition">Free federal tax filing</a></li>
+				<li><a href="/personal-taxes/online/basic.jsp" title="Use TurboTax Basic for extra help on your simple tax return">1040EZ tax returns</a></li>
+				<li><a href="/personal-taxes/online/deluxe.jsp" title="Use TurboTax Deluxe to make the most of your deductions">Maximize tax deductions</a></li>
+				<li><a href="/personal-taxes/online/premier.jsp" title="TurboTax Premier: For stocks, bonds, and rental property">Investments and rental property</a></li>
+				<li><a href="/personal-taxes/online/home-and-business.jsp" title="Home &amp; Business: Extra help for freelancers and contractors">Self-employed, freelance</a></li>
+			</ul>
+			<h5>Small Business Tax Preparation</h5>
+			<ul>
+				<li><a href="/small-business-taxes/" title="Which TurboTax product is right for your business taxes?">Business tax software</a></li>				
+				<li><a href="/personal-taxes/online/home-and-business.jsp" title="Home &amp; Business: Extra help for freelancers and contractors">Self-employment taxes</a></li>
+				<li><a href="/small-business-taxes/business.jsp" title="TurboTax Business: For corporations and partnerships">C Corp, S Corp, partnership taxes</a></li>
+				<li><a href="/small-business-taxes/quick-employer-forms/index.jsp" title="Create 1099 and W-2 forms">Create 1099 and W-2 forms</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h5>Support and Tax Advice</h5>
+			<ul>
+				<li><a href="/support" title="Get help with TurboTax software and technical issues">Technical support</a></li>
+				<li><a href="http://turbotax.intuit.com/support/ask-a-tax-expert/index.jsp?lid=stic" title="Ask a Tax Expert - advice from a tax professional">Expert tax advice</a></li>				
+				<li><a href="https://ttlc.intuit.com/app/full_page" title="Learn and share with the TurboTax community">TurboTax Live Community</a></li>
+			</ul>
+			<h5>Mobile</h5>
+			<ul>
+				<li><a href="/tax-tools/calculators/taxcaster/iphone/" title="Estimate taxes on the iPhone">Estimate taxes on your iPhone</a></li>
+				<li><a href="https://market.android.com/details?id=com.intuit.mobile.taxcaster" title="Estimate taxes on the Android">Estimate taxes on your Android</a></li>
+				<li><a href="/snaptax/mobile" title="File taxes from your iPhone or Android">File taxes from your iPhone or Android</a></li>
+			</ul>
+			<h5>TurboTax Social Media</h5>
+			<ul>
+				<li><a href="http://blog.turbotax.intuit.com/" title="TurboTax Blog">TurboTax Blog</a></li>
+				<li><a href="http://www.facebook.com/turbotax" title="TurboTax Facebook">TurboTax Facebook</a></li>
+				<li><a href="http://www.youtube.com/user/TurboTax" title="TurboTax YouTube">TurboTax YouTube</a></li>
+				<li><a href="http://twitter.com/TURBOTAX" title="TurboTax Twitter">TurboTax Twitter</a></li>
+			</ul>
+		</div>
+		<div class="col">			
+			<h5>More Products from Intuit</h5>
+			<ul>
+				<li><a href="http://quicken.intuit.com/" title="Easily track and manage your finances with Quicken" target="_blank">Personal finances</a></li>
+				<li><a href="http://quickbooks.intuit.com/" title="Track your business income and expenses with QuickBooks" target="_blank">Accounting software programs</a></li>
+				<li><a href="http://payroll.intuit.com/payroll_services/online_payroll.jsp" title="Easily manage your payroll online anytime, anywhere with Intuit Online Payroll" target="_blank">Payroll services</a></li>
+				<li><a href="http://www.quickbooksmerchantservice.com/services/services.php/?p_prioritycode=turbotax_home_mpfi_list" title="Process credit cards for your business with QuickBooks Merchant Services" target="_blank">Credit card processing</a></li>
+				<li><a href="http://www.lacertesoftware.com/" title="Explore Intuit&rsquo;s products for professional accountants" target="_blank">Tax prep for accountants</a></li>
+				<li><a href="http://intuitlabs.com" title="Explore and provide feedback on Intuit&rsquo;s latest innovations" target="_blank">Intuit Labs product innovation</a></li>
+				<li><a href="http://paytrust.intuit.com" title="Receive, pay, and track all your bills with PayTrust" target="_blank">Online bill pay</a></li>		
+				<li><a href="http://turbotax.intuit.ca" title="TurboTax Canada" target="_blank">TurboTax Canada</a></li>		
+				<li><a href="http://www.intuit.com/" title="Learn about other Intuit products" target="_blank">More from Intuit &hellip;</a></li>
+			</ul>
+		</div>
+		
+		<div style="clear:both;"></div>
+	</div>
+	<div class="bottom">&nbsp;</div>
+</div>
+
+<div id="footersub2" class="lh-largest fs-small">
+		<div class="intuitfooterlogo">&nbsp;</div>
+	<div class="logos">
+		<a class="logo-nResult" href="javascript:openWinLarge('https://portal.nresult.com/WebCert/redir.aspx?id=EcvStRAoyW1cJJu34snPhg%3d%3d');">Certified by nResult</a>
+		<a class="logo-cLevel" href="javascript:openWinSize('http://c-levelsecurity.com/certified/intuit/Intuit_turbotax.html','690','500');">Security Certification of the TurboTax Online application has been performed by C-Level Security</a>
+		<a class="logo-trustE" href="javascript:openWinLarge('http://www.truste.org/ivalidate.php?url=turbotax.intuit.com&amp;sealid=101');">Reviewed by TRUSTe, Site Privacy Statement</a>
+		<p class="logo-aEfile">Authorized e-file Provider</p>
+  	</div>
+  
+	<a href='http://turbotax.intuit.com/site-map.jsp'>Site Map</a> | 
+	<a href='http://turbotax.intuit.com/corp/affiliates.jsp'>Affiliates and Partners</a> | 
+	<a href='http://intuitic.satmetrix.com/intuitCTG_community/login.jspa?source=101'>Feedback</a> | 
+	<a href='http://turbotax.intuit.com/support/contact/'>Contact Us</a> |
+	<a href='http://turbotax.intuit.com/corp/softwarelicense.jsp'>Software License Agreements</a> | 
+	<a href='http://security.intuit.com/privacy/' class="newWindow">Privacy Statement</a> |
+	<a href='http://security.intuit.com/' class="newWindow">Security</a>
+	<br />  
+  Security Certification of the TurboTax Online application has been performed by C-Level Security.
+  <br />
+	
+&copy; 
+1997-2012&nbsp;<a href="http://www.intuit.com">Intuit Inc.</a> | <a href="http://www.intuit.com/legal/">Trademark Notices</a> | <a href="http://about.intuit.com/">About Intuit</a> | <a href="http://www.intuitcareers.com">Intuit Careers</a> | <a href="http://jobs.intuit.com/">Search Intuit Jobs</a>
+<br />By accessing and using this page you agree to the 
+	<a href='http://turbotax.intuit.com/corp/terms-of-service.jsp'>Terms and Conditions</a>.
+	<br />
+	<div style="clear:both;"></div>
+</div>
+	
+<!-- /fragments/footer.jsp END -->
+
+<script type="text/javascript" src="/microsite/js/refund-future-calc.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#refundDate').html(refundInDays(7));
+	});
+</script>
+<script type="text/javascript">
+			<!--
+			var doubleClickTimeout = setTimeout('',0);
+			var doubleClickTimeoutDelay = 3000;
+			$(document).ready(function (){
+				clearTimeout(doubleClickTimeout);
+				doubleClickTimeout = setTimeout('trackDoubleClick()',doubleClickTimeoutDelay);
+			});
+			function trackDoubleClick(){
+				var axel = Math.random()+"";
+				var a = axel * 10000000000000;
+				// add the iframe
+				$('body').append('<iframe src="http://fls.doubleclick.net/activityi;src=1984865;type=ttond286;cat=ttexi591;ord=1;num=' + a + '?" width="1" height="1" frameborder="0"></iframe>');
+				// DoubleClick DART Natural Search Tracking Code
+				if (document.referrer){
+					$.getScript("/js/dart-script.js");
+				}
+			}
+			-->
+			</script>
+			<noscript>
+			<iframe src="http://fls.doubleclick.net/activityi;src=1984865;type=ttond286;cat=ttexi591;ord=1;num=1?" width="1" height="1" frameborder="0" title=""></iframe>
+			</noscript>
+			<script type="text/javascript" language="javascript" src="/js/events_home.js?version=111009"></script></body>
+</html>
+

@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Timewarp Internet</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="time.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+<META NAME ="description" content = "Timewarp Internet - broadband, ADSL, co-location, hosting and internet provider to UK home and business users">
+
+<META NAME ="keywords" content = "broadband, adsl, business, sdsl, hosting, uncapped broadband,internet">
+<meta NAME = "robots" content = "index, follow">
+<meta NAME = "revisit-after" content = "21 days">
+
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td background="gfx/bg_header.jpg"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><a href="index.php" target="_top"><img src="gfx/logo_timewarp_r1_c1.jpg" alt="http://www.timewarp.co.uk" width="241" height="67" border="0"></a></td>
+          <td width="100%">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td background="gfx/bg_menu.gif" height="27" valign="bottom">
+<!-- Fireworks MX Dreamweaver MX target.  Created Thu Mar 10 12:29:10 GMT+0000 (GMT Standard Time) 2005-->
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+/* Functions that swaps images. */
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+/* Functions that handle preload. */
+function MM_preloadImages() { //v3.0
+ var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+   var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+   if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+/* MENU */
+function mmLoadMenus() {
+  if (window.mm_menu_0310112127_0) return;
+  window.mm_menu_0310112127_0 = new Menu("root",62,18,"Arial, Helvetica, sans-serif",11,"#000000","#ffffff","#358bc7","#ff9900","left","middle",3,0,1000,-5,7,true,true,true,0,true,true);
+
+/* Menu - Broadband */
+  		mm_menu_0310112127_0.addMenuItem("Home","window.open('/broadband/home.php', '_top');");
+  		mm_menu_0310112127_0.addMenuItem("Business","window.open('/broadband/business.php', '_top');");
+  		mm_menu_0310112127_0.addMenuItem("SDSL","window.open('/broadband/sdsl.php', '_top');");
+		mm_menu_0310112127_0.addMenuItem("Upgrades","window.open('/broadband/upgrades.php', '_top');");
+   mm_menu_0310112127_0.hideOnMouseOut=true;
+   mm_menu_0310112127_0.menuBorder=1;
+   mm_menu_0310112127_0.menuLiteBgColor='#ffffff';
+   mm_menu_0310112127_0.menuBorderBgColor='#ffffff';
+   mm_menu_0310112127_0.bgColor='#ffffff';
+  window.mm_menu_0310113044_1 = new Menu("root",97,18,"Arial, Helvetica, sans-serif",11,"#000000","#ffffff","#358bc7","#ff9900","left","middle",3,0,1000,-5,7,true,true,true,0,true,true);
+  
+/* Menu - Help */
+  		mm_menu_0310113044_1.addMenuItem("Email","window.open('/help/email/email.php', '_top');");
+  				mm_menu_0310113044_1.addMenuItem("Broadband","window.open('/help/broadband/broadband.php', '_top');");
+				mm_menu_0310113044_1.addMenuItem("Dial-up","window.open('/help/dialup/dialup.php', '_top');");
+  
+				mm_menu_0310113044_1.addMenuItem("Contact&nbsp;Us","window.open('/contacts/contacts.php', '_top');");
+  				mm_menu_0310113044_1.addMenuItem("Sales&nbsp;Enquiries","window.open('/contacts/sales.php', '_top');");
+   mm_menu_0310113044_1.hideOnMouseOut=true;
+   mm_menu_0310113044_1.menuBorder=1;
+   mm_menu_0310113044_1.menuLiteBgColor='#ffffff';
+   mm_menu_0310113044_1.menuBorderBgColor='#ffffff';
+   mm_menu_0310113044_1.bgColor='#ffffff';
+  window.mm_menu_0310112941_2 = new Menu("root",80,18,"Arial, Helvetica, sans-serif",11,"#000000","#ffffff","#358bc7","#ff9900","left","middle",3,0,1000,-5,7,true,true,true,0,true,true);
+  
+/* Menu - Services */
+  mm_menu_0310112941_2.addMenuItem("Web&nbsp;Hosting","window.open('/services/webhosting.php', '_top');");
+  mm_menu_0310112941_2.addMenuItem("Dial&nbsp;up","window.open('/services/dialup.php', '_top');");
+  mm_menu_0310112941_2.addMenuItem("Co-Location","window.open('/services/colocation.php', '_top');");
+  mm_menu_0310112941_2.addMenuItem("Hardware","window.open('/services/hardware.php', '_top');");
+  
+   mm_menu_0310112941_2.hideOnMouseOut=true;
+   mm_menu_0310112941_2.menuBorder=1;
+   mm_menu_0310112941_2.menuLiteBgColor='#ffffff';
+   mm_menu_0310112941_2.menuBorderBgColor='#ffffff';
+   mm_menu_0310112941_2.bgColor='#ffffff';
+  window.mm_menu_0310113414_3 = new Menu("root",81,18,"Arial, Helvetica, sans-serif",11,"#000000","#ffffff","#358bc7","#ff9900","left","middle",3,0,1000,-5,7,true,true,true,0,true,true);
+ 
+ /* Menu - Company */
+  mm_menu_0310113414_3.addMenuItem("About&nbsp;Us&nbsp;","window.open('/company/about.php', '_top');");
+  mm_menu_0310113414_3.addMenuItem("Partners","window.open('/company/partners.php', '_top');");
+  mm_menu_0310113414_3.addMenuItem("Policies","window.open('/company/policies.php', '_top');");
+  mm_menu_0310113414_3.addMenuItem("Testimonials","window.open('/company/testimonials.php', '_top');");
+   mm_menu_0310113414_3.hideOnMouseOut=true;
+   mm_menu_0310113414_3.menuBorder=1;
+   mm_menu_0310113414_3.menuLiteBgColor='#ffffff';
+   mm_menu_0310113414_3.menuBorderBgColor='#ffffff';
+   mm_menu_0310113414_3.bgColor='#ffffff';
+  window.mm_menu_0310113152_4 = new Menu("root",174,18,"Arial, Helvetica, sans-serif",11,"#000000","#ffffff","#358bc7","#ff9900","left","middle",3,0,1000,-5,7,true,true,true,0,true,true);
+ 
+ /* Menu - Contacts */
+  mm_menu_0310113152_4.addMenuItem("Contact&nbsp;&nbsp;Details","window.open('/contacts/contacts.php', '_top');");
+  mm_menu_0310113152_4.addMenuItem("Sales&nbsp;Contact&nbsp;Form","window.open('/contacts/sales.php', '_top');");
+  mm_menu_0310113152_4.addMenuItem("Technical&nbsp;Contact&nbsp;Form","window.open('/contacts/technical.php', '_top');");
+  mm_menu_0310113152_4.addMenuItem("Admin&nbsp;Accounts&nbsp;Contact&nbsp;Form","window.open('/contacts/accounts.php', '_top');");
+  mm_menu_0310113152_4.addMenuItem("General&nbsp;Contact&nbsp;Form","window.open('/contacts/general.php', '_top');");
+   mm_menu_0310113152_4.hideOnMouseOut=true;
+   mm_menu_0310113152_4.menuBorder=1;
+   mm_menu_0310113152_4.menuLiteBgColor='#ffffff';
+   mm_menu_0310113152_4.menuBorderBgColor='#ffffff';
+   mm_menu_0310113152_4.bgColor='#ffffff';
+
+  mm_menu_0310113152_4.writeMenus();
+} // mmLoadMenus()
+
+//-->
+</script>
+<script language="JavaScript1.2" src="/mm_menu.js"></script>
+<script language="JavaScript" type="/text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+//-->
+</script>
+<body bgcolor="#ffffff" >
+<!--Copy the table section including the opening and closing table tags, and paste the data where-->
+<!--======================== BEGIN COPYING THE HTML HERE ==========================-->
+<script language="JavaScript1.2">mmLoadMenus();</script>
+<table width="90%" height="26" border="0" cellpadding="0" cellspacing="0">
+  <!-- fwtable fwsrc="" fwbase="navbar.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+  <tr> 
+    <!-- row 1 -->
+    <td><a href="#" onMouseOut="MM_swapImage('navbar_r1_c1','','/gfx/navbar_r1_c1.gif',1);MM_swapImgRestore()" onMouseOver="MM_swapImage('navbar_r1_c1','','/gfx/navbar_r1_c1_f2.gif',1);MM_swapImage('navbar_r1_c1','','/gfx/nav/navbar_r1_c1.gif',1)"><img src="/gfx/navbar_r1_c1.gif" alt="" name="navbar_r1_c1" width="79" height="26" border="0" usemap="#m_broadband" id="navbar_r1_c1"></a></td>
+    <td><a href="#" onMouseOut="MM_swapImage('navbar_r1_c2','','/gfx/navbar_r1_c2.gif',1);MM_swapImgRestore()" onMouseOver="MM_swapImage('navbar_r1_c2','','/gfx/navbar_r1_c2_f2.gif',1);MM_swapImage('navbar_r1_c2','','/gfx/nav/navbar_r1_c2.gif',1)"><img name="navbar_r1_c2" src="/gfx/navbar_r1_c2.gif" width="67" height="26" border="0" usemap="#m_services" alt=""></a></td>
+    <td><a href="javascript:;" onMouseOver="MM_swapImage('navbar_r1_c3','','/gfx/nav/navbar_r1_c3.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="navbar_r1_c3" src="/gfx/navbar_r1_c3.gif" width="53" height="26" border="0" usemap="#m_help" alt=""></a></td>
+    <td><a href="javascript:;" onMouseOver="MM_swapImage('navbar_r1_c4','','/gfx/nav/navbar_r1_c4.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="navbar_r1_c4" src="/gfx/navbar_r1_c4.gif" width="66" height="26" border="0" usemap="#m_contacts" alt=""></a></td>
+    <td><a href="javascript:;" onMouseOver="MM_swapImage('navbar_r1_c5','','/gfx/nav/navbar_r1_c5.gif',1)" onMouseOut="MM_swapImgRestore()"><img name="navbar_r1_c5" src="/gfx/navbar_r1_c5.gif" width="76" height="26" border="0" usemap="#m_company" alt=""></a></td>
+    <td width="100%"><img src="/gfx/spacer.gif" width="10" height="10"></td>
+    <td nowrap class="menu2" width="100%" align="right"><a href="/networkstatus.php" target="_top">Network 
+      Status</a> | &nbsp; </td>
+    <td nowrap class="menu2"><a href="/terms/terms.php" target="_top">T &amp; 
+      Cs</a></td>
+  </tr>
+  <map name="m_broadband" id="m_broadband">
+    <area shape="rect" coords="-1,-2,78,26" href="/broadband/broadband.php" target="_top" alt="Broadband"  onMouseOver="MM_showMenu(window.mm_menu_0310112127_0,5,26,null,'navbar_r1_c1')" onMouseOut="MM_startTimeout()"  >
+  </map>
+  <map name="m_services" id="m_services">
+    <area shape="poly" coords="66,-2,121,-2,121,26,66,26,66,-2" href="#" alt="" onMouseOut="MM_startTimeout();"  onMouseOver="MM_showMenu(window.mm_menu_0310113044_1,66,26,null,'navbar_r1_c2');"  >
+    <area shape="poly" coords="0,-2,67,-2,67,26,0,26,0,-2" href="/services/services.php" target="_top" alt="Services"  onMouseOver="MM_showMenu(window.mm_menu_0310112941_2,0,26,null,'navbar_r1_c2');" onMouseOut="MM_startTimeout();"  >
+    <area shape="rect" coords="-87,-2,1,26" href="#" alt="" onMouseOut="MM_startTimeout();"  onMouseOver="MM_showMenu(window.mm_menu_0310112127_0,-87,26,null,'navbar_r1_c2');"  >
+  </map>
+  <map name="m_help" id="m_help">
+    <area shape="poly" coords="1,-2,56,-2,56,26,1,26,1,-2" href="/help/help.php" target="_top" alt="Help"  onMouseOver="MM_showMenu(window.mm_menu_0310113044_1,-1,26,null,'navbar_r1_c3');" onMouseOut="MM_startTimeout();"  >
+  </map>
+  <map name="m_contacts" id="m_contacts">
+    <area shape="poly" coords="65,-2,143,-2,143,26,65,26,65,-2" href="#" alt="" onMouseOut="MM_startTimeout();"  onMouseOver="MM_showMenu(window.mm_menu_0310113414_3,65,26,null,'navbar_r1_c4');"  >
+    <area shape="poly" coords="0,-2,66,-2,66,26,0,26,0,-2" href="/contacts/contacts.php" target="_top" alt="Contacts"  onMouseOver="MM_showMenu(window.mm_menu_0310113152_4,0,26,null,'navbar_r1_c4');" onMouseOut="MM_startTimeout();"  >
+    <area shape="poly" coords="-54,-2,1,-2,1,26,-54,26,-54,-2" href="#" alt="" onMouseOut="MM_startTimeout();"  onMouseOver="MM_showMenu(window.mm_menu_0310113044_1,-54,26,null,'navbar_r1_c4');"  >
+  </map>
+  <map name="m_company" id="m_company">
+    <area shape="poly" coords="-2,-3,76,-3,76,25,-2,25,-2,-3" href="/company/about.php" target="_top" alt="Company"  onMouseOver="MM_showMenu(window.mm_menu_0310113414_3,-1,26,null,'navbar_r1_c5');" onMouseOut="MM_startTimeout();"  >
+  </map>
+</table>
+ </td>
+  </tr>
+  <tr> 
+    <td><img src="gfx/spacer.gif" width="10" height="5"></td>
+  </tr>
+  <tr> 
+    <td> <table width="90%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td valign="top" bgcolor="#FE9900"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td><a href="broadband/home.php" target="_top"><img src="gfx/box_homeusers.jpg" alt="Timewarp Home Users" width="144" height="85" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td background="gfx/bg_homebox2.gif"> <p> <img src="gfx/pic_orangestarter.gif" alt="Mug and paper" width="142" height="58"><br>
+                    <img src="gfx/pic_phone.gif" alt="On the phone" width="142" height="58"><br>
+                    <br>
+                    <br>
+                  </p></td>
+              </tr>
+            </table></td>
+          <td valign="top" bgcolor="#FE9900" class="stars2"> <br>
+            *<br>
+            *<br>
+            *<br>
+            *<br>
+            *<br>
+            *<br>
+            *<br>
+            *<br> </td>
+          <td valign="top" bgcolor="#FE9900"> <table width="100%" border="0" cellspacing="2" cellpadding="2">
+              <tr> 
+                <td align="right" valign="top"><img src="gfx/pic_box.gif" alt="Low costs for Timewarp users" width="75" height="69"></td>
+              </tr>
+              <tr> 
+                <td><p>Timewarp offers internet connectivity to suit your personal 
+                    requirements, whether you are a light or heavy user we can 
+                    provide a product which will make it cost effective and simple 
+                    for you to be online.</p>
+                  <p><a href="broadband/home.php" target="_top" class="menu">Take 
+                    a look at Timewarp's Home User Services &gt;&gt;&gt;</a></p>
+                  <p></p></td>
+              </tr>
+            </table></td>
+          <td valign="top"><img src="gfx/spacer.gif" width="10" height="10"></td>
+          <td valign="top" bgcolor="#99CCFF"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td><a href="broadband/business.php" target="_top"><img src="gfx/box_businessusers.jpg" alt="Timewarp Business Users" width="144" height="86" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td background="gfx/bg_homebox.gif"><br> <br>
+                  <img src="gfx/pic_orangestarter2.gif" alt="writing on board " width="142" height="58"><br> 
+                  <br> <br> <br> </td>
+              </tr>
+            </table></td>
+          <td valign="top" bgcolor="#99CCFF" class="stars3"><p><br>
+              *<br>
+              *<br>
+              *<br>
+              *<br>
+              *<br>
+              *<br>
+              *<br>
+              *<br>
+            </p></td>
+          <td valign="top" bgcolor="#99CCFF"> 
+            <table width="100%" border="0" cellspacing="2" cellpadding="2">
+              <tr> 
+                <td><p><br>
+                    Timewarp offer Business users high speed 'always-on' connectivity 
+                    that every business whether big or small can afford. </p>
+                  <p>Take advantage of low cost, ADSL Broadband and never use 
+                    a modem again! <br>
+                    <br>
+                    <a href="broadband/business.php" target="_top" class="menu">Take 
+                    a look at Timewarp's Business User Services &gt;&gt;&gt;</a> 
+                  </p></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td class="stars"> <table width="90%" height="30" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td background="gfx/bg_stars.gif">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td><table width="90%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="50%" valign="top" background="gfx/bg_news.gif"> <table width="100%" border="0" cellspacing="2" cellpadding="2">
+              <tr> 
+                <td valign="top"> <a href="broadband/sdsl.php" target="_top"><img src="gfx/home-sdsl.jpg" alt="View our new SDSL deals" width="320" height="80" border="0"></a> 
+                </td>
+              </tr>
+            </table></td>
+          <td valign="top"><img src="gfx/spacer.gif" width="10" height="10"></td>
+          <td width="50%" valign="top" background="gfx/bg_news.gif"> 
+            <table width="100%" border="0" cellspacing="2" cellpadding="2">
+              <tr> 
+                <td align="right" valign="top"> <a href="checker.php" target="_top"><img src="gfx/home-adsl.jpg" alt="ADSL Checker" width="320" height="80" border="0"></a> 
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><!-- #BeginLibraryItem "/Library/footer.lbi" --><a href="index.php" target="_top">Home page</a> | <a href="broadband/broadband.php" target="_top">Broadband</a> 
+| <a href="services/services.php" target="_top">Services</a> | <a href="help/help.php" target="_top">Help</a> 
+| <a href="contacts/contacts.php" target="_top">Contacts</a> | <a href="company/about.php" target="_top">Company</a> 
+| <a href="terms/terms.php" target="_top">T&amp;Cs</a><!-- #EndLibraryItem --></td>
+  </tr>
+</table>
+</body>
+</html>

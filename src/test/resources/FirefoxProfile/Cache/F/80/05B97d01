@@ -1,0 +1,762 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Dental practice of Dr. Charles Glenn and Dr. Shane Claiborne</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style1 {
+	color: #FFFFFF;
+	font-size: 10px;
+	font-family: tahoma;
+}
+.style2 {
+	color: #5282ae;
+	font-size: 10px;
+	font-family: tahoma;
+}
+.style3 {
+	color: #535353;
+	font-size: 10px;
+	font-family: tahoma;
+}
+.style4 {
+	color: #f33900;
+	font-weight: bold;
+}
+.style5 {
+	font-size: 10px;
+	font-family: tahoma;
+}
+.style6 {
+	color: #5282ae;
+	font-weight: bold;
+}
+.style7 {
+	color: #dee6ed;
+	font-size: 10px;
+	font-family: tahoma;
+}
+.style8 {
+	color: #779ec2;
+	font-size: 10px;
+	font-family: tahoma;
+}
+-->
+</style>
+
+<script language="JavaScript">
+/*Tip Of The Day Script
+Created By MikeW at mikew@dvol.com. Copyright 2000 by MikeW - Please leave all credits in place if useing this script. Featured on A1 javaScripts, www.a1javascripts.com */
+  
+//Make new array and get the current day in var today
+var msg = new Array();
+Stamp = new Date();
+today = Stamp.getDate();
+//put the tip of the day in each msg[x] string
+//change tips each month, automatically switches every day
+msg[0]="“Brushing the teeth too vigorously or using a hard bristled toothbrush causes the gums to recede and exposes root surfaces. It also wears down the tooth structure. Both of these conditions can lead to tooth sensitivity.”"
+msg[1]="“A pea-sized amount of fluoridated toothpaste is all you need, should you choose to use a toothpaste.” "
+msg[2]="“Replace your brush when the bristles begin to spread. A worn out toothbrush will not properly clean your teeth.”"
+msg[3]="“When flossing, you should use about 18 inches of floss and wind most of it around one of your middle fingers. Wind the rest of the floss around the same finger on your opposite hand.”"
+msg[4]="“Use care when guiding floss between your teeth; never snap or jam the floss into the gums.”"
+msg[5]="“When flossing, slide the floss between teeth using a gentle, sawing motion.  When it touches the gumline, curve it into a C shape against one tooth.  Hold the floss tightly against the tooth and move the floss in up and down rubbing motions.” "
+msg[6]="“Don’t forget to floss the backside of your last tooth.” "
+msg[7]="“When brushing, move your toothbrush in short, gentle, circular, toothwide strokes.” "
+msg[8]="“When brushing, place your toothbrush at a 45-degree angle where the teeth meet the gums, trying to get the bristle tips just under the gumline.” "
+msg[9]="“When brushing, brush the outer, inner and chewing tooth surfaces.” "
+msg[10]="“When brushing, don’t forget to brush your tongue (as far back as you can) to remove bacteria and freshen your breath.” "
+msg[11]="“When brushing, use a soft bristled brush (synthetic bristles preferably because natural bristles tend to harbor the oral bacteria as the bristles are more porous). Be sure it is the right size (generally smaller is better than larger).”"
+msg[12]="“Do not brush your teeth straight after eating fruit or other acidic foods, since this will only attack the enamel further. It is better to wait half an hour.”"
+msg[13]="“Use an electric toothbrush with a small round head and rounded bristle tips and replace the attachment brush or your toothbrush every two to three months.”"
+msg[14]="“Use toothpaste that contains fluoride. If necessary, also use fluoride tablets or fluoride powder when preparing food.”"
+msg[15]="“Chewing sugar-free gum stimulates the formation of saliva and neutralises acids in the mouth that can damage the teeth.”"
+msg[16]="“Rinse your mouth with plain water a few times each day when you dont have a chance to use a toothbrush or floss. This helps dislodge food particles trapped next to teeth that cause problems when left there too long.”"
+msg[17]="“Sugar temporarily turns your saliva more acidic. The longer sugar remains in your saliva the longer the bacteria grow and thrive, and potentially damage your teeth.”"
+msg[18]="“Patients with dentures should still have annual dental checkups to screen for oral cancers.”"
+msg[19]="“Cough drops, antacids, and chewable vitamin C tablets typically contain cavity-producing sugar. Rinse with water after you use them; this neutralizes the acidity, which promotes tooth decay.”"
+msg[20]="“When brushing, place the bristles at a 45 degree angle to the teeth. Slide the tips of the brush under the gums.” "
+msg[21]="“When brushing, jiggle the brush bristles very gently so that any plaque growing under the gum will be removed.” "
+msg[22]="“When brushing, be sure to brush the outside, the tongue side and the chewing surfaces of your teeth.” "
+msg[23]="“When brushing the front teeth, brush the inside surfaces of the upper and lower jaws by tilting the brush vertically and making several up and down strokes with the front part of the brush over the teeth and gum tissues.” "
+msg[24]="“Brushing your tongue will help freshen your breath. Debris and bacteria can collect on your tongue and cause bad breath.” "
+msg[25]="“Your toothbrush will only clean one or two teeth at a time. Change its position to properly clean each tooth.”"
+msg[26]="“To prevent plaque damage, be sure to brush at least once every day, preferably at bedtime. Adding a brush time after breakfast increases your chances of thorough daily plaque removal.”"
+msg[27]="“Don’t rush your brush. A thorough brushing should take at least 3 minutes.”"
+msg[28]="“Eat healthly and avoid sweetened foods and drinks.”"
+msg[29]="“If you cannot clean your teeth, eat an apple after every meal or chew sugar-free gum or use an antibacterial mouthwash.”"
+msg[30]="“Have your dentist check your teeth and gums at least twice a year; prevention is better than cure.”"
+//write todays tip so that the tip number matches with the day
+
+</script>
+
+
+
+
+</head>
+
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="http://staticweb.archive.org/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="http://staticweb.archive.org/js/graph-calc.js" ></script>
+<script type="text/javascript" src="http://staticweb.archive.org/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http:\/\/www.lynchburgdentist.com\/";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "31";
+var displayMonth = "Dec";
+var displayYear = "2005";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(http://staticweb.archive.org/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="http://wayback.archive.org/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="http://staticweb.archive.org/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="http://wayback.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.lynchburgdentist.com/" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20051231090550" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20051125091947/http://www.lynchburgdentist.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="25 Nov 2005"><strong>NOV</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 9:05:50 Dec 31, 2005">DEC</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20060424044024/http://www.lynchburgdentist.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="24 Apr 2006"><strong>APR</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20051230003723/http://www.lynchburgdentist.com/" title="0:37:23 Dec 30, 2005" style="background-color:transparent;border:none;"><img src="http://staticweb.archive.org/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 9:05:50 Dec 31, 2005">31</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20060101021810/http://www.lynchburgdentist.com/" title="2:18:10 Jan 1, 2006" style="background-color:transparent;border:none;"><img src="http://staticweb.archive.org/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20041208101933/http://www.lynchburgdentist.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="8 Dec 2004"><strong>2004</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 9:05:50 Dec 31, 2005">2005</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20070205070452/http://www.lynchburgdentist.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="5 Feb 2007"><strong>2007</strong></a>
+		                
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="http://wayback.archive.org/web/20051231090550*/http://www.lynchburgdentist.com/" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>119 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">1 Mar 01 - 7 Feb 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="http://wayback.archive.org/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:001210001010_2002:-1:101012121020_2003:-1:121211110112_2004:-1:110112327231_2005:11:042000000134_2006:-1:f00101131000_2007:-1:010100002800_2008:-1:000010001000_2009:-1:011111000100_2010:-1:000010000000_2011:-1:010000000000_2012:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="http://staticweb.archive.org/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="http://staticweb.archive.org/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(http://staticweb.archive.org/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(http://staticweb.archive.org/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td width="696" align="left" valign="top"><table width="696"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td colspan="3" align="left" valign="top"><div style="padding-left:0px; padding-top:24px">
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://web.archive.org/web/20051231090550/http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="696" height="166">
+              <param name="movie" value="Flash/header.swf">
+              <param name="quality" value="High">
+              <param name="_cx" value="18415">
+              <param name="_cy" value="4392">
+              <param name="FlashVars" value>
+              <param name="Src" value="Flash/header.swf">
+              <param name="WMode" value="Window">
+              <param name="Play" value="0">
+              <param name="Loop" value="-1">
+              <param name="SAlign" value>
+              <param name="Menu" value="-1">
+              <param name="Base" value>
+              <param name="AllowScriptAccess" value="always">
+              <param name="Scale" value="ShowAll">
+              <param name="DeviceFont" value="0">
+              <param name="EmbedMovie" value="0">
+              <param name="BGColor" value>
+              <param name="SWRemote" value>
+              <param name="MovieData" value>
+              <param name="SeamlessTabbing" value="1">
+              <embed src="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/Flash/header.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="696" height="166"></embed></object>
+        </div></td>
+      </tr>
+      <tr>
+        <td width="5" align="left" valign="top">&nbsp;</td>
+        <td width="480" height="100%" align="left" valign="top"><table width="475" height="100%"  border="0" cellpadding="0" cellspacing="0" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/line_1.gif">
+          <tr>
+            <td height="1" align="left" valign="top"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/spacer.gif" width="1" height="1"></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://web.archive.org/web/20051231090550/http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="475" height="33">
+                <param name="movie" value="Flash/menu.swf">
+                <param name="quality" value="High">
+              <param name="_cx" value="12568">
+              <param name="_cy" value="873">
+              <param name="FlashVars" value>
+              <param name="Src" value="Flash/menu.swf">
+              <param name="WMode" value="Window">
+              <param name="Play" value="0">
+              <param name="Loop" value="-1">
+              <param name="SAlign" value>
+              <param name="Menu" value="-1">
+              <param name="Base" value>
+              <param name="AllowScriptAccess" value="always">
+              <param name="Scale" value="ShowAll">
+              <param name="DeviceFont" value="0">
+              <param name="EmbedMovie" value="0">
+              <param name="BGColor" value>
+              <param name="SWRemote" value>
+              <param name="MovieData" value>
+              <param name="SeamlessTabbing" value="1">
+                <embed src="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/Flash/menu.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="475" height="33"></embed></object></td>
+          </tr>
+          <tr>
+            <td height="100%" align="left" valign="top"><table width="475" height="100%"  border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="29" align="left" valign="top"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/kettle_1.gif" width="475" height="29"></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top"><div style="padding-left:13px; padding-top:18px; padding-right:15px; padding-bottom:25px"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/#"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pic_1.gif" width="144" height="110" border="0" align="left" style="margin-right:13px "></a><div style="padding-left:5px; padding-top:5px; color: #535353; font-size: 10px; font-family: tahoma;">
+                  <font face="Arial, Helvetica, sans-serif" size="1">Dr. Glenn 
+                  and Dr. Claiborne are devoted to providing the citizens of 
+                  Lynchburg and the surrounding areas of&nbsp; Boonsboro, 
+                  Bedford, Amherst, and Forest with the highest standard of 
+                  dental care in a warm and friendly atmosphere. Their staff 
+                  understands there are many aspects to quality dental care and 
+                  strives to make every part of your visit an enjoyable 
+                  experience.<br>
+                  <br>
+&nbsp;</font></div>
+                      <div style="padding-left:0px; padding-top:6px; width:457; height:129">
+                        <table width="457"  border="0" cellspacing="0" cellpadding="3" height="123" style="border-collapse: collapse" bordercolor="#111111">
+                          <tr align="left" valign="middle">
+                            <td width="16" height="15"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_1.gif" width="8" height="5"></td>
+                            <td height="15" width="229"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/newpatient.html" class="style2"><strong>
+                            New Patient Information</strong></a></td>
+                            <td height="123" width="212" rowspan="8" valign="top" bgcolor="#85BF6B">
+                            
+                            
+                            <p align="center">
+                            <font face="Tahoma" size="2" color="#FFFFFF"> 
+                            Dr. Glenn's Dental Care Tip for 
+      <SCRIPT LANGUAGE="Javascript">var aceDate=new Date()
+var aceYear=aceDate.getYear()
+if (aceYear < 1000)
+aceYear+=1900
+var aceDay=aceDate.getDay()
+var aceMonth=aceDate.getMonth()+1
+if (aceMonth<10)
+aceMonth="0"+aceMonth
+var aceDayMonth=aceDate.getDate()
+if (aceDayMonth<10)
+aceDayMonth="0"+aceDayMonth
+document.write("<font color='FFFFFF' face='Tahoma' size='2'>"+aceMonth+"/"+aceDayMonth+"/"+aceYear+"</font></small>")
+
+//--></SCRIPT>:</font><font face="Tahoma" size="1" color="#FFFFFF"><br>
+                            &nbsp;<br><font color="#FFFFFF"><script>document.write(msg[today-1]);</script></font></font></p>
+                            
+                            
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="16" height="15"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_1.gif" width="8" height="5"></td>
+                            <td height="15" width="229"><strong>
+                            <a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/aboutus.html" class="style2">About Dr. 
+                            Glenn and Dr. Claiborne</a></strong></td>
+                          </tr>
+                          <tr>
+                            <td width="16" height="15"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_1.gif" width="8" height="5"></td>
+                            <td height="15" width="229"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/faq.html" class="style2"><strong>
+                            Frequently Asked Questions</strong></a></td>
+                          </tr>
+                          <tr>
+                            <td width="16" height="15"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_1.gif" width="8" height="5"></td>
+                            <td height="15" width="229"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/smilegallery.html" class="style2"><strong>
+                            Smile Gallery</strong></a></td>
+                          </tr>
+                          <tr>
+                            <td width="16" height="18"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_1.gif" width="8" height="5"></td>
+                            <td height="18" width="229"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/sterilization.html" class="style2"><strong>
+                            Sterilization Procedures</strong></a></td>
+                          </tr>
+                          <tr>
+                            <td width="16" height="15"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_1.gif" width="8" height="5"></td>
+                            <td height="15" width="229"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/directions.html" class="style2"><strong>
+                            Directions to the office</strong></a></td>
+                          </tr>
+                          <tr>
+                            <td width="16" height="15"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_1.gif" width="8" height="5"></td>
+                            <td height="15" width="229"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/privacy.html" class="style2"><strong>
+                            Privacy statement</strong></a></td>
+                          </tr>
+                          <tr>
+                            <td width="16" height="15"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_1.gif" width="8" height="5"></td>
+                            <td height="15" width="229"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/financing.html" class="style2"><strong>
+                            Financing Options</strong></a></td>
+                          </tr>
+                        </table>
+                        </div>
+                </div></td>
+              </tr>
+              <tr>
+                <td height="100%" align="left" valign="top"><table width="475" height="100%"  border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="22" align="left" valign="top"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/articles.gif" width="475" height="22"></td>
+                  </tr>
+                  <tr>
+                    <td height="100%" align="left" valign="top"><div style="padding-left:13px; padding-top:19px; padding-bottom:10px">
+                      <table width="452"  border="0" cellspacing="0" cellpadding="0" height="241">
+                        <tr align="left" valign="top">
+                          <td width="149" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/rep_1.gif" style="background-repeat:repeat-y; background-position:top right " height="241"><div style="padding-left:0px; padding-top:0px">
+                            <a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/veneers.html"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pic_3.gif" width="144" height="70" border="0"></a></div>
+                            <div style="padding-left:5px; padding-top:12px; padding-right:14px"><span class="style3"><span class="style4">
+                              <font face="Tahoma">What can Lumineers</font>™<font face="Tahoma"> do for your 
+                              smile?</font></span></span><font face="Tahoma" size="1"> 
+                              - Lumineers by Cerinate</font><font size="1">™</font><font face="Tahoma" size="1"> is a terrific cosmetic 
+                              solution for permanently stained, chipped, 
+                              discolored, misaligned teeth, or even to 
+                              revitalize old crown and bridgework. Lumineers are 
+                              a porcelain veneer that can be made as thin as a 
+                              contact lens and is placed over existing teeth 
+                              without requiring painful removal of sensitive 
+                              tooth structure (unlike traditional veneers.)<br>
+                              </font><span class="style5"><span class="style6">
+                              Want more?</span>
+                              <a style="color:#F33900 " href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/veneers.html">Click here</a></span></div>
+                            </td>
+                          <td width="154" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/rep_1.gif" style="background-repeat:repeat-y; background-position:top right " height="241"><div style="padding-left:5px; padding-top:0px">
+                            <a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/services.html"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pic_4.gif" width="144" height="70" border="0"></a><br>
+                            <span class="style3"><span class="style4"><br>
+                            Services Of</span></span><span class="style3"><span class="style4">fered:</span><font face="Tahoma"> </font></span>
+                            <font face="Tahoma" size="1">The practice of Dr. 
+                            Glenn and Dr. Claiborne&nbsp; endeavors to provide the highest quality of 
+                            family and cosmetic dentistry in a comfortable 
+                            setting.&nbsp; Our office offers a wide range of dental 
+                            services including  basic cleanings, veneers (Lumineers), cosmetic dentistry, 
+                            implants (placement and restoration) and teeth 
+                            whitening.&nbsp; We do everything possible to make 
+                            dental visits pleasant for our Lynchburg area 
+                            patients.<br>
+                            </font><span class="style5"><span class="style6">Want more?</span> <a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/services.html" style="color:#F33900 ">Click here</a></span></div></td>
+                          <td width="149" height="241"><div style="padding-left:5px; padding-top:0px">
+                            <a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/oralcare.html"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pic_2.gif" width="144" height="70" border="0"></a></div><div style="padding-left:11px; padding-top:12px; padding-right:5px"><span class="style3"><span class="style4">
+                          <font face="Tahoma">Oral Care Library:</font></span><font face="Tahoma">
+                          </font></span><font face="Tahoma" size="1">The 
+                          coupling of scientific and technological advances 
+                          makes today's dentistry a dynamic and fascinating 
+                          health service.&nbsp; Dr. Glenn and Dr. Claiborne are excited about these 
+                          new dental developments and continually  strive toward 
+                          patient education.&nbsp; The oral care library lists 
+                          home care instructions after common dental procedures.<br>
+                          </font><span class="style5"><span class="style6">Want more?</span> <a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/oralcare.html" style="color:#F33900 ">Click here</a></span></div>
+                            </td>
+                        </tr>
+                      </table>
+                      </div></td>
+                  </tr>
+                  <tr>
+                    <td height="6" align="left" valign="top"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/bottom_1.gif" width="475" height="6"></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+        <td width="211" height="100%" align="left" valign="top"><table width="211" height="100%"  border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left" valign="top"><div style="padding-left:0px; padding-top:5px">
+              <table width="204"  border="0" cellpadding="0" cellspacing="0" bgcolor="#85BF6B" height="188" style="border-collapse: collapse" bordercolor="#111111">
+                <tr>
+                  <td height="112" align="left" valign="top">
+      <div align="center"> 
+        <p> <font color="#FFFFFF" face="Tahoma" size="1"><br>
+        </font><font face="Tahoma" size="1" color="#FFFFFF"><b>Office Hours<br>
+        </b>Mon. 8-5<br>
+      Tues. 8-5<br>
+      Wed. 8-5<br>
+        Thur. 8-5<br>
+        Fri. 8-5<br>
+        <b><br>
+        </b> </font> <font face="Tahoma" size="1"><font color="#FFFFFF">Phone: 
+        434-384-7611<br>
+      Fax: 434-384-5656<br>
+      E-mail: </font>
+      <a href="mailto:charlesglenndds@hotmail.com"><font color="#FFFFFF">charlesglenndds@hotmail.com</font></a><font color="#FFFFFF">
+        </font>
+      </font><font face="Tahoma" size="1" color="#FFFFFF"><br>
+&nbsp;</font></p>
+        </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="76" align="left" valign="top" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/back_1.gif" style="background-repeat:no-repeat; background-position:bottom left "><div style="padding-left:15px; padding-top:10px">
+                    <font face="Tahoma" size="1" color="#FFFFFF">The office of 
+                    Dr. Glenn<br>
+                    and Dr. Claiborne<br>
+        2904 Old Forest Road<br>
+        Lynchburg, Va 24501</font></div></td>
+                </tr>
+              </table>
+              </div></td>
+          </tr>
+          <tr>
+            <td height="100%" align="left" valign="top"><table width="204" height="100%"  border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="29" align="left" valign="top"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/we_offer.gif" width="204" height="29"></td>
+              </tr>
+              <tr>
+                <td height="100%" align="left" valign="top" bgcolor="#688BA9"><div style="padding-left:2px; padding-top:14px; padding-bottom:8px">
+                  <table width="200"  border="0" cellspacing="0" cellpadding="0" height="259">
+                    <tr>
+                      <td height="29" align="left" valign="top" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pix_1.gif" style="background-repeat:repeat-x; background-position:bottom "><div style="padding-left:13px; padding-top:5px">
+                        <table width="180"  border="0" cellspacing="0" cellpadding="0">
+                          <tr align="left" valign="middle">
+                            <td width="15"><font face="Tahoma" size="1"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/#">
+                            <font color="#FFFFFF"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_2.gif" width="7" height="5" border="0"></font></a></font></td>
+                            <td><font face="Tahoma" size="2">
+                            <a href="http://web.archive.org/web/20051231090550/http://www.ada.org/" target="adawin">
+                            <font size="1" color="#FFFFFF">American Dental<br>
+                            Association </font></a></font></td>
+                          </tr>
+                        </table>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td height="29" align="left" valign="top" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pix_1.gif" style="background-repeat:repeat-x; background-position:bottom "><div style="padding-left:13px; padding-top:5px">
+                          <table width="180"  border="0" cellspacing="0" cellpadding="0">
+                            <tr align="left" valign="middle">
+                              <td width="15"><font face="Tahoma" size="1"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/#">
+                              <font color="#FFFFFF"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_2.gif" width="7" height="5" border="0"></font></a></font></td>
+                              <td><font face="Tahoma" size="1">
+                              <a href="http://web.archive.org/web/20051231090550/http://www.agd.org/" target="aagdwin">
+                              <font color="#FFFFFF">American Academy<br>
+                              of General Dentistry</font></a></font></td>
+                            </tr>
+                          </table>
+                      </div></td>
+                    </tr>
+                    <tr>
+                      <td height="29" align="left" valign="top" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pix_1.gif" style="background-repeat:repeat-x; background-position:bottom "><div style="padding-left:13px; padding-top:5px">
+                          <table width="180"  border="0" cellspacing="0" cellpadding="0">
+                            <tr align="left" valign="middle">
+                              <td width="15"><font face="Tahoma" size="1"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/#">
+                              <font color="#FFFFFF"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_2.gif" width="7" height="5" border="0"></font></a></font></td>
+                              <td>
+                              <a href="http://web.archive.org/web/20051231090550/http://www.aacd.com/" target="cosmeticwin">
+                              <font face="Tahoma" size="1" color="#FFFFFF">
+                              American Academy of Cosmetic Dentistry </font></a></td>
+                            </tr>
+                          </table>
+                      </div></td>
+                    </tr>
+                    <tr>
+                      <td height="20" align="left" valign="top" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pix_1.gif" style="background-repeat:repeat-x; background-position:bottom "><div style="padding-left:13px; padding-top:5px">
+                          <table width="180"  border="0" cellspacing="0" cellpadding="0">
+                            <tr align="left" valign="middle">
+                              <td width="15"><font face="Tahoma" size="1"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/#">
+                              <font color="#FFFFFF"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_2.gif" width="7" height="5" border="0"></font></a></font></td>
+                              <td><font face="Tahoma" size="1">
+                              <a href="http://web.archive.org/web/20051231090550/http://www.discusdental.com/" target="steriwin">
+                              <font color="#FFFFFF">Discus Dental</font></a></font></td>
+                            </tr>
+                          </table>
+                      </div></td>
+                    </tr>
+                    <tr>
+                      <td height="20" align="left" valign="top" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pix_1.gif" style="background-repeat:repeat-x; background-position:bottom "><div style="padding-left:13px; padding-top:5px">
+                          <table width="180"  border="0" cellspacing="0" cellpadding="0">
+                            <tr align="left" valign="middle">
+                              <td width="15"><font face="Tahoma" size="1"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/#">
+                              <font color="#FFFFFF"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_2.gif" width="7" height="5" border="0"></font></a></font></td>
+                              <td><a href="http://web.archive.org/web/20051231090550/http://www.optiva.com/">
+                              <font face="Tahoma" size="1" color="#FFFFFF">
+                              Philips Sonicare</font></a></td>
+                            </tr>
+                          </table>
+                      </div></td>
+                    </tr>
+                    <tr>
+                      <td height="20" align="left" valign="top" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pix_1.gif" style="background-repeat:repeat-x; background-position:bottom "><div style="padding-left:13px; padding-top:5px">
+                          <table width="180"  border="0" cellspacing="0" cellpadding="0">
+                            <tr align="left" valign="middle">
+                              <td width="15"><font face="Tahoma" size="1"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/#">
+                              <font color="#FFFFFF"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_2.gif" width="7" height="5" border="0"></font></a></font></td>
+                              <td><font face="Tahoma" size="1">
+                              <a href="http://web.archive.org/web/20051231090550/http://www.colgate.com/" target="procwin">
+                              <font color="#FFFFFF">Colgate</font></a></font></td>
+                            </tr>
+                          </table>
+                      </div></td>
+                    </tr>
+                    <tr>
+                      <td height="72" align="left" valign="top" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pix_1.gif" style="background-repeat:repeat-x; background-position:bottom "><div style="padding-left:13px; padding-top:5px">
+                          <table width="180"  border="0" cellspacing="0" cellpadding="0" height="47">
+                            <tr align="left" valign="middle">
+                              <td width="15" height="19"><font face="Tahoma" size="1"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/#">
+                              <font color="#FFFFFF"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_2.gif" width="7" height="5" border="0"></font></a></font></td>
+                              <td height="19"><font face="Tahoma" size="1">
+                              <a href="http://web.archive.org/web/20051231090550/http://www.oral-care.com/" target="listwin">
+                              <font color="#FFFFFF">Listerine (Warner &amp; Lambert)</font></a></font></td>
+                            </tr>
+                            <tr align="left" valign="middle">
+                              <td width="15" height="28"><font face="Tahoma" size="1"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/#">
+                              <font color="#FFFFFF"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_2.gif" width="7" height="5" border="0"></font></a></font></td>
+                              <td height="28">
+                              <a href="http://web.archive.org/web/20051231090550/http://www.cerinate.com/" target="cerinate"><font face="Tahoma" size="1" color="#FFFFFF">Cerinate</font></a></td>
+                            </tr>
+                            <tr align="left" valign="middle">
+                              <td width="15" height="12"><font face="Tahoma" size="1"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/#">
+                              <font color="#FFFFFF"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_2.gif" width="7" height="5" border="0"></font></a></font></td>
+                              <td height="12">
+                              <a href="http://web.archive.org/web/20051231090550/http://www.dentist.net/" target="dentist"><font face="Tahoma" size="1" color="#FFFFFF">Dentist.net</font></a></td>
+                            </tr>
+                          </table>
+                      </div></td>
+                    </tr>
+                    <tr>
+                      <td height="20" align="left" valign="top" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pix_1.gif" style="background-repeat:repeat-x; background-position:bottom "><div style="padding-left:13px; padding-top:5px">
+                        <table width="180"  border="0" cellspacing="0" cellpadding="0">
+                          <tr align="left" valign="middle">
+                            <td width="15"><font face="Tahoma" size="1"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/#">
+                            <font color="#FFFFFF"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/point_2.gif" width="7" height="5" border="0"></font></a></font></td>
+                            <td><font face="Tahoma" size="1">
+                            <a href="http://web.archive.org/web/20051231090550/http://www.oralb.com/" target="oralb">
+                            <font color="#FFFFFF">Oral B</font></a></font></td>
+                          </tr>
+                        </table>
+                      </div></td>
+                    </tr>
+                    <tr>
+                      <td height="20" align="left" valign="top" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/pix_1.gif" style="background-repeat:repeat-x; background-position:bottom ">&nbsp;</td>
+                    </tr>
+                  </table>
+                  </div></td>
+              </tr>
+              <tr>
+                <td height="66" align="left" valign="top"><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/bottom.gif" width="204" height="66"></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td colspan="3" align="left" valign="top"><div style="padding-left:5px; padding-top:5px">
+          <table width="684" height="30"  border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="left" valign="top" background="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/bottomino.gif"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                <tr align="left" valign="top">
+                  <td width="496"><div style="padding-left:62px; padding-top:9px"><span class="style8"><a href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/index.html" class="style8">
+                    Home</a><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/spacer.gif" width="17" height="1">:<img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/spacer.gif" width="17" height="1"><a class="style8" href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/services.html">Services</a><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/spacer.gif" width="17" height="1">:<img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/spacer.gif" width="17" height="1"><a class="style8" href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/faq.html">FAQ</a><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/spacer.gif" width="17" height="1">:<img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/spacer.gif" width="17" height="1"><a class="style8" href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/smilegallery.html">Smile 
+                    Gallery</a><img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/spacer.gif" width="17" height="1">:<img src="http://web.archive.org/web/20051231090550im_/http://www.lynchburgdentist.com/images/spacer.gif" width="17" height="1"><a class="style8" href="http://web.archive.org/web/20051231090550/http://www.lynchburgdentist.com/aboutus.html">About 
+                    Us</a></span></div></td>
+                  <td class="style8"><div style="padding-left:0px; padding-top:9px">Copyright &copy; 2004. All Rights Reserved</div></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table>
+          </div></td>
+      </tr>
+    </table></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td width="696" align="center" valign="top"><font size="2" face="AGaramond">Dr. 
+    Charles Glenn DDS&nbsp; Dr. Shane Claiborne DDS</font><font size="2"><font face="AGaramond Bold"><br>
+    </font><font face="AGaramond">Periodontal - Cosmetic - Teeth Whitening - 
+    Family Dentistry</font></font><font size="2" face="AGaramond Bold"><br>
+    S</font><font face="AGaramond" size="2">erving 
+    Lynchburg and the surrounding areas of<br>
+    Boonsboro, Forest, Bedford County, Amherst County</font></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 9:05:50 Dec 31, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 2:14:30 Jan 21, 2012.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

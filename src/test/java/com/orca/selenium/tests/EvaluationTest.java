@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.orca.page.objects.BeginEvaluation;
 import com.orca.page.objects.EvaluationWeight;
 import com.orca.page.objects.Home;
+import com.orca.page.objects.SurveyName;
 import com.orca.selenium.utils.TestUtils;
 
 public class EvaluationTest {
@@ -18,6 +19,7 @@ public class EvaluationTest {
 		private Home homePage;
 		private BeginEvaluation beginEvaluation;
 		private EvaluationWeight evaluationWeight;
+		private SurveyName surveyName;
 		WebDriver driver;
 		
 		@Before
@@ -36,6 +38,7 @@ public class EvaluationTest {
 		public void createEvaluation() {
 			beginEvaluation = homePage.beginEvaluation();
 			evaluationWeight = beginEvaluation.createEvaluation();
+			surveyName = evaluationWeight.setWeight();
 		}
 
 }

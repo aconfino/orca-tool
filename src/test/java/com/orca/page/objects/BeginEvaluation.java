@@ -17,15 +17,6 @@ public class BeginEvaluation {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//*[@id='page']/span/a")
-	private WebElement createNewEvaluation;
-	
-	@FindBy(xpath="//*[@id='page']/span[2]/a")
-	private WebElement editEvaluation;
-	
-	@FindBy(xpath="//*[@id='page']/span[3]/a")
-	private WebElement evaluationSummary;
-	
 	@FindBy(id="name")
 	private WebElement evaluationName;
 	
@@ -35,9 +26,11 @@ public class BeginEvaluation {
 	public EvaluationWeight createEvaluation(){
 		Date date = new Date();
 		evaluationName.clear();
-		evaluationName.sendKeys("Test Evaluation" + date.toString());
+		evaluationName.sendKeys("Test Evaluation -- " + date.toString());
 		submitButton.click();
 		return new EvaluationWeight(driver);
 	}
+	
+
 
 }

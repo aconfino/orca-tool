@@ -1,0 +1,965 @@
+<HTML>
+<HEAD>
+	<TITLE>Website Templates and Web Templates Design (Flash, Dreamweaver, Frontpage)</TITLE>
+<META name="description" content="Website Templates (Frontpage, Dreamweaver), web templates, flash templates for web design. Website templates and web templates are compatible with frontpage, dreamweaver and other software. Choose website templates and create a web page without hiring web design companies">
+<META name="keywords" content="website templates web template site templates, page frontpage dreamweaver design flash intro logo">
+<META name="revisit-after" content="2 days">
+<META name="robots" content="index, follow">
+<META name="language" content="en-us">
+<META name="classification" content="Photoshop templates, Logo templates, Flash intro templates, Website Templates and Web Page Templates">
+<META name="Creator" content="info@templatemonster.com">
+<META name="Publisher" content="www.templatemonster.com">
+<META name="Distribution" content="Global">
+<META name="Rating" content="General">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;"><script>
+	hr = escape(window.location.href);
+</script>
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+function buy(id, exc){
+var str = "&PHPSESSID=7282777b4066c8fed2a5ddbaf1678ba8";
+if (exc == 1){
+    str += "&exc=1";
+}
+window.open("https://secure.template-help.com/email.php?templ=" + id + str,
+	"_self",
+	"width=430, height=250, scrollbars=yes, status=no, resizable=yes");
+}
+function cart(s){
+str = "&PHPSESSID=7282777b4066c8fed2a5ddbaf1678ba8";
+open("http://web.archive.org/web/20040403090612/http://www.template-help.com//cart.php?" + s + str ,
+	"tmcart",
+	"width=865, height=420, scrollbars=yes, status=no, resizable=yes");
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+  }
+
+//-->
+</script>
+<link rel="stylesheet" href="http://web.archive.org/web/20040403090612cs_/http://www.templatemonster.com/css/style1.css" type="text/css">
+</HEAD>
+<SCRIPT language="javascript">
+ <!--
+	function wopen(url){
+		window.open(url, 'ww', 'width=450, height=220, location=no');
+	}
+ //-->
+	</SCRIPT>
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="http://staticweb.archive.org/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="http://staticweb.archive.org/js/graph-calc.js" ></script>
+<script type="text/javascript" src="http://staticweb.archive.org/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http:\/\/www.templatemonster.com\/";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "3";
+var displayMonth = "Apr";
+var displayYear = "2004";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(http://staticweb.archive.org/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="http://wayback.archive.org/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="http://staticweb.archive.org/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="http://wayback.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.templatemonster.com/" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20040403090612" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20040125005443/http://www2.templatemonster.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="25 Jan 2004"><strong>JAN</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 9:06:12 Apr 3, 2004">APR</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20040523103333/http://www.templatemonster.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="23 May 2004"><strong>MAY</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20040125005443/http://www2.templatemonster.com/" title="0:54:43 Jan 25, 2004" style="background-color:transparent;border:none;"><img src="http://staticweb.archive.org/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 9:06:12 Apr 3, 2004">3</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20040403234104/http://www.templatemonster.com/" title="23:41:04 Apr 3, 2004" style="background-color:transparent;border:none;"><img src="http://staticweb.archive.org/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20030401062253/http://www.templatemonster.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="1 Apr 2003"><strong>2003</strong></a>
+		                
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 9:06:12 Apr 3, 2004">2004</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20050404020529/http://www.templatemonster.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="4 Apr 2005"><strong>2005</strong></a>
+		                
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="http://wayback.archive.org/web/20040403090612*/http://www.templatemonster.com/" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>1,217 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">25 May 02 - 20 Jul 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="http://wayback.archive.org/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000010114031_2003:-1:132403121133_2004:3:100429a9b999_2005:-1:aaa8bcdf9bce_2006:-1:c91b05641320_2007:-1:000202101210_2008:-1:000120010020_2009:-1:100101101321_2010:-1:110021031465_2011:-1:8a1211400000_2012:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="http://staticweb.archive.org/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="http://staticweb.archive.org/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(http://staticweb.archive.org/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(http://staticweb.archive.org/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+<center>
+
+<TABLE WIDTH=745 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=3 align=center><table width=97% cellspacing="0" cellpadding="0">
+	<tr>
+		<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/web-templates-1.gif"></td>
+		<td bgcolor="#4391D6" width=100% style="color:ffffff" align="center">
+		<SPAN id="topMessage"><span style="color: #FF0000;"><u><b>Important Note:</b></u></span><span style="color: yellow"> Please make sure that Javascript is enabled at your computer to place orders at our website</span></SPAN>
+				<script>
+			document.getElementById("topMessage").innerHTML = "<b>TEMPLATE MONSTER HOT NEWS: </b>Local HelpCenter is now present in any product package. Get instant help with regular Windows help file!\n\n\n  ";
+		</script>
+				</td>
+		<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/web-templates-2.gif"></td>
+	</tr>
+</table>
+</TD>
+	</TR>
+	<TR>
+		<TD width=541 valign=top>
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<tr>
+		<td rowspan=2><a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/monster_logo2.gif" alt="Website Templates from Template Monster" awidth="101" aheight="107" border="0"></a></td>
+		<td><br>&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/name.gif" alt="Template Monster"></td>
+		<td rowspan=2 style="padding-top:5px; padding-bottom:1px">
+			<p align="justify"><span class="light_blue">WHAT IS WEBSITE TEMPLATE?</span><br><br>
+				Website templates are pre-made web design products that can be easily customized to reflect your company's branding. Website templates are available in Photoshop and HTML format. Pay per one template to get rarest design. Compatible with FrontPage, DreamWeaver, GoLive, and other software. 
+    		<br style="font-size:6px">
+		</td>
+	</tr>
+	<tr>
+		<td width=210 style="padding-left:14px; padding-top:4px; padding-bottom:2px;" valign="top">
+			Website templates at pay-per-download plan&nbsp;&mdash;
+			guarantee&nbsp;of&nbsp;your web design rarity.
+			<br><br style="font-size:6px">
+			<a href="http://web.archive.org/web/20040403090612/http://www.templatetuning.com/" class="light_blue_a">Click here if you want us to customize website template to <br>build professionally looking website.</a>
+		</td>
+	</tr>
+</table>
+					<table BORDER=0 CELLPADDING=0 CELLSPACING=0>
+			<tr>
+				<td valign=bottom><a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/web-templates.php"><img alt="Website Templates" src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/b_1.gif" border=0></a></td>
+				<td valign=bottom><a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/flash-templates.php"><img alt="Flash Intro Templates" src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/menu2.gif" border=0></a></td>
+				<td valign=bottom><a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/logo-templates.php"><img alt="Logo Templates" src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/menu3.gif" border=0></a></td>
+				<td valign=bottom><a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/corporate-identity.php"><img alt="Corporate Identity" src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/menu4.gif" border=0></a></td>
+				<td valign=bottom><a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/phpnuke-themes.php"><img alt="PHP-Nuke themes" src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/menu5.gif" border=0></a></td>
+				<td valign=bottom><a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/lib_index.php"><img alt="Free Clipart Library" src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/menu6.gif" border=0></a></td>
+			</tr>
+			<tr>
+		    				<td colspan=6 height=7 bgcolor="#4391D6"></td>
+						</tr>
+		</table>
+		
+  <TABLE WIDTH=541 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+			<TR>
+		    	<TD valign=top width=281 height="3"></TD>
+			</TR>
+
+		</table>
+		<TABLE WIDTH=541 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+			<tr>
+				<td valign=top>
+					<SCRIPT>
+	function SubmitForm(formName, val){
+		var form = document.forms[formName + val];
+		subm = false;
+		if (val == 1){
+			if (form.elements.author.selectedIndex > 0)
+				subm = true;
+			if (form.elements.cat.selectedIndex > 0)
+				subm = true;
+			if (form.elements.search_words.value != '')
+				subm = true;
+			if (form.elements.from_.value != '')
+				subm = true;
+			if (form.elements.to.value != '')
+				subm = true;
+		}else{
+			if (form.elements.tid.value != '')
+				subm = true;
+		}
+	
+		if (subm){
+			form.submit();
+		}
+	}
+</SCRIPT>
+
+					<TABLE WIDTH=206 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+					<form action='http://web.archive.org/web/20040403090612/http://www.templatemonster.com/category.php' method="GET" name='sf1'>
+					<input type='hidden' name='action' value='search'>
+					<tr bgcolor="#edfffb">
+					<td colspan=6 bgcolor="#4391D6" class="white" style="padding:4px">&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/arrow11.gif">&nbsp;&nbsp;WEB TEMPLATE SEARCH</td>
+					</tr>
+					<tr>
+						<td rowspan="100" background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/bg11.gif"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/spacer.gif"></td>
+						<td rowspan="16"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/spacer.gif" width=5></td>
+						<td bgcolor="#e3eaf2" class="light_blue_2">AUTHOR</td>
+						<td rowspan="100"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/spacer.gif" width=5></td>
+						<td rowspan="100" background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/bg11.gif"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/spacer.gif"></td>
+					</tr>
+					<tr bgcolor="#e3eaf2"><td><select name="author" class="search"  style="width:190px"><option class="grey">any author</option><option value='106'>Aeron</option><option value='83'>Albion</option><option value='79'>Angel</option><option value='61'>ArGo</option><option value='72'>BG</option><option value='1'>Big mama</option><option value='18'>Bullet</option><option value='5'>Casher</option><option value='62'>Cerberus</option><option value='36'>Co-casher</option><option value='48'>Co-pharaoh</option><option value='121'>Colorado</option><option value='114'>Cougar</option><option value='46'>Creamy</option><option value='14'>Dan</option><option value='85'>Delta</option><option value='117'>Demon</option><option value='27'>Dgan Dgan</option><option value='113'>Di</option><option value='10'>Dipixel</option><option value='50'>Earwig</option><option value='3'>Engine</option><option value='75'>Exuma</option><option value='32'>Flayer</option><option value='112'>Frix</option><option value='30'>Glasgo Ranger</option><option value='73'>Hugo</option><option value='22'>Hummingbird</option><option value='77'>Jaguar</option><option value='95'>Joker</option><option value='66'>Leonardo</option><option value='84'>Logotyper</option><option value='78'>Maccavelli</option><option value='60'>MadFlasher</option><option value='4'>MariArti</option><option value='37'>Mr. Corpuscle</option><option value='41'>Neutral Nick</option><option value='100'>Nuker</option><option value='110'>O-zone</option><option value='76'>Olney</option><option value='19'>Orange</option><option value='13'>Pharaoh</option><option value='25'>Photographer</option><option value='58'>Raymond</option><option value='26'>Shrew</option><option value='69'>Southern Star</option><option value='88'>Stream</option><option value='40'>Two cows</option><option value='118'>Vampire</option><option value='109'>Viola</option><option value='64'>Wizard</option><option value='104'>X-way</option></select></td></tr>
+					<tr bgcolor="#e3eaf2"><td class="light_blue_2" bgcolor="#e3eaf2">CATEGORY</td><tr>
+					<tr bgcolor="#e3eaf2"><td><select name="cat" class="search" style="width:190px"><option class="grey">any category</option><option  value='60'   style='color:#FF0005' >Full site</option>
+<option  value='55'   style='color:#0425FF' >Flash intro header</option>
+<option  value='53'   style='color:#FF0000' >Flash animated</option>
+<option  value='62'   style='color:#0425FF' >3D style templates</option>
+<option  value='61'   style='color:#FF0000' >Fireworks templates</option>
+<option  value='57'   style='color:#0425FF' >Last added</option>
+<option  value='56'   style='color:#FF0000' >Low budget</option>
+<option  value='69'   style='color:#0425FF' >3 colors templates</option>
+<option  value='72'   style='color:#FF0000' >Full package templates</option>
+<option  value='70'  >Adult</option>
+<option  value='33'  >Agriculture</option>
+<option  value='47'  >Animals &amp; Pets</option>
+<option  value='26'  >Architecture</option>
+<option  value='40'  >Art &amp; Photography</option>
+<option  value='54'  >ArtWorks</option>
+<option  value='1'  >Beauty</option>
+<option  value='39'  >Books</option>
+<option  value='2'  >Business</option>
+<option  value='11'  >Car</option>
+<option  value='63'   style='color:#0425FF' >Clean style templates</option>
+<option  value='22'  >Communications</option>
+<option  value='3'  >Computers</option>
+<option  value='35'  >Dating</option>
+<option  value='46'  >Education</option>
+<option  value='50'  >Electronics</option>
+<option  value='9'  >Entertainment</option>
+<option  value='25'  >Exterior design</option>
+<option  value='7'  >Family</option>
+<option  value='49'  >Fashion</option>
+<option  value='68'   style='color:#FF0000' >Flash Site templates</option>
+<option  value='36'  >Flowers</option>
+<option  value='29'  >Food &amp; Drink</option>
+<option  value='64'  >Forums</option>
+<option  value='67'  >Games</option>
+<option  value='48'  >Gifts</option>
+<option  value='21'  >Hosting</option>
+<option  value='74'  >Hotels</option>
+<option  value='16'  >Industrial</option>
+<option  value='24'  >Interior &amp; Furniture</option>
+<option  value='6'  >Internet</option>
+<option  value='51'  >Jewelry</option>
+<option  value='34'  >Law</option>
+<option  value='18'  >Media</option>
+<option  value='10'  >Medical</option>
+<option  value='44'  >Military</option>
+<option  value='19'  >Music</option>
+<option  value='13'  >Neutral</option>
+<option  value='42'  >Online store/shop</option>
+<option  value='66'  >Personal pages</option>
+<option  value='71'   style='color:#0425FF' >PHP-Nuke Themes</option>
+<option  value='65'  >Politics</option>
+<option  value='5'  >Portal</option>
+<option  value='4'  >Real Estate</option>
+<option  value='17'  >Religious</option>
+<option  value='45'  >Science</option>
+<option  value='41'  >Security</option>
+<option  value='32'  >Society &amp; Culture</option>
+<option  value='23'  >Software</option>
+<option  value='14'  >Sport</option>
+<option  value='43'  >Transportation</option>
+<option  value='27'  >Travel</option>
+<option  value='8'  >Web design</option>
+<option  value='75'  >Wedding</option>
+</select></td></tr>
+					<tr bgcolor="#e3eaf2"><td class="light_blue_2" bgcolor="#e3eaf2">KEYWORD</td><tr>
+					<tr bgcolor="#e3eaf2"><td ><input type="text" name="search_words" class="search" style="width:190px" value=""></td></tr>
+					<tr bgcolor="#e3eaf2"><td class="light_blue_2" bgcolor="#e3eaf2">PRICE RANGE</td><tr>
+					<tr bgcolor="#e3eaf2" align='justify'><td >&nbsp;please enter lower and higher $ value<br>
+					 &nbsp; from <input type="text" class="search" style="width:30" name='from_' value="any"> to <input type="text" class="search" style="width:30" name='to' value="any"></td></tr>
+					<tr bgcolor="#e3eaf2"><td style="padding-top:5px; padding-bottom:6px">
+					<table width="80%" align='center'><tr><td align="center" width="100%" bgcolor="" style="background-color:#86B8E5; font-weight:bold; color:#ffffff; padding-left:5px; padding-top:3px; padding-bottom:3px;  padding-right:5px"><a href="javascript: SubmitForm('sf', 1);" class="button2">PERFORM SEARCH</a></td></tr></table>
+					</td></tr>
+					<tr><td  background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/bg11.gif"></td></tr>
+					</form>
+					<form action='http://web.archive.org/web/20040403090612/http://www.templatemonster.com/category.php' method="GET" name='sf2'>
+					<input type='hidden' name='action' value='search'>
+					<tr><td class="light_blue_2" style="padding-top:7px">SEARCH BY TEMPLATE'S NUMBER</td></tr>
+					<tr><td >
+					<table><tr><td><input type="text" name="tid" class="search" style="width:140px"> </td><td bgcolor="" style="background-color:#86B8E5; font-weight:bold; color:#ffffff; padding-left:5px;   padding-right:5px"><a href="javascript: SubmitForm('sf', 2)" class="button2">SHOW</a></td></tr></table></td></tr>
+					<tr><td style="padding-top:5px; padding-bottom:8px">
+					<table><tr><td width="200" align="center" style="padding-top:5px; padding-bottom:8px"><a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/category.php?action=search_all" class="grey4">BROWSE ALL TEMPLATES</a></td></tr></table>
+					</td></tr>
+					<tr><td colspan=10 background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/bg11.gif"></td></tr>
+					</form>
+					</table>
+					<SCRIPT language='JavaScript'>
+<!--
+	//check if url is filled
+	function submit_wish(){
+		var real_action = 'wish.php';
+		var target="Thank_You";
+		var wish = document.forms['wish_form'].wish.value;
+		var url = document.forms['wish_form'].url.value;
+		if( wish.length < 1  ){
+			alert("Enter subject you can not find, please !");
+		}else if( url.length < 1){
+			alert("Enter url of a sample site, please !");
+		}else{
+			window.open( real_action+"?wish="+escape(wish)+"&url="+escape(url)+"&wish_type=1", target, "location=0, menubar=0, status=0, resizable=1" );
+		}
+	}
+//-->
+</SCRIPT>
+	<form action='http://web.archive.org/web/20040403090612/http://www.templatemonster.com/status.php' name="status_form" method='GET' target='_blank'>
+	<TABLE WIDTH=206 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+		<tr>
+			<td colspan=6 bgcolor="BE6BC7" class="white" style="padding:4px">&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/arrow11.gif">&nbsp;&nbsp;TEMPLATE MONSTER TOOLS</td>
+		</tr>
+		<tr><td class="red2" style="padding-top:2px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif">&nbsp;&nbsp;PROMOTE YOUR WEBSITE:</td><tr>
+		<tr><td style="padding-left:23px; padding-bottom:3px;">Visit our website dedicated to online promotion. <a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=addme" target="_blank" class="grey" style="text-decoration:underline">Click here to learn more.</a><br></td></tr>
+		<tr><td class="red2" style="padding-top:2px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif">&nbsp;&nbsp;CHECK STATUS OF YOUR <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEBSITE TEMPLATE PURCHASE:</td><tr>
+		<tr><td style="padding-left:10px;">
+			<table>
+				<tr>
+					<td>Transaction ID</td>
+					<td><input type="text" name="order_id" class="search" style="width:65px"></td>
+					<input type="hidden" name="cl" value="billing">
+					<td align="center" style="background-color:#BE6BC7 ; font-weight:bold; color:#ffffff; padding-left:5px; padding-top:3px; padding-bottom:3px;  padding-right:5px">
+					<a href="javascript: document.status_form.submit();" class="button2">CHECK</a>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+	</form>
+
+	
+					<TABLE WIDTH=206 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+						<FORM method="POST" action="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/subscr.php" name="subscr_form" target="Thank you!!!">
+						<INPUT type="hidden" name="action" value="subscribe">
+						<tr>
+							<td colspan=6 bgcolor="#DBA72A" class="white" style="padding:4px">&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/arrow11.gif">&nbsp;&nbsp;REPORTS & REQUESTS</td>
+						</tr>
+						<tr><td class="yellow_2">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif">&nbsp;&nbsp;WEB TEMPLATES NEWSLETTER</td><tr>
+						<tr><td style="padding-left:23px">Subscribe to new website templates report and you will be notified about our newest products. Our subscribers get a full <STRONG style="color:Red">5% discount</STRONG> on newly added web design templates!</td></tr>
+						<tr><td style="padding-left:10px; padding-top:5px"><nobr>Please enter your e-mail address</nobr></td></tr>
+						<tr><td style="padding-left:10px;">
+							<table><tr><td><input type="text" name="email" class="search" style="width:110px"></td>
+							<td  align=center  style="background-color:#DBA72A ; font-weight:bold; color:#ffffff; padding-left:5px; padding-top:3px; padding-bottom:3px;  padding-right:5px"><a href="javascript: document.subscr_form.submit();" class="button2">SUBSCRIBE</a></td></tr></table>
+						</td></tr>
+						</form>
+						<FORM method="POST" action="javascript:submit_wish()" name="wish_form">
+						<tr><td class="yellow_2">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif">&nbsp;&nbsp;WEBSITE TEMPLATE WISHBOX</td><tr>
+						<tr><td style="padding-left:23px">Can't find web design you are looking for? Share your ideas with our designers.</td></tr>
+						<tr><td style="padding-left:10px; padding-top:5px">Please enter descriptions of desired website template</td></tr>
+						<tr><td style="padding-left:10px; padding-top:5px"><textarea name="wish" class="search" style="width:195px; height=50px"></textarea></td></tr>
+						<tr><td style="padding-left:9px; padding-top:5px">Please enter URL of similar web page:</td></tr>
+						<tr><td style="padding-left:10px;">
+							<table><tr><td>					http://<input type="text" name="url" class="search" style="width:100px"> </td>
+							<td  align=center  style="background-color:#DBA72A ; font-weight:bold; color:#ffffff; padding-left:5px; padding-top:3px; padding-bottom:3px;  padding-right:5px"><a href="javascript: document.wish_form.submit();" class="button2">SUBMIT</a></td></tr></table>
+						</td></tr>
+						</form>
+												<FORM method="POST" action="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/submit_piracy.php" name="piracy_form" target="piracy">
+						<tr><td class="yellow_2">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif">&nbsp;&nbsp;REPORT A PIRACY</td><tr>
+						<tr><td style="padding-left:10px; padding-top:5px">Please enter URL of a website containing copyright infrigement: </td></tr>
+						<tr><td style="padding-left:10px;">
+						<table><tr><td>					http://<input type="text" name="url" class="search" style="width:100px"> </td>
+						<td  align=center  style="background-color:#DBA72A ; font-weight:bold; color:#ffffff; padding-left:5px; padding-top:3px; padding-bottom:3px;  padding-right:5px"><a href="javascript: document.piracy_form.submit();" class="button2">SUBMIT</a></td></tr></table>
+						</td></tr>
+						</form>
+					</table>
+<table width='100%'>
+	<tr>
+		<td height='10'> </td>
+	</tr>
+	<TR><TD><STYLE>@import url("http://web.archive.org/web/20040403090612/http://www.templatemonster.com/css/survey-violette.css");</STYLE>
+	<H1 class="surveyTitle"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/arrow11.gif" width=5 height=9>&nbsp;&nbsp;Template Monster's Poll</H1>
+<TABLE align="center" class="survey" cellspacing="0" cellpadding="0">
+
+	
+	
+	<TR><TD class="question" colspan="3">
+		How many pages should normal template contain?	</TR></TD>
+
+	
+	<FORM name="survey18" method="post" style="margin:0">
+				<TR><TD valign='top'><INPUT name='survVotes[18][17][]' value='49' type='radio' id='answ49'></TD><TD width='100%' style='padding-top:3px'><LABEL for='answ49'>1 page is enough for me</LABEL></TD></TR>
+				<TR><TD valign='top'><INPUT name='survVotes[18][17][]' value='50' type='radio' id='answ50'></TD><TD width='100%' style='padding-top:3px'><LABEL for='answ50'>2 pages: main page + sub page</LABEL></TD></TR>
+				<TR><TD valign='top'><INPUT name='survVotes[18][17][]' value='51' type='radio' id='answ51'></TD><TD width='100%' style='padding-top:3px'><LABEL for='answ51'>Several pages (for main categories)</LABEL></TD></TR>
+				<TR><TD valign='top'><INPUT name='survVotes[18][17][]' value='52' type='radio' id='answ52'></TD><TD width='100%' style='padding-top:3px'><LABEL for='answ52'>Template should contain as many pages as I am going to use in website</LABEL></TD></TR>
+		
+	
+	
+			<TR><TD colspan="2">
+			<TABLE width="100%" style="margin-top:5px"><TR>
+				<TD><DIV class="textButton2"><A href="http://web.archive.org/web/20040403090612/javascript:document.forms.survey18.submit()">VOTE</A></DIV></TD>
+				<TD width="100%" align="center">
+										<A href="http://web.archive.org/web/20040403090612/javascript:ShowPollResults(false)" class="black">View poll results</A>
+														</TD>
+			</TR></TABLE>
+		</TD></TR>
+		<SCRIPT>
+		function ShowPollResults(showAll){
+			win = window.open(
+				showAll ? '/poll-results.php' : '/poll.php?show_results&id=18',
+				'poll',
+				'width=300, height=200, resizable=yes, scrollbars=no, location=no,  toolbar=no, menubar=no, status=no'
+			);
+			win.moveTo((window.screen.availWidth-300)/2,(window.screen.availHeight-200)/2);
+			win.focus();
+		}
+		</SCRIPT>
+	</FORM>
+	
+</TABLE>
+
+</TD></TR>
+	<tr>
+		<td align="center"><a href="javascript: wopen2('guarantee.php');"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/no_garantee_learn_more.gif" alt="No membership campaign from Template Monster" border="0"></a></td>
+	</tr>
+</table>
+					
+				</td>
+				<td valign=top>
+					<TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0>
+					<tr>
+						<TD valign="top" align="center"><a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/lib_index.php"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/upl/banner-main_banner.jpg" width=319 height=161 border=0></a></TD>
+					</tr>
+    									<tr><td colspan=6 bgcolor="#4BB79A" class="white" style="padding:4px">&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/arrow11.gif">&nbsp;&nbsp;INFORMATION & SUPPORT</td></tr>
+					<tr><td style="padding-left:8px; padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0>&nbsp;&nbsp;<a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/samples/sample.zip" class="href6">FREE SAMPLE WEBSITE TEMPLATE</a></td><tr>
+					<tr><td style="padding-left:8px; padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0>&nbsp;&nbsp;<a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/faq.php" class="href6">FREQUENTLY ASKED QUESTIONS</a></td><tr>
+					<tr><td style="padding-left:8px; padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0>&nbsp;&nbsp;<a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/help/" class="href6" target="help_center">ONLINE HELP CENTER</a></td><tr>
+					<tr><td style="padding-left:8px; padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0>&nbsp;&nbsp;<a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/support_index.php" class="href6" target="chat">SUPPORT CHAT</a></td><tr>
+					<tr><td style="padding-left:8px; padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0>&nbsp;&nbsp;<a href="http://web.archive.org/web/20040403090612/http://www.template-help.com/support/index.php?_a=tickets&_m=submit" class="href6" target='ticket'>TROUBLE TICKET SYSTEM</a></td><tr>
+					<tr><td style="padding-left:8px; padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0>&nbsp;&nbsp;<a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/terms.php" class="href6">TERMS AND CONDITIONS</a></td><tr>
+					<tr><td style="padding-left:8px; padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0>&nbsp;&nbsp;<a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/awards.php" class="href6">TEMPLATE MONSTER'S AWARDS</a></td><tr>
+					<tr><td><br></td></tr>
+						<tr><td colspan=6 bgcolor="#9DC342" class="white" style="padding:4px">&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/arrow11.gif">&nbsp;&nbsp;WEB TEMPLATES COMMUNITY</td></tr>
+<tr><td style="padding-left:8px; padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0>&nbsp;&nbsp;<a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/affiliate.php" class="href7">TEMPLATE MONSTER AFFILIATE PROGRAM</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Earn thousands $$$! <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Join template monster 20% affiliate program.</td><tr>
+<tr><td style="padding-left:8px; padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0>&nbsp;&nbsp;<a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/links.php" class="href7">HELPFUL RESOURCES WEB PAGE</a></td><tr>
+<tr><td style="padding-left:8px; padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0>&nbsp;&nbsp;<a href="http://web.archive.org/web/20040403090612/http://www.templatetuning.com/" class="href7">WEBSITE TEMPLATE CUSTOMIZATION</a></td><tr>
+<tr><td style="padding-left:8px; padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0>&nbsp;&nbsp;<a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=coolhome" class="href7">COOLHOMEPAGES SHOWCASE</a></td><tr>
+					<tr><td><br></td></tr>
+					<tr>
+	<td colspan=6 bgcolor="#E26363" class="white" style="padding:4px">&nbsp;&nbsp;<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/arrow11.gif">&nbsp;&nbsp;TEMPLATE MONSTER'S PARTNERS
+	</td>
+</tr>
+<tr>
+	<td style="padding:10px">
+		<TABLE WIDTH=100% BORDER=0 CELLPADDING=5 CELLSPACING=0>
+
+<TR>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.websitesource.com/" class="href8" target="_blank">WEBSITESOURCE.COM</A><BR>
+							Website Source - Reliable Web Hosting
+						</TD>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.inverse-logic.com/" class="href8" target="_blank">INVERSE-LOGIC</A><BR>
+							Custom web design company
+						</TD></TR><TR>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=tophosts" class="href8" target="_blank">TOP HOSTS</A><BR>
+							Web hosting resource and directory
+						</TD>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.tonhosting.com/cgi-bin/affiliates/clickthru.cgi?id=templatemonster" class="href8" target="_blank">TON HOSTING</A><BR>
+							Web Hosting where your complete satisfaction is the ultimate 
+goal
+						</TD></TR><TR>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=refw3" class="href8" target="_blank">W3EXIT</A><BR>
+							Increase traffic by 50% FREE
+						</TD>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.killersites.com/" class="href8" target="_blank">KILLERSITES</A><BR>
+							Web site designers tutorials and resources
+						</TD></TR><TR>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=webmbids" class="href8" target="_blank">WEBMASTERBIDS</A><BR>
+							Bid on Advertising space auction style
+						</TD>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.hostsearch.com/" class="href8" target="_blank">HOSTSEARCH.COM</A><BR>
+							Looking for better web hosting?
+						</TD></TR><TR>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=herwebhost" class="href8" target="_blank">HERWEBHOST</A><BR>
+							Your favorite hosting
+						</TD>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.seehits.com/" class="href8" target="_blank">SEE HITS</A><BR>
+							Free Hit Counter
+						</TD></TR><TR>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=HostingHelper" class="href8" target="_blank">HOSTING HELPER</A><BR>
+							Affordable web hosting from only $5.00p/m
+						</TD>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.apollohosting.com/" class="href8" target="_blank">APOLLO HOSTING</A><BR>
+							Award Winning Web Hosting
+						</TD></TR><TR>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=bigwebmaster" class="href8" target="_blank">BIG WEBMASTER</A><BR>
+							A directory for webmasters
+						</TD>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=exsek" class="href8" target="_blank">EXACT SEEK</A><BR>
+							Search engine partner
+						</TD></TR><TR>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.submitnet.net/affiliates.asp?aid=266&pid=1" class="href8" target="_blank">SUBMITNET</A><BR>
+							Free 90 Day Trial Search Submission & Optimization Tools
+						</TD>						<TD valign="top"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/website-design-templates.gif" border=0></TD>
+						<TD valign="top">
+							<A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=evrsoft" class="href8" target="_blank">EVRSOFT</A><BR>
+							The World's #1 HTML Editor
+						</TD></TR>
+		</table>
+	</td>
+<tr>
+
+					  <script>
+ 						function wopen2(url){
+							window.open(url, 'ww', 'width=550, height=450, location=no,resizable=yes,scrollbars=yes');
+						}
+					</script>
+		
+
+										</table>
+				</td>
+			<tr>
+		</TABLE>
+		<!-- end but-->
+	
+		</TD>
+		<Td width=5>
+<IMG SRC="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/spacer.gif" border=0 WIDTH=5 ALT=""></TD>
+		<TD width=200 valign=top  style="padding-top:3px">
+							<table BORDER="0" CELLPADDING=0 CELLSPACING=0 width=200>
+					<form action="http://web.archive.org/web/20040403090612/https://secure.mytemplatestorage.com/personal/index.php" method="POST">
+					<tr>
+						<td width=200 height=121 background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/affiliate_entrance.gif" valign=top> 
+            				<a href="http://web.archive.org/web/20040403090612/http://www.mytemplatestorage.com/?aff=TM"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/affiliate_entrance_top.gif" alt="Free Affiliate Program" width="200" height="50" border=0></a><br>
+            				<img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/affiliate_entrance_top2.gif" alt="Affiliate entrance" width="200" height="23" border=0><br>
+					 		<table border="0" CELLPADDING=0 CELLSPACING=0>
+								<tr>
+									<td rowspan=2 width=60></td>
+									<td><input type="text" name="login" class="search" style="width:84"></td>
+									<td rowspan=2><input type="image" src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/login.gif" align=right hspace=6 vspace=1 alt="Login"></td>
+								</tr>
+								<tr>
+									<td style="padding-top:3px"><input type="password" name="passwd" class="search" style="width:84"></td>
+									<input type="hidden" name="action" value="login">
+								</tr>
+  							</table>
+						</TD>
+					</tr>
+					</form>
+				</table>
+		<table border="0" cellpadding="0" cellspacing="0" width="200">
+							<tbody><tr><td colspan="5"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/spacer.gif" width="1" height="4"></td></tr>
+							<tr><td colspan="5"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/featured.gif" alt="Featured Website Templates"></td></tr>
+					<tr>
+			    <td colspan=2><br style="font-size:5px">
+				<a style="cursor: hand" href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/show.php?templ=4807&cat_type=featured&type=1" target="_blank"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/screenshots/4800/4807-m.jpg"
+				    alt="Template 4807"
+				    border=1				    style="border-color: 777777"></a><br><nobr><a style="cursor: hand" href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/show.php?templ=4807&cat_type=featured&type=1" target="_blank"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/view.gif" width=50 height=20 alt="view" title="" border=0></a><a  href="javascript: cart('add=4807')"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/add.gif" alt="add" title="" border=0><a><a href="javascript: buy('4807')"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/buy.gif" alt="buy" title="" border=0></a></nobr>
+    		    </td>
+		    	<td valign=bottom style="padding-left:3px">
+					<a style="cursor:pointer" onClick="MM_openBrWindow('unique.php','','resizable=yes,width=600,height=200')"><span class="title"><b>PRICE</b></span><span style="font-size: 8px; color: blue; font-family: arial">&nbsp;(?)</span></a>
+					<br>
+							<table border=0 cellpadding=0 cellspacing=0 style="font-family: verdana">
+			<tr>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_r_left.gif"></td>
+				<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_r_center.gif" align=center style="color: white; font-weight: bold; font-family: verdana, tahoma, arial; padding-bottom: 3px; font-size: 15px; text-decoration: none" width=35><a href="javascript: buy('4807')" target="_self" style="color: white; text-decoration: none">65</a></td>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_r_right.gif"></td>
+			</tr>
+		</table>
+	<br>
+												    <a style="cursor:pointer" onClick="MM_openBrWindow('unique.php','','resizable=yes,width=600,height=200')"><span class="grey" style="font-size:10px"><b>UNIQUE<br>PRICE</b></span><span style="font-size: 8px; color: blue; font-family: arial">&nbsp;(?)</span></a><br>
+														<table border=0 cellpadding=0 cellspacing=0 style="font-family: verdana">
+			<tr>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_b_left.gif"></td>
+				<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_b_center.gif" align=center style="color: white; font-weight: bold; font-family: verdana, tahoma, arial; padding-bottom: 3px; font-size: 15px; text-decoration: none" width=35><a href="javascript: buy('4807', 1)" target="_self" style="color: white; text-decoration: none">834</a></td>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_b_right.gif"></td>
+			</tr>
+		</table>
+		    	    </td>
+			</tr>
+			<!--<tr><td width=100>Search Criteria</td><td><nobr>Featured</nobr></td></tr>-->
+			<tr><td><nobr>Item Number</nobr></td><td><nobr>4807</nobr></td></tr>
+						<tr><td>Author</td><td><nobr>Jaguar</nobr></td></tr>
+			<tr><td>Downloads</td><td><nobr>1</nobr></td></tr>
+					<tr>
+			    <td colspan=2><br style="font-size:5px">
+				<a style="cursor: hand" href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/show.php?templ=4804&cat_type=featured&type=1" target="_blank"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/screenshots/4800/4804-m.jpg"
+				    alt="Template 4804"
+				    border=1				    style="border-color: 777777"></a><br><nobr><a style="cursor: hand" href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/show.php?templ=4804&cat_type=featured&type=1" target="_blank"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/view.gif" width=50 height=20 alt="view" title="" border=0></a><a  href="javascript: cart('add=4804')"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/add.gif" alt="add" title="" border=0><a><a href="javascript: buy('4804')"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/buy.gif" alt="buy" title="" border=0></a></nobr>
+    		    </td>
+		    	<td valign=bottom style="padding-left:3px">
+					<a style="cursor:pointer" onClick="MM_openBrWindow('unique.php','','resizable=yes,width=600,height=200')"><span class="title"><b>PRICE</b></span><span style="font-size: 8px; color: blue; font-family: arial">&nbsp;(?)</span></a>
+					<br>
+							<table border=0 cellpadding=0 cellspacing=0 style="font-family: verdana">
+			<tr>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_r_left.gif"></td>
+				<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_r_center.gif" align=center style="color: white; font-weight: bold; font-family: verdana, tahoma, arial; padding-bottom: 3px; font-size: 15px; text-decoration: none" width=35><a href="javascript: buy('4804')" target="_self" style="color: white; text-decoration: none">65</a></td>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_r_right.gif"></td>
+			</tr>
+		</table>
+	<br>
+												    <a style="cursor:pointer" onClick="MM_openBrWindow('unique.php','','resizable=yes,width=600,height=200')"><span class="grey" style="font-size:10px"><b>UNIQUE<br>PRICE</b></span><span style="font-size: 8px; color: blue; font-family: arial">&nbsp;(?)</span></a><br>
+														<table border=0 cellpadding=0 cellspacing=0 style="font-family: verdana">
+			<tr>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_b_left.gif"></td>
+				<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_b_center.gif" align=center style="color: white; font-weight: bold; font-family: verdana, tahoma, arial; padding-bottom: 3px; font-size: 15px; text-decoration: none" width=35><a href="javascript: buy('4804', 1)" target="_self" style="color: white; text-decoration: none">783</a></td>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_b_right.gif"></td>
+			</tr>
+		</table>
+		    	    </td>
+			</tr>
+			<!--<tr><td width=100>Search Criteria</td><td><nobr>Featured</nobr></td></tr>-->
+			<tr><td><nobr>Item Number</nobr></td><td><nobr>4804</nobr></td></tr>
+						<tr><td>Author</td><td><nobr>Flayer</nobr></td></tr>
+			<tr><td>Downloads</td><td><nobr>1</nobr></td></tr>
+					<tr>
+			    <td colspan=2><br style="font-size:5px">
+				<a style="cursor: hand" href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/show.php?templ=4802&cat_type=featured&type=1" target="_blank"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/screenshots/4800/4802-m.jpg"
+				    alt="Template 4802"
+				    border=1				    style="border-color: 777777"></a><br><nobr><a style="cursor: hand" href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/show.php?templ=4802&cat_type=featured&type=1" target="_blank"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/view.gif" width=50 height=20 alt="view" title="" border=0></a><a  href="javascript: cart('add=4802')"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/add.gif" alt="add" title="" border=0><a><a href="javascript: buy('4802')"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/buy.gif" alt="buy" title="" border=0></a></nobr>
+    		    </td>
+		    	<td valign=bottom style="padding-left:3px">
+					<a style="cursor:pointer" onClick="MM_openBrWindow('unique.php','','resizable=yes,width=600,height=200')"><span class="title"><b>PRICE</b></span><span style="font-size: 8px; color: blue; font-family: arial">&nbsp;(?)</span></a>
+					<br>
+							<table border=0 cellpadding=0 cellspacing=0 style="font-family: verdana">
+			<tr>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_r_left.gif"></td>
+				<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_r_center.gif" align=center style="color: white; font-weight: bold; font-family: verdana, tahoma, arial; padding-bottom: 3px; font-size: 15px; text-decoration: none" width=35><a href="javascript: buy('4802')" target="_self" style="color: white; text-decoration: none">62</a></td>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_r_right.gif"></td>
+			</tr>
+		</table>
+	<br>
+												    <a style="cursor:pointer" onClick="MM_openBrWindow('unique.php','','resizable=yes,width=600,height=200')"><span class="grey" style="font-size:10px"><b>UNIQUE<br>PRICE</b></span><span style="font-size: 8px; color: blue; font-family: arial">&nbsp;(?)</span></a><br>
+														<table border=0 cellpadding=0 cellspacing=0 style="font-family: verdana">
+			<tr>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_b_left.gif"></td>
+				<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_b_center.gif" align=center style="color: white; font-weight: bold; font-family: verdana, tahoma, arial; padding-bottom: 3px; font-size: 15px; text-decoration: none" width=35><a href="javascript: buy('4802', 1)" target="_self" style="color: white; text-decoration: none">785</a></td>
+				<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/butt_b_right.gif"></td>
+			</tr>
+		</table>
+		    	    </td>
+			</tr>
+			<!--<tr><td width=100>Search Criteria</td><td><nobr>Featured</nobr></td></tr>-->
+			<tr><td><nobr>Item Number</nobr></td><td><nobr>4802</nobr></td></tr>
+						<tr><td>Author</td><td><nobr>Hugo</nobr></td></tr>
+			<tr><td>Downloads</td><td><nobr>1</nobr></td></tr>
+				</tbody></table>
+		<DIV style="margin:1em"><A class="grey4" href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/category.php?cat=57">VIEW ALL LAST ADDED</A></DIV>
+	<br>
+	<a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=hostreview" target='_blank'><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/hostreview.gif" border=0 vspace=3></a><br>
+		<a href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=coolhome" target='_blank'><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/banner2.gif" border=0></a><br>
+	<IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/spacer.gif" width=200 height=3><BR>
+	<A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/go.php?to=hostillusion" target="_blank"><IMG src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/banner-hostillusion.com-200x54.jpg" width=200 height=54 border=0></A><BR>
+	<STYLE>
+TABLE.roundEges{
+	margin-top:4px;
+	background-color: #fbf6e9;
+}
+</STYLE>
+<DIV class="white" style="margin-top:4px;padding:3px;font-size:10px;background-color:#DBA72A" align="center">TEMPLATEMONSTER'S WEBSITES</DIV>
+
+<table class="roundEges" cellpadding="0" cellspacing="0" border="0" width=100%>
+		<tr bgcolor="#fbf6e9">
+			<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol1.gif"></td>
+			<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t2.gif" width=100%></td>
+			<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol2.gif"></td>
+		</tr>
+		<tr bgcolor="#fbf6e9">
+			<td  background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t1.gif" ></td>
+			<td bgcolor="#fbf6e9" class="z" width=100% align=center style="padding-top:0px; padding-bottom:3px"><a href="http://web.archive.org/web/20040403090612/http://www.templatetuning.com/" target="_blank" class="yellow_2_a">www.templatetuning.com</a><br>
+			<a href="http://web.archive.org/web/20040403090612/http://www.templatetuning.com/" class="grey" target="_blank">24/7 web design services<BR>
+				based on templates</a><br>
+				</td>
+			<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t3.gif"> </td>
+		</tr>
+		<tr bgcolor="#fbf6e9">
+			<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol3.gif"></td>
+			<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t4.gif"  width=100%></td>
+			<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol4.gif"></td>
+		</tr>
+</table>
+
+<table class="roundEges" cellpadding="0" cellspacing="0" border="0" width=100%>
+	<tr bgcolor="#fbf6e9">
+		<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol1.gif"></td>
+		<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t2.gif" width=100%></td>
+		<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol2.gif"></td>
+	</tr>
+	<tr bgcolor="#fbf6e9">
+		<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t1.gif"></td>
+		<td bgcolor="#fbf6e9" class="z" width=100% align=center style="padding-top:1px; padding-bottom:3px"><a href="http://web.archive.org/web/20040403090612/http://www.site2you.com/" target="_blank" class="yellow_2_a">www.site2you.com</a><br>
+		<a href="http://web.archive.org/web/20040403090612/http://www.site2you.com/" class="grey" target="_blank">best on the net<BR>
+		 online website builder</a><br>
+		</td>
+		<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t3.gif"></td>
+	</tr>
+	<tr bgcolor="#fbf6e9">
+		<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol3.gif"></td>
+		<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t4.gif"  width=100%></td>
+		<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol4.gif"></td>
+	</tr>
+	</table>
+
+<table class="roundEges" cellpadding="0" cellspacing="0" border="0" width=100%>
+	<tr bgcolor="#fbf6e9">
+		<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol1.gif"></td>
+		<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t2.gif" width=100%></td>
+		<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol2.gif"></td>
+	</tr>
+	<tr bgcolor="#fbf6e9">
+		<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t1.gif"></td>
+		<td nowrap bgcolor="#fbf6e9" class="z" width=100% align=center style="padding-top:1px; padding-bottom:3px"><a href="http://web.archive.org/web/20040403090612/http://www.inverse-logic.com/" target="_blank" class="yellow_2_a">www.inverse-logic.com</a><br>
+		<a href="http://web.archive.org/web/20040403090612/http://www.inverse-logic.com/" target="_blank" class="grey">
+		Premier quality<BR>custom web design studio
+		</a><br>
+		</td>
+		<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t3.gif"></td>
+	</tr>
+	<tr bgcolor="#fbf6e9">
+		<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol3.gif"></td>
+		<td background="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/t4.gif"  width=100%></td>
+		<td><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/2ugol4.gif"></td>
+	</tr>
+</table>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 style="padding-top:4px">
+			<STYLE>
+.footer A.light_blue_3{
+	padding: 0;
+	padding-right: 7px;
+}
+.footer .red{
+	padding-top: 0;
+}
+</STYLE>
+<table width=100% cellpadding="0" cellspacing="0" class="footer"><tr height="10"><td colspan=2 bgcolor="#4391D6"><img src="http://web.archive.org/web/20040403090612im_/http://www.templatemonster.com/images/spacer.gif" height="10"></td></tr></td></tr><tr height="5"><td colspan="2"></td></tr><tr>	<td class="red" valign="top"><b>Products:&nbsp;</b></td>	<td align="left" valign="bottom" width="100%"><A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/web-templates.php" class="light_blue_3">Website&nbsp;Templates</A> <A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/flash-templates.php" class="light_blue_3">Flash&nbsp;Intro&nbsp;Templates</A> <A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/logo-templates.php" class="light_blue_3">Logo&nbsp;Templates</A> <A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/corporate-identity.php" class="light_blue_3">Corporate&nbsp;Identity</A> <A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/phpnuke-themes.php" class="light_blue_3">PHP&nbsp;Nuke&nbsp;Themes</A> <A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/lib_index.php" class="light_blue_3">Free&nbsp;Clipart&nbsp;Library</A> </td></tr><tr height="5"><td colspan="2"></td></tr><tr>	<td class="red" valign="top"><b>Navigation:&nbsp;</b></td>	<td align="left" valign="bottom" width="100%"><A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/" class="light_blue_3">Template&nbsp;Monster&nbsp;Home</A> <A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/support_index.php" class="light_blue_3">Support&nbsp;Chat</A> <A href="http://web.archive.org/web/20040403090612/http://www.mytemplatestorage.com/" class="light_blue_3">Affiliate&nbsp;Program</A> <A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/help/" class="light_blue_3">Tour</A> <A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/faq.php" class="light_blue_3">FAQ</A> <A href="http://web.archive.org/web/20040403090612/http://www.templatemonster.com/terms.php" class="light_blue_3">Terms&nbsp;of&nbsp;use</A> <A href="http://web.archive.org/web/20040403090612/http://www.template-help.com/support/index.php?_a=tickets&_m=submit" class="light_blue_3">Contact&nbsp;us</A> </td></tr><tr height="5"><td colspan="2"></td></tr><tr>	<td class="red" valign="top"><b>Services:&nbsp;</b></td>	<td align="left" valign="bottom" width="100%"><A href="http://web.archive.org/web/20040403090612/http://www.imhosted.com/" class="light_blue_3">Affordable&nbsp;Web&nbsp;Hosting</A> <A href="http://web.archive.org/web/20040403090612/http://www.hostaz.com/" class="light_blue_3">Web&nbsp;Hosting</A> <A href="http://web.archive.org/web/20040403090612/http://www.devstart.com/" class="light_blue_3">Webmaster&nbsp;Resources</A> <A href="http://web.archive.org/web/20040403090612/http://www.bigwebmaster.com/" class="light_blue_3">Big&nbsp;webmaster</A> <A href="http://web.archive.org/web/20040403090612/http://www.hostreview.com/" class="light_blue_3">Web&nbsp;Hosting</A> <A href="http://web.archive.org/web/20040403090612/http://www.onlyscripts.com/" class="light_blue_3">Webmaster&nbsp;Scripts</A> <A href="http://web.archive.org/web/20040403090612/http://www.phphub.com/" class="light_blue_3">PHP&nbsp;Resource&nbsp;Center</A> <A href="http://web.archive.org/web/20040403090612/http://www.pickaweb.co.uk/" class="light_blue_3">UK&nbsp;Domains&nbsp;&&nbsp;Hosting</A> <A href="http://web.archive.org/web/20040403090612/http://www.templatesbox.com/" class="light_blue_3">Free&nbsp;Templates</A> <A href="http://web.archive.org/web/20040403090612/http://www.webmasterschannel.com/" class="light_blue_3">Webmaster&nbsp;Directory</A> <A href="http://web.archive.org/web/20040403090612/http://www.websitehostdirectory.com/" class="light_blue_3">Website&nbsp;Hosting&nbsp;Directory</A> </td></tr><tr height="5"><td colspan="2"></td></tr><tr>	<td class="red" valign="top"><b>Network:&nbsp;</b></td>	<td align="left" valign="bottom" width="100%"><A href="http://web.archive.org/web/20040403090612/http://www.stickysauce.com/" class="light_blue_3">Webmaster&nbsp;Tools</A> <A href="http://web.archive.org/web/20040403090612/http://www.tophosts.com/" class="light_blue_3">Web&nbsp;Hosting</A> <A href="http://web.archive.org/web/20040403090612/http://www.dotster.com/" class="light_blue_3">Dotster&nbsp;Domain&nbsp;Names</A> <A href="http://web.archive.org/web/20040403090612/http://www.promotionworld.com/" class="light_blue_3">Website&nbsp;Promotion</A> <A href="http://web.archive.org/web/20040403090612/http://www.weberdev.com/" class="light_blue_3">PHP&MySQL&nbsp;Code&nbsp;Examples</A> <A href="http://web.archive.org/web/20040403090612/http://www.webdevforums.com/" class="light_blue_3">Webmaster&nbsp;Forums</A> </td></tr><tr height="5"><td colspan="2"></td></tr></table><div  style="color:686868; font-size:11px;text-align:center;padding-top:9px; padding-bottom:5px">
+
+	Copyright &copy; 2002-2004 Inverse Logic, Inc. All Rights Reserved.
+</div>
+		</TD>
+	</TR>
+</TABLE>
+<div style="position: absolute; left: 0px; top: 0px; visibility: hidden">
+	<script language="JavaScript">
+		document.write("<iframe width=1 height=1 src='web_design.php"+window.location.search+" ' ></iframe>");
+	</script>
+	<iframe width=1 height=1 src='http://web.archive.org/web/20040403090612/http://www.templatemonster.com/counter.php?ref='></iframe>
+</div>
+</BODY>
+</HTML>
+<!--Welcome to Silicon Volley-->
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 9:06:12 Apr 3, 2004 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 2:11:55 Jan 21, 2012.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

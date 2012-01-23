@@ -1,0 +1,380 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Danville Youth Ministries - a ministry of First Baptist Church of Danville</title>
+<link href="http://web.archive.org/web/20080516001916cs_/http://www.danvilleyouth.com/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="http://staticweb.archive.org/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="http://staticweb.archive.org/js/graph-calc.js" ></script>
+<script type="text/javascript" src="http://staticweb.archive.org/jflot/jquery.min.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "http:\/\/www.danvilleyouth.com\/";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "16";
+var displayMonth = "May";
+var displayYear = "2008";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+<div id="wm-ipp" style="display:none; position:relative;padding:0 5px;min-height:70px;min-width:800px; z-index:9000;">
+<div id="wm-ipp-inside" style="position:fixed;padding:0!important;margin:0!important;width:97%;min-width:780px;border:5px solid #000;border-top:none;background-image:url(http://staticweb.archive.org/images/toolbar/wm_tb_bk_trns.png);text-align:center;-moz-box-shadow:1px 1px 3px #333;-webkit-box-shadow:1px 1px 3px #333;box-shadow:1px 1px 3px #333;font-size:11px!important;font-family:'Lucida Grande','Arial',sans-serif!important;">
+   <table style="border-collapse:collapse;margin:0;padding:0;width:100%;"><tbody><tr>
+   <td style="padding:10px;vertical-align:top;min-width:110px;">
+   <a href="http://wayback.archive.org/web/" title="Wayback Machine home page" style="background-color:transparent;border:none;"><img src="http://staticweb.archive.org/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0"/></a>
+   </td>
+   <td style="padding:0!important;text-align:center;vertical-align:top;width:100%;">
+
+       <table style="border-collapse:collapse;margin:0 auto;padding:0;width:570px;"><tbody><tr>
+       <td style="padding:3px 0;" colspan="2">
+       <form target="_top" method="get" action="http://wayback.archive.org/web/form-submit.jsp" name="wmtb" id="wmtb" style="margin:0!important;padding:0!important;"><input type="text" name="url" id="wmtbURL" value="http://www.danvilleyouth.com/" style="width:400px;font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;" onfocus="javascript:this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20080516001916" /><input type="submit" value="Go" style="font-size:11px;font-family:'Lucida Grande','Arial',sans-serif;margin-left:5px;" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td style="vertical-align:bottom;padding:5px 0 0 0!important;" rowspan="2">
+           <table style="border-collapse:collapse;width:110px;color:#99a;font-family:'Helvetica','Lucida Grande','Arial',sans-serif;"><tbody>
+			
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr style="width:110px;height:16px;font-size:10px!important;">
+           	<td style="padding-right:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20070704050929/http://www.danvilleyouth.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="4 Jul 2007"><strong>JUL</strong></a>
+		                
+               </td>
+               <td id="displayMonthEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight:bold;text-transform:uppercase;width:34px;height:15px;padding-top:1px;text-align:center;" title="You are here: 0:19:16 May 16, 2008">MAY</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight:bold;text-transform:uppercase;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20081120185013/http://www.danvilleyouth.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="20 Nov 2008"><strong>NOV</strong></a>
+		                
+               </td>
+           </tr>
+
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr>
+               <td style="padding-right:9px;white-space:nowrap;overflow:visible;text-align:right!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20070704050929/http://www.danvilleyouth.com/" title="5:09:29 Jul 4, 2007" style="background-color:transparent;border:none;"><img src="http://staticweb.archive.org/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+		                
+               </td>
+               <td id="displayDayEl" style="background:#000;color:#ff0;width:34px;height:24px;padding:2px 0 0 0;text-align:center;font-size:24px;font-weight: bold;" title="You are here: 0:19:16 May 16, 2008">16</td>
+				<td style="padding-left:9px;white-space:nowrap;overflow:visible;text-align:left!important;vertical-align:middle!important;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20081120185013/http://www.danvilleyouth.com/" title="18:50:13 Nov 20, 2008" style="background-color:transparent;border:none;"><img src="http://staticweb.archive.org/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"/></a>
+		                
+			    </td>
+           </tr>
+
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr style="width:110px;height:13px;font-size:9px!important;">
+				<td style="padding-right:9px;font-size:11px!important;font-weight: bold;text-align:right;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+                       2007
+                       
+               </td>
+               <td id="displayYearEl" style="background:#000;color:#ff0;font-size:11px!important;font-weight: bold;padding-top:1px;width:34px;height:13px;text-align:center;" title="You are here: 0:19:16 May 16, 2008">2008</td>
+				<td style="padding-left:9px;font-size:11px!important;font-weight: bold;white-space:nowrap;overflow:visible;" nowrap="nowrap">
+               
+		                <a href="http://web.archive.org/web/20101004172059/http://www.danvilleyouth.com/" style="text-decoration:none;color:#33f;font-weight:bold;background-color:transparent;border:none;" title="4 Oct 2010"><strong>2010</strong></a>
+		                
+				</td>
+           </tr>
+           </tbody></table>
+       </td>
+
+       </tr>
+       <tr>
+       <td style="vertical-align:middle;padding:0!important;">
+           <a href="http://wayback.archive.org/web/20080516001916*/http://www.danvilleyouth.com/" style="color:#33f;font-size:11px;font-weight:bold;background-color:transparent;border:none;" title="See a list of every capture for this URL"><strong>5 captures</strong></a>
+           <div style="margin:0!important;padding:0!important;color:#666;font-size:9px;padding-top:2px!important;white-space:nowrap;" title="Timespan for captures of this URL">4 Jul 07 - 1 Feb 11</div>
+       </td>
+       <td style="padding:0!important;">
+       <a style="position:relative; white-space:nowrap; width:450px;height:27px;" href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" style="position:relative; white-space:nowrap; width:450px;height:27px;background-color:#fff;cursor:pointer;border-right:1px solid #ccc;" title="Explore captures for this URL">
+			<img id="sparklineImgId" style="position:absolute; z-index:9012; top:0px; left:0px;"
+				onmouseover="showTrackers('inline');" 
+				onmouseout="showTrackers('none');"
+				onmousemove="trackMouseMove(event,this)"
+				alt="sparklines"
+				width="450"
+				height="27"
+				border="0"
+				src="http://wayback.archive.org/jsp/graph.jsp?graphdata=450_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000100000_2008:4:000010000010_2009:-1:000000000000_2010:-1:000000000100_2011:-1:010000000000_2012:-1:000000000000"></img>
+			<img id="wbMouseTrackYearImg" 
+				style="display:none; position:absolute; z-index:9010;"
+				width="25" 
+				height="27"
+				border="0"
+				src="http://staticweb.archive.org/images/toolbar/transp-yellow-pixel.png"></img>
+			<img id="wbMouseTrackMonthImg"
+				style="display:none; position:absolute; z-index:9011; " 
+				width="2"
+				height="27" 
+				border="0"
+				src="http://staticweb.archive.org/images/toolbar/transp-red-pixel.png"></img>
+       </div>
+		</a>
+
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td style="text-align:right;padding:5px;width:65px;font-size:11px!important;">
+       <a href="javascript:;" onclick="document.getElementById('wm-ipp').style.display='none';" style="display:block;padding-right:18px;background:url(http://staticweb.archive.org/images/toolbar/wm_tb_close.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;margin-bottom:23px;background-color:transparent;border:none;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="display:block;padding-right:18px;background:url(http://staticweb.archive.org/images/toolbar/wm_tb_help.png) no-repeat 100% 0;color:#33f;font-family:'Lucida Grande','Arial',sans-serif;background-color:transparent;border:none;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+
+</div>
+</div>
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+<table cellspacing="0" cellpadding="0" style="width:766px; height:553;" align="center">
+  <tr>
+    <td height="365">
+	<table cellspacing="0" cellpadding="0">
+	  <tr>
+		<td height="135">
+<div style="margin:17px 0px 0px 13px; ">
+<img src="http://web.archive.org/web/20080516001916im_/http://www.danvilleyouth.com/images/logo.jpg" alt="" width="400" height="45"><br>
+<div style="margin:30px 0px 0px 12px; ">
+<a href="http://web.archive.org/web/20080516001916/http://www.danvilleyouth.com/index.html"><img src="http://web.archive.org/web/20080516001916im_/http://www.danvilleyouth.com/images/b.gif" alt="" width="94" height="38"></a><a href="http://web.archive.org/web/20080516001916/http://www.danvilleyouth.com/beliefs.html"><img src="http://web.archive.org/web/20080516001916im_/http://www.danvilleyouth.com/images/b1.gif" alt="" width="106" height="38"></a><a href="http://web.archive.org/web/20080516001916/http://www.danvilleyouth.com/media.html"><img src="http://web.archive.org/web/20080516001916im_/http://www.danvilleyouth.com/images/b2.gif" alt="" width="106" height="38"></a><a href="http://web.archive.org/web/20080516001916/http://www.danvilleyouth.com/activities.html"><img src="http://web.archive.org/web/20080516001916im_/http://www.danvilleyouth.com/images/b3.gif" alt="" width="106" height="38"></a><a href="http://web.archive.org/web/20080516001916/http://www.danvilleyouth.com/campinfo.html"><img src="http://web.archive.org/web/20080516001916im_/http://www.danvilleyouth.com/images/b4.gif" alt="" width="106" height="38"></a><a href="http://web.archive.org/web/20080516001916/http://www.danvilleyouth.com/resources.html"><img src="http://web.archive.org/web/20080516001916im_/http://www.danvilleyouth.com/images/b5.gif" alt="" width="106" height="38"></a><a href="http://web.archive.org/web/20080516001916/http://www.danvilleyouth.com/contactus.html"><img src="http://web.archive.org/web/20080516001916im_/http://www.danvilleyouth.com/images/b6.gif" alt="" width="102" height="38"></a>
+</div>
+</div>		
+		</td>
+	  </tr>
+	  <tr>
+		<td height="222" style="background-image: url('http://web.archive.org/web/20080516001916im_/http://www.danvilleyouth.com/images/bg_t.jpg'); background-repeat: no-repeat; background-attachment: scroll; background-position: top 50%">
+		<table cellspacing="0" cellpadding="0">
+		  <tr>
+			<td width="437">
+&nbsp;</td>
+			<td width="329">
+			
+<div style="width:267; height:110; margin-left:20px; margin-right:5px; margin-top:20px; margin-bottom:20px">
+
+
+<p>
+
+<b><font color="#FFFFFF" size="2"><br>
+Welcome to the Youth Group Website of First                                     
+Baptist Church of Danville! </font></b>                                    
+
+
+<p>
+
+<font color="#FFFFFF">We are here to serve teenagers in the Danville area.&nbsp;                                     
+If you are new to our youth ministry, we hope this site will help you find out                                     
+more about our youth group. If you regularly attend our youth ministry, this                                     
+site will help keep your informed of the activities and events we have.&nbsp; Thanks for stopping by! </font>                                    
+
+
+<p>
+
+<font color="#FFFFFF">Adam Confino - Youth Pastor</font></div>			
+			</td>
+		  </tr>
+		</table>
+		</td>
+	  </tr>
+	</table>
+	</td>
+  </tr>
+  <tr>
+    <td height="100%" style="padding:11px 12px 8px 13px;">
+	<table cellspacing="0" cellpadding="0" height="1%">
+	  <tr>
+		<td width="244" style="border:1px solid #D0D2D4;" height="417%" align="top">
+<div style="margin:14px 15px 10px 16px; ">
+<b>Announcements:</b>                  
+<p><b>Jr. High and Sr. High are together again!</b>&nbsp; Wednesday April 16th  
+will be the last Jr. High youth group night until the Fall.&nbsp; Jr. High  
+students will join the Sr. High on Sunday nights from 6:00-7:30pm starting April  
+20th.<p><b>After-glos at the Confinos<br>
+</b>From April 20th-May 18th the Confinos will be having afteglos at their home  
+from 7:30-9:30pm.&nbsp; Students can be picked up at the Confino home in  
+Riverside.<p><b>Want the youth group to come to your house for week?<br>
+</b>We will be starting our Traveling Youth Evening Service soon.&nbsp; If you  
+would like to host the youth group one week this summer, please contact Adam.<p> 
+<b>Rochester Missions Trip</b> -&nbsp;<br>   
+Although the trip is months away, preparations for it begin right now.&nbsp; If    
+you want to apply to be part of the team, download the <a href="http://web.archive.org/web/20080516001916/http://www.danvilleyouth.com/Application%20to%20trip.DOC">application    
+here</a>.                              
+</div>		
+		</td>
+		<td width="236" bgcolor="#F3F4F4" height="417%">
+<div style="margin:15px 17px 10px 17px; ">
+<p align="left"><b>BEACH PARTY&nbsp; A BLAST!!</b> 
+<p align="left"><img border="0" src="http://web.archive.org/web/20080516001916im_/http://www.danvilleyouth.com/images/beach-party-01.gif" width="230" height="180"><p align="left">Yeah, 
+it was pretty cool.&nbsp; Smoothies, bands, tiki torches, and a hot tub made 
+this March night very cool.&nbsp; Check  
+back for the official video.
+<p>
+<b>Snow Camp Was Awesome...</b>
+<p>
+<img border="0" src="http://web.archive.org/web/20080516001916im_/http://www.danvilleyouth.com/images/snowcamp08.gif" width="230" height="169">
+<p>
+Check out the highlights of some amazing weekends that we shared with one   
+another and see God's work in our lives!&nbsp; <a href="http://web.archive.org/web/20080516001916/http://www.danvilleyouth.com/media.html">Click here.</a>  
+</div>		                    
+		       
+		</td>
+		<td width="3" height="417%"></td>
+		<td width="258" height="417%">
+<div style="margin:15px 17px 0px 20px; ">
+<b> Schedule: </b><br>
+<br>
+- Jr. High Sunday School <br>                
+- Sunday Morning 9:25-10:30am <br>                
+- Sr. High Sunday School <br>                
+- Sunday Morning 9:25-10:30am <br>                
+- Sr High Youth Group Sunday Nights - 6:00-7:30pm <br>               
+- Jr. High Youth Group Wednesday Nights -&nbsp; 6:30-8:00pm (through April 20th)<br>
+- April 20th-May18th - Afterglos at the Confinos<br>              
+- May 3rd - Spring Fling Service Project<br>
+- May 10th - Operation AWOL (A work of love) Service Project<br>    
+- Rochester Missions Trip - June 16th-20th<br>           
+- Harvey Cedars Bible Camp Sr. High - July 21st-26th<br>            
+- Harvey Cedars Bible Camp Jr. High - July 28th-August 2nd&nbsp;    
+<br style="line-height:30px;"> 
+</div>
+<table cellspacing="0" cellpadding="0" bgcolor="#F3F4F4">
+  <tr>
+    <td>
+    </td>
+  </tr>
+</table>
+		</td>
+	  </tr>
+	</table>
+	</td>
+  </tr>
+  <tr>
+    <td height="126" style="padding:0px 12px 0px 13px;">
+	<div id="copy">
+Interested in our summer internship?&nbsp; Download the<a href="http://web.archive.org/web/20080516001916/http://www.danvilleyouth.com/Job%20Description%20For%20youth%20intern%20at%20FBC%20of%20Danville%20-%202008.doc">   
+job description</a> and <a href="http://web.archive.org/web/20080516001916/http://www.danvilleyouth.com/SINGLES%20INTERN%20APPLICATION.doc">application</a>.&nbsp;   
+E-mail questions to <a href="mailto:adam@danvilleyouth.com">adam@danvilleyouth.com</a>  
+<p>
+To visit our church&#39;s main website go to                    
+<a href="http://web.archive.org/web/20080516001916/http://www.danvillefirstbaptist.org/">www.danvillefirstbaptist.org</a><br>
+Designed by <a href="http://web.archive.org/web/20080516001916/http://www.acwebsitedesign.com/">www.acwebsitedesign.com</a>.</div>                    
+	</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 0:19:16 May 16, 2008 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 2:16:44 Jan 21, 2012.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

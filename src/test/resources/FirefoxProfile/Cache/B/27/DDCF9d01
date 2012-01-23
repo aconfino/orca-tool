@@ -1,0 +1,537 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>TEMPLATE-HELP.COM LIVE CHAT</title>
+    <link href="/chat-theme/css/style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/js/product_type_selector.js"></script>
+</head>
+<body onload="enableProductType(currentRoomId);" >
+<script type="text/javascript">     var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2787305-2']);
+    _gaq.push(['_trackPageview'],['_trackPageLoadTime']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();
+
+</script>
+<noscript>
+    <div class="errorMessage" align="center" width="100%">
+        Javascript is not enabled. You must enable Javascript in your Web Browser settings before you can start chat.<br/>
+        Please submit a trouble ticket <a href="http://esupport.template-help.com/index.php?_m=tickets&_a=submit" target="_top">here</a>
+    </div>
+</noscript>
+<div id="main_container" class="chat-step1">
+    <div class="main_content_top">
+        <div class="main_content">
+            <div class="header_block">
+                <div class="header_left"></div>
+                <div class="header_center">Welcome to Template-Help.com Live Chat</div>
+                <div class="header_right"></div>
+            </div>
+            <div class="clear">&nbsp;</div>
+            <div class="content">
+        <form action="index.jsp" method="post" name="formLogin" onsubmit="return checkInputParams();" style="margin:0;padding:0;">
+            <input id="submitHiddenId" type="submit" style="display:none">
+                    <input name="action" value="chat_login" type="hidden">
+                    <input name="referer" value="http://www.templatemonster.com/support.php" type="hidden">
+                    <input name="refererProject" value="tm" type="hidden">
+                    <input name="aff" value="" type="hidden">
+                    <input name="productType" value="" type="hidden">
+                    <input name="productTypeText" value="" type="hidden">
+        <div class="center">
+                <h1 class="first_message">Thanks for contacting us!</h1>
+                <p class="note">
+                   To better serve you, please fill out the form below and click the Start Chat button in the lower right.
+                </p>
+                <div class="info_box">
+                    <div class="boxtop"><div></div></div>
+                    <div class="boxbody">
+                   <table>
+                        <tr>
+                        <td>
+                         <table width="100%">
+                            <tr>
+                                <td class="input-name field_name" valign="top">
+                                    Name:
+                                </td>
+                                <td class="input">
+                                    <input id="nickId" name="nick"  type="text" value="adam"><br/>
+                                    <div class="compulsory-field">
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="field_name" valign="top">
+                                    E-mail:
+                                </td>
+                                <td class="input">
+                                    <input id="emailId" name="email"  type="text" value="aconfino@gmail&#46;com"><br/>
+                                    <div class="compulsory-field">
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td class="field_name" valign="top">
+                                Order number:<br/>
+                                <sup>(if available)</sup>
+                            </td>
+                            <td class="input">
+                                <input id="orderIdId" name="orderId" type="text" value="">
+                            </td>
+                            <td >
+                                &nbsp;
+                            </td>
+                        </tr>
+                        </table>
+                        </td>
+                        <td>
+                           <div class="policy">
+                               <b>Our Privacy Policy:</b><br/> your e-mail address will never be sold or shared with any third party!
+                           </div>
+                        </td>
+                        </tr>
+                    </table>
+                   </div>
+                </div>
+
+                <h1>Choose Department:</h1>
+                <div class="info_box">
+                    <div class="boxtop"><div></div></div>
+                    <div class="boxbody">
+                        <table class="choose-department">
+                    
+                    <tr>
+                        <td valign="top">
+                            <input id="room1Id" type="radio" name="room"
+                                   value="pre-sales"
+                                    
+                                    onclick="changeRoom(this.id); document.formLogin.productTypeText.value = 'Please, select correct option'; return true;">
+                            </td>
+                        <td>
+                            <b class="roomTitle" onclick="changeRoom('room1Id'); document.getElementById('room1Id').checked = 'true' ">Pre-sales</b><br/>
+                            In this room you may ask questions that will help you to make your mind towards the purchase.
+                            <div id="productTypeArea_room1Id"
+                                 style="display:none">
+                            
+                                    <label>Please, select correct option: <select id="selectProductType_room1Id"
+                                                                                 name="selectProductType_room1Id"
+                                                                                 onchange="setProductType(this.value); return false;">
+                                          
+                                                <option value="After Effects">
+                                                    After Effects
+                                                </option>
+                                        
+                                                <option value="Corporate Identity">
+                                                    Corporate Identity
+                                                </option>
+                                        
+                                                <option value="CRE Loaded">
+                                                    CRE Loaded
+                                                </option>
+                                        
+                                                <option value="Drupal">
+                                                    Drupal
+                                                </option>
+                                        
+                                                <option value="Dynamic SWiSH Site">
+                                                    Dynamic SWiSH Site
+                                                </option>
+                                        
+                                                <option value="Dynamic Flash Photo Gallery">
+                                                    Dynamic Flash Photo Gallery
+                                                </option>
+                                        
+                                                <option value="Facebook">
+                                                    Facebook
+                                                </option>
+                                        
+                                                <option value="Flash Animated">
+                                                    Flash Animated
+                                                </option>
+                                        
+                                                <option value="Flash CMS">
+                                                    Flash CMS
+                                                </option>
+                                        
+                                                <option value="Flash Intro">
+                                                    Flash Intro
+                                                </option>
+                                        
+                                                <option value="Flash Site">
+                                                    Flash Site
+                                                </option>
+                                        
+                                                <option value="Iconset">
+                                                    Iconset
+                                                </option>
+                                        
+                                                <option value="Joomla">
+                                                    Joomla
+                                                </option>
+                                        
+                                                <option value="JS Animated">
+                                                    JS Animated
+                                                </option>
+                                        
+                                                <option value="Logoset">
+                                                    Logoset
+                                                </option>
+                                        
+                                                <option value="Logotype">
+                                                    Logotype
+                                                </option>
+                                        
+                                                <option value="Magento">
+                                                    Magento
+                                                </option>
+                                        
+                                                <option value="Mambo Templates">
+                                                    Mambo Templates
+                                                </option>
+                                        
+                                                <option value="Mobile">
+                                                    Mobile
+                                                </option>
+                                        
+                                                <option value="osCommerce">
+                                                    osCommerce
+                                                </option>
+                                        
+                                                <option value="phpBB">
+                                                    phpBB
+                                                </option>
+                                        
+                                                <option value="PHP-Nuke">
+                                                    PHP-Nuke
+                                                </option>
+                                        
+                                                <option value="PowerPoint">
+                                                    PowerPoint
+                                                </option>
+                                        
+                                                <option value="PrestaShop">
+                                                    PrestaShop
+                                                </option>
+                                        
+                                                <option value="PSD Template">
+                                                    PSD Template
+                                                </option>
+                                        
+                                                <option value="Razor">
+                                                    Razor
+                                                </option>
+                                        
+                                                <option value="Silverlight">
+                                                    Silverlight
+                                                </option>
+                                        
+                                                <option value="Static (HTML/CSS)">
+                                                    Static (HTML/CSS)
+                                                </option>
+                                        
+                                                <option value="Stock Music">
+                                                    Stock Music
+                                                </option>
+                                        
+                                                <option value="SWiSH Animated">
+                                                    SWiSH Animated
+                                                </option>
+                                        
+                                                <option value="Tumblr">
+                                                    Tumblr
+                                                </option>
+                                        
+                                                <option value="Turnkey Websites">
+                                                    Turnkey Websites
+                                                </option>
+                                        
+                                                <option value="VirtueMart">
+                                                    VirtueMart
+                                                </option>
+                                        
+                                                <option value="WordPress">
+                                                    WordPress
+                                                </option>
+                                        
+                                                <option value="XML (Dynamic) Flash">
+                                                    XML (Dynamic) Flash
+                                                </option>
+                                        
+                                                <option value="Zen Cart">
+                                                    Zen Cart
+                                                </option>
+                                        
+                                                <option value="General Inquiry">
+                                                    General Inquiry
+                                                </option>
+                                        
+                                    </select>
+                                    </label>
+                            
+                            </div>
+                            <script type="text/javascript">
+                                
+                            </script>
+                            </td>
+                    </tr>
+                            
+                    <tr>
+                        <td valign="top">
+                            <input id="room2Id" type="radio" name="room"
+                                   value="support"
+                                    
+                                    onclick="changeRoom(this.id); document.formLogin.productTypeText.value = 'Please, select correct option'; return true;">
+                            </td>
+                        <td>
+                            <b class="roomTitle" onclick="changeRoom('room2Id'); document.getElementById('room2Id').checked = 'true' ">Technical Support</b><br/>
+                            You have purchased a template and have a technical issue? Please, get professional assistance here.
+                            <div id="productTypeArea_room2Id"
+                                 style="display:none">
+                            
+                                    <label>Please, select correct option: <select id="selectProductType_room2Id"
+                                                                                 name="selectProductType_room2Id"
+                                                                                 onchange="setProductType(this.value); return false;">
+                                          
+                                                <option value="After Effects">
+                                                    After Effects
+                                                </option>
+                                        
+                                                <option value="Corporate Identity">
+                                                    Corporate Identity
+                                                </option>
+                                        
+                                                <option value="CRE Loaded">
+                                                    CRE Loaded
+                                                </option>
+                                        
+                                                <option value="Drupal">
+                                                    Drupal
+                                                </option>
+                                        
+                                                <option value="Dynamic Flash Photo Gallery">
+                                                    Dynamic Flash Photo Gallery
+                                                </option>
+                                        
+                                                <option value="Dynamic SWiSH Site">
+                                                    Dynamic SWiSH Site
+                                                </option>
+                                        
+                                                <option value="Facebook">
+                                                    Facebook
+                                                </option>
+                                        
+                                                <option value="Flash Animated">
+                                                    Flash Animated
+                                                </option>
+                                        
+                                                <option value="Flash CMS">
+                                                    Flash CMS
+                                                </option>
+                                        
+                                                <option value="Flash Intro">
+                                                    Flash Intro
+                                                </option>
+                                        
+                                                <option value="Flash Site">
+                                                    Flash Site
+                                                </option>
+                                        
+                                                <option value="Iconset">
+                                                    Iconset
+                                                </option>
+                                        
+                                                <option value="Joomla">
+                                                    Joomla
+                                                </option>
+                                        
+                                                <option value="JS Animated">
+                                                    JS Animated
+                                                </option>
+                                        
+                                                <option value="Logoset">
+                                                    Logoset
+                                                </option>
+                                        
+                                                <option value="Logotype">
+                                                    Logotype
+                                                </option>
+                                        
+                                                <option value="Magento">
+                                                    Magento
+                                                </option>
+                                        
+                                                <option value="Mambo Templates">
+                                                    Mambo Templates
+                                                </option>
+                                        
+                                                <option value="Mobile">
+                                                    Mobile
+                                                </option>
+                                        
+                                                <option value="osCommerce">
+                                                    osCommerce
+                                                </option>
+                                        
+                                                <option value="phpBB">
+                                                    phpBB
+                                                </option>
+                                        
+                                                <option value="PHP-Nuke">
+                                                    PHP-Nuke
+                                                </option>
+                                        
+                                                <option value="PowerPoint">
+                                                    PowerPoint
+                                                </option>
+                                        
+                                                <option value="PrestaShop">
+                                                    PrestaShop
+                                                </option>
+                                        
+                                                <option value="PSD Template">
+                                                    PSD Template
+                                                </option>
+                                        
+                                                <option value="Razor">
+                                                    Razor
+                                                </option>
+                                        
+                                                <option value="Silverlight">
+                                                    Silverlight
+                                                </option>
+                                        
+                                                <option value="Static (HTML/CSS)">
+                                                    Static (HTML/CSS)
+                                                </option>
+                                        
+                                                <option value="Stock Music">
+                                                    Stock Music
+                                                </option>
+                                        
+                                                <option value="SWiSH Animated">
+                                                    SWiSH Animated
+                                                </option>
+                                        
+                                                <option value="Tumblr">
+                                                    Tumblr
+                                                </option>
+                                        
+                                                <option value="Turnkey Websites">
+                                                    Turnkey Websites
+                                                </option>
+                                        
+                                                <option value="VirtueMart">
+                                                    VirtueMart
+                                                </option>
+                                        
+                                                <option value="WordPress">
+                                                    WordPress
+                                                </option>
+                                        
+                                                <option value="XML (Dynamic) Flash">
+                                                    XML (Dynamic) Flash
+                                                </option>
+                                        
+                                                <option value="Zen Cart">
+                                                    Zen Cart
+                                                </option>
+                                        
+                                                <option value="General Inquiry">
+                                                    General Inquiry
+                                                </option>
+                                        
+                                    </select>
+                                    </label>
+                            
+                            </div>
+                            <script type="text/javascript">
+                                
+                            </script>
+                            </td>
+                    </tr>
+                            
+                    <tr>
+                        <td valign="top">
+                            <input id="room3Id" type="radio" name="room"
+                                   value="billing"
+                                    checked='checked'
+                                    onclick="changeRoom(this.id); document.formLogin.productTypeText.value = 'Please select a product type'; return true;">
+                            </td>
+                        <td>
+                            <b class="roomTitle" onclick="changeRoom('room3Id'); document.getElementById('room3Id').checked = 'true' ">Billing</b><br/>
+                            This is the right place to inquire the status of your order, resolve any possible payment problems and report a fraudulent charge on your credit card statement.
+                            <div id="productTypeArea_room3Id"
+                                 style="">
+                            
+                            </div>
+                            <script type="text/javascript">
+                                
+                                    currentRoomId = 'room3Id';
+                                    document.formLogin.productTypeText.value = 'Please select a product type';
+                                
+                            </script>
+                            </td>
+                    </tr>
+                            
+
+                </table>
+                    </div>
+                </div>
+                <h1>Initial Question:</h1>
+            <div class="info_box">
+                <div class="boxtop"><div></div></div>
+                <div class="boxbody">
+                    <textarea id="questionId" name="question"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+
+            <a id="buttonSubmitId" class="button" onclick="if (checkInputParams()) { document.formLogin.submit();} return false;">
+                <span class="button_left_background">&nbsp;</span>
+                <span class="button-style-2">Start Chat!</span>
+                <span class="button_right_background">&nbsp;</span>
+            </a>
+            <div class="clear"></div>
+        </div>
+        </form>
+       </div>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript" src="js/validate.js"></script>
+    <script type="text/javascript" >
+
+        function checkCookies() {
+            if (!isEnabledCookies()){
+                window.alert('Cookies are not enabled. You must enable cookies before you can start chat');
+                return false;
+            }
+            return true;
+        }
+
+        function checkInputParams() {
+            return checkCookies();
+        }
+    </script>
+</body>
+</html>
