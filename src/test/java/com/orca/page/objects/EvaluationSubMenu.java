@@ -25,5 +25,15 @@ public class EvaluationSubMenu {
 	
 	@FindBy(xpath="//*[@id='page']/span[3]/a")
 	private WebElement evaluationSummary;
+	
+	public BeginEvaluation createNewEvaluation(){
+		createNewEvaluation.click();
+		return new BeginEvaluation(driver);
+	}
+	
+	public EvaluationSummary goToSummary(){
+		evaluationSummary.click();
+		return new EvaluationSummary(driver);
+	}
 
 }

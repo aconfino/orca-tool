@@ -11,13 +11,15 @@ import org.openqa.selenium.interactions.Actions;
 
 public class TestUtils {
 	
+	// TODO make this path relative
+	public static final String firefoxProfileDir = "C:\\workspace\\orcaproject\\src\\test\\resources\\FirefoxProfile";	
 	public static final String URL = "http://localhost:8080/";
-
+	
 	public static FirefoxDriver getFirefoxDriver(){
-		// TODO make this path relative
-		File profileDirectory = new File("C:\\workspace\\orcaproject\\src\\test\\resources\\FirefoxProfile");
-		FirefoxProfile profile = new FirefoxProfile(profileDirectory);
-		return new FirefoxDriver(profile);
+	//	File profileDirectory = new File(firefoxProfileDir);
+	//	FirefoxProfile profile = new FirefoxProfile(profileDirectory);
+	//	return new FirefoxDriver(profile);
+		return new FirefoxDriver();
 	}
 	
 	public static void slideElement(WebDriver driver, WebElement webElement, int xAxis){

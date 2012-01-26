@@ -51,19 +51,33 @@ public class EvaluationWeight {
 	@FindBy(xpath="//*[@id='evaluation']/div[2]/input[3]")
 	private WebElement gotoSummaryButton;
 	
-	public SurveyName setWeight(){	
+	public SurveyName setWeightAndContinue(){
+		setWeight();
+		continueButton.click();
+		return new SurveyName(driver);
+	}
+	
+	public SurveyName continueEvaluation(){
+		setWeight();
+		continueButton.click();
+		return new SurveyName(driver);
+	}
+	
+	public EvaluationSummary goToSummary(){
+		gotoSummaryButton.click();
+		return new EvaluationSummary(driver);
+	}
+	
+	public void setWeight(){	
 		TestUtils.slideElement(driver, functionalitySlider, -20);
 		TestUtils.slideElement(driver, codeSlider, -40);
 		TestUtils.slideElement(driver, pedigreeSlider, -60);
 		TestUtils.slideElement(driver, marketSlider, -80);
 		TestUtils.slideElement(driver, supportSlider, -100);
 		TestUtils.slideElement(driver, licenseSlider, 20);
-		TestUtils.slideElement(driver, velocitySlider, 40);
 		TestUtils.slideElement(driver, velocitySlider, 60);
 		TestUtils.slideElement(driver, communitySlider, 80);
 		TestUtils.slideElement(driver, documentationSlider, 100);
-		continueButton.click();
-	return new SurveyName(driver);
 	}
 
 }
