@@ -31,6 +31,11 @@ public class EvaluationSubMenu {
 		return new BeginEvaluation(driver);
 	}
 	
+	public EditEvaluation editEvaluation(){
+		editEvaluation.click();
+		return new EditEvaluation(driver);
+	}
+	
 	public EvaluationSummary goToSummary(){
 		evaluationSummary.click();
 		return new EvaluationSummary(driver);

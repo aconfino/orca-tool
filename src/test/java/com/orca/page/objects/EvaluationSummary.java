@@ -19,6 +19,17 @@ public class EvaluationSummary {
 	@FindBy(id="page")
 	WebElement page;
 	
+	@FindBy(xpath="//*[@id='noRightRailContent']/div/div/div/a")
+	WebElement editEvaluation;
+	
+	@FindBy(xpath="//*[@id='noRightRailContent']/div/div/div[2]")
+	WebElement functionalityWeight;
+	
+	public EditEvaluation editEvaluation(){
+		editEvaluation.click();
+		return new EditEvaluation(driver);
+	}
+	
 	public boolean pageContains(String string){
 		boolean contains = false;
 		if (page.getText().contains(string))

@@ -1,6 +1,6 @@
 package com.orca.selenium.tests;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 
@@ -17,6 +17,7 @@ import com.orca.page.objects.CodeStatic;
 import com.orca.page.objects.Comments;
 import com.orca.page.objects.Community;
 import com.orca.page.objects.Documentation;
+import com.orca.page.objects.EditEvaluation;
 import com.orca.page.objects.EvaluationSummary;
 import com.orca.page.objects.EvaluationWeight;
 import com.orca.page.objects.Functionality;
@@ -33,6 +34,7 @@ public class EvaluationTest {
 		
 		private Home homePage;
 		private BeginEvaluation beginEvaluation;
+		private EditEvaluation editEvaluation;
 		private EvaluationWeight evaluationWeight;
 		private SurveyName surveyName;
 		private CodeDesign codeDesign;
@@ -81,6 +83,58 @@ public class EvaluationTest {
 			comments = functionality.continueSurvey();
 			evaluationSummary = comments.finishSurvey();
 			assertTrue(evaluationSummary.pageContains("Evaluation Summary"));
+		}
+		
+		@Test
+		public void evaluationSubMenu() {
+			beginEvaluation = homePage.beginEvaluation();
+			beginEvaluation= beginEvaluation.getSubmenu().createNewEvaluation();
+			editEvaluation = beginEvaluation.getSubmenu().editEvaluation();
+			evaluationSummary = editEvaluation.getSubmenu().goToSummary();
+			assertTrue(evaluationSummary.pageContains("Evaluation Summary"));
+		}
+		
+		/*
+		 * Note that the moveSlider methods take xAxis pixels
+		 * as their argument, not the final value of the slider.
+		 */
+		
+		@Test
+		public void editEvaluationWeight(){
+			String name = "Updated Evaluation Name";
+			String functionalityWeight = "Functionality weight: 55";
+			String codeWeight = "Code weight: 58";
+			String communityWeight = "Community weight: 60";	
+			String documentationWeight = "Documentation weight: 63";
+			String licenseWeight = "License weight: 65";
+			String marketWeight = "Market weight: 68";
+			String pedigreeWeight = "Pedigree weight: 70";
+			String supportWeight = "Support weight: 73";
+			String velocityWeight = "Velocity weight: 75";
+			beginEvaluation = homePage.beginEvaluation();
+			evaluationSummary = beginEvaluation.getSubmenu().goToSummary();
+			editEvaluation = evaluationSummary.editEvaluation();
+			editEvaluation.editName(name);
+			editEvaluation.moveFunctionalitySlider(20);
+			editEvaluation.moveCodeSlider(30);
+			editEvaluation.moveCommunitySlider(40);
+			editEvaluation.moveDocumentationSlider(50);
+			editEvaluation.moveLicenseSlider(60);
+			editEvaluation.moveMarketSlider(70);
+			editEvaluation.movePedigreeSlider(80);
+			editEvaluation.moveSupportSlider(90);
+			editEvaluation.moveVelocitySlider(100);
+			evaluationSummary = editEvaluation.saveAndGoToSummary();
+			assertTrue(evaluationSummary.pageContains(name));
+			assertTrue(evaluationSummary.pageContains(functionalityWeight));
+			assertTrue(evaluationSummary.pageContains(codeWeight));
+			assertTrue(evaluationSummary.pageContains(communityWeight));
+			assertTrue(evaluationSummary.pageContains(documentationWeight));
+			assertTrue(evaluationSummary.pageContains(licenseWeight));
+			assertTrue(evaluationSummary.pageContains(marketWeight));
+			assertTrue(evaluationSummary.pageContains(pedigreeWeight));
+			assertTrue(evaluationSummary.pageContains(supportWeight));
+			assertTrue(evaluationSummary.pageContains(velocityWeight));			
 		}
 
 }

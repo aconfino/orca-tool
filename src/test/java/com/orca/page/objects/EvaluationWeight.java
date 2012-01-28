@@ -11,8 +11,10 @@ import com.orca.selenium.utils.TestUtils;
 
 public class EvaluationWeight {
 	protected WebDriver driver;
+	protected EvaluationSubMenu submenu;
 	
 	public EvaluationWeight(WebDriver driver){
+		submenu = new EvaluationSubMenu(driver);
 		this.driver=driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
@@ -78,6 +80,14 @@ public class EvaluationWeight {
 		TestUtils.slideElement(driver, velocitySlider, 60);
 		TestUtils.slideElement(driver, communitySlider, 80);
 		TestUtils.slideElement(driver, documentationSlider, 100);
+	}
+
+	public EvaluationSubMenu getSubmenu() {
+		return submenu;
+	}
+
+	public void setSubmenu(EvaluationSubMenu submenu) {
+		this.submenu = submenu;
 	}
 
 }

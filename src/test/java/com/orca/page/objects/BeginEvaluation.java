@@ -10,8 +10,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BeginEvaluation {
 	protected WebDriver driver;
+	protected EvaluationSubMenu submenu;
 	
 	public BeginEvaluation(WebDriver driver) {
+		submenu = new EvaluationSubMenu(driver);
 		this.driver = driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
@@ -30,7 +32,13 @@ public class BeginEvaluation {
 		submitButton.click();
 		return new EvaluationWeight(driver);
 	}
+
+	public EvaluationSubMenu getSubmenu() {
+		return submenu;
+	}
+
+	public void setSubmenu(EvaluationSubMenu submenu) {
+		this.submenu = submenu;
+	}
 	
-
-
 }
