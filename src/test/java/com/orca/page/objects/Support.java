@@ -9,10 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.orca.selenium.utils.TestUtils;
 
-public class Support {
+public class Support extends BasePageObject {
 	protected WebDriver driver;
+	protected SurveySubmenu submenu;
 	
 	public Support(WebDriver driver) {
+		submenu = new SurveySubmenu(driver);
 		this.driver = driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
@@ -33,6 +35,12 @@ public class Support {
 	@FindBy(id="communitySupportSlider")
 	private WebElement communitySupportSlider;
 	
+	public void setMetrics(int xAxis){
+		TestUtils.slideElement(driver, commercialSupportSlider, xAxis);
+		TestUtils.slideElement(driver, indemnificationSlider, xAxis);
+		TestUtils.slideElement(driver, communitySupportSlider, xAxis);
+	}
+	
 	public Velocity continueSurvey(){
 		TestUtils.slideElement(driver, commercialSupportSlider, 200);
 		TestUtils.slideElement(driver, indemnificationSlider, 100);
@@ -44,6 +52,14 @@ public class Support {
 	public EvaluationSummary goToSummary(){
 		goToSummary.click();
 		return new EvaluationSummary(driver);
+	}
+
+	public SurveySubmenu getSubmenu() {
+		return submenu;
+	}
+
+	public void setSubmenu(SurveySubmenu submenu) {
+		this.submenu = submenu;
 	}
 
 }

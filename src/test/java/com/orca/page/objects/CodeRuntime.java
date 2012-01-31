@@ -9,10 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.orca.selenium.utils.TestUtils;
 
-public class CodeRuntime {
+public class CodeRuntime extends BasePageObject{
 	protected WebDriver driver;
+	public SurveySubmenu submenu;
 	
 	public CodeRuntime(WebDriver driver) {
+		submenu = new SurveySubmenu(driver);
 		this.driver = driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
@@ -33,6 +35,12 @@ public class CodeRuntime {
 	@FindBy(id="IOThreshholdSlider")
 	private WebElement IOThreshholdSlider;
 	
+	public void setMetrics(int xAxis){
+		TestUtils.slideElement(driver, cpuThreshholdSlider, xAxis);
+		TestUtils.slideElement(driver, memoryThreshholdSlider, xAxis);
+		TestUtils.slideElement(driver, IOThreshholdSlider, xAxis);
+	}
+	
 	public CodeStatic continueSurvey(){
 		TestUtils.slideElement(driver, cpuThreshholdSlider, -100);
 		TestUtils.slideElement(driver, memoryThreshholdSlider, -200);
@@ -45,6 +53,13 @@ public class CodeRuntime {
 		goToSummary.click();
 		return new EvaluationSummary(driver);
 	}
-	
+
+	public SurveySubmenu getSubmenu() {
+		return submenu;
+	}
+
+	public void setSubmenu(SurveySubmenu submenu) {
+		this.submenu = submenu;
+	}
 	
 }

@@ -9,10 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.orca.selenium.utils.TestUtils;
 
-public class Pedigree {
+public class Pedigree extends BasePageObject {
 	protected WebDriver driver;
+	protected SurveySubmenu submenu;
 	
 	public Pedigree(WebDriver driver) {
+		submenu = new SurveySubmenu(driver);
 		this.driver = driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
@@ -33,6 +35,12 @@ public class Pedigree {
 	@FindBy(id="derivedSlider")
 	private WebElement derivedSlider;
 	
+	public void setMetrics(int xAxis){
+		TestUtils.slideElement(driver, authorSlider, xAxis);
+		TestUtils.slideElement(driver, groupSponsorSlider, xAxis);
+		TestUtils.slideElement(driver, derivedSlider, xAxis);
+	}
+	
 	public Support continueSurvey(){
 		TestUtils.slideElement(driver, authorSlider, -200);
 		TestUtils.slideElement(driver, groupSponsorSlider, 100);
@@ -44,6 +52,14 @@ public class Pedigree {
 	public EvaluationSummary goToSummary(){
 		goToSummary.click();
 		return new EvaluationSummary(driver);
+	}
+
+	public SurveySubmenu getSubmenu() {
+		return submenu;
+	}
+
+	public void setSubmenu(SurveySubmenu submenu) {
+		this.submenu = submenu;
 	}
 
 }

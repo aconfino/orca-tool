@@ -26,6 +26,7 @@ public class LicenseController {
 			return new ModelAndView("notAuthorized");
 		ModelAndView mav = new ModelAndView("license");
 		mav.addObject("license", survey.getLicense());
+		mav.addObject("survey", survey);
 		return mav;
 	}
 	

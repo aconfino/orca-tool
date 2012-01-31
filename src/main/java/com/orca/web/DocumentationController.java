@@ -26,6 +26,7 @@ public class DocumentationController {
 			return new ModelAndView("notAuthorized");
 		ModelAndView mav = new ModelAndView("documentation");
 		mav.addObject("documentation", survey.getDocumentation());
+		mav.addObject("survey", survey);
 		return mav;
 	}
 	

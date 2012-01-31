@@ -9,10 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.orca.selenium.utils.TestUtils;
 
-public class Velocity {
+public class Velocity extends BasePageObject {
 	protected WebDriver driver;
+	protected SurveySubmenu submenu;
 	
 	public Velocity(WebDriver driver) {
+		submenu = new SurveySubmenu(driver);
 		this.driver = driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
@@ -30,6 +32,11 @@ public class Velocity {
 	@FindBy(id="patchActualSlider")
 	private WebElement patchActualSlider;
 	
+	public void setMetrics(int xAxis){
+		TestUtils.slideElement(driver, featureActualSlider, xAxis);
+		TestUtils.slideElement(driver, patchActualSlider, xAxis);
+	}
+	
 	public Functionality continueSurvey(){
 		TestUtils.slideElement(driver, featureActualSlider, 200);
 		TestUtils.slideElement(driver, patchActualSlider, 100);
@@ -40,6 +47,14 @@ public class Velocity {
 	public EvaluationSummary goToSummary(){
 		goToSummary.click();
 		return new EvaluationSummary(driver);
+	}
+
+	public SurveySubmenu getSubmenu() {
+		return submenu;
+	}
+
+	public void setSubmenu(SurveySubmenu submenu) {
+		this.submenu = submenu;
 	}
 
 }

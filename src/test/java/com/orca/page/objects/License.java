@@ -7,10 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class License {
+public class License extends BasePageObject {
 	protected WebDriver driver;
+	protected SurveySubmenu submenu;
 	
 	public License(WebDriver driver) {
+		submenu = new SurveySubmenu(driver);
 		this.driver = driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
@@ -25,6 +27,9 @@ public class License {
 	@FindBy(id="licenseName")
 	private WebElement licenseName;
 	
+	@FindBy(id="acceptable1")
+	private WebElement acceptableCheckBox;
+		
 	public MarketPenetration continueSurvey(){
 		licenseName.clear();
 		licenseName.sendKeys("Copyleft");
@@ -32,9 +37,21 @@ public class License {
 		return new MarketPenetration(driver);
 	}
 	
+	public void clickCheckBox(){
+		acceptableCheckBox.click();
+	}
+	
 	public EvaluationSummary goToSummary(){
 		goToSummary.click();
 		return new EvaluationSummary(driver);
+	}
+
+	public SurveySubmenu getSubmenu() {
+		return submenu;
+	}
+
+	public void setSubmenu(SurveySubmenu submenu) {
+		this.submenu = submenu;
 	}
 
 }

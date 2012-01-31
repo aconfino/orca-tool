@@ -9,10 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.orca.selenium.utils.TestUtils;
 
-public class CodeStatic {
+public class CodeStatic extends BasePageObject {
 	protected WebDriver driver;
+	protected SurveySubmenu submenu;
 	
 	public CodeStatic(WebDriver driver) {
+		submenu = new SurveySubmenu(driver);
 		this.driver = driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
@@ -33,6 +35,12 @@ public class CodeStatic {
 	@FindBy(id="dependencyCyclesSlider")
 	private WebElement dependencyCyclesSlider;
 	
+	public void setMetrics(int xAxis){
+		TestUtils.slideElement(driver, cyclomaticComplexitySlider, xAxis);
+		TestUtils.slideElement(driver, methodCountSlider, xAxis);
+		TestUtils.slideElement(driver, dependencyCyclesSlider, xAxis);
+	}
+	
 	public Community continueSurvey(){
 		TestUtils.slideElement(driver, cyclomaticComplexitySlider, -200);
 		TestUtils.slideElement(driver, methodCountSlider, 200);
@@ -44,6 +52,14 @@ public class CodeStatic {
 	public EvaluationSummary goToSummary(){
 		goToSummary.click();
 		return new EvaluationSummary(driver);
+	}
+
+	public SurveySubmenu getSubmenu() {
+		return submenu;
+	}
+
+	public void setSubmenu(SurveySubmenu submenu) {
+		this.submenu = submenu;
 	}
 
 }

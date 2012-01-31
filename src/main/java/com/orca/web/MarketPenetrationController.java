@@ -26,6 +26,7 @@ public class MarketPenetrationController {
 			return new ModelAndView("notAuthorized");
 		ModelAndView mav = new ModelAndView("marketPenetration");
 		mav.addObject("marketPenetration", survey.getMarketPenetration());
+		mav.addObject("survey", survey);
 		return mav;
 	}
 	

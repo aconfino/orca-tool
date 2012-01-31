@@ -26,6 +26,7 @@ public class CodeStaticController {
 			return new ModelAndView("notAuthorized");
 		ModelAndView mav = new ModelAndView("codeStatic");
 		mav.addObject("codeStatic", survey.getCodeStatic());
+		mav.addObject("survey", survey);
 		return mav;
 	}
 	

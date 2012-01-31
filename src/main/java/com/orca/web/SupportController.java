@@ -26,6 +26,7 @@ public class SupportController {
 			return new ModelAndView("notAuthorized");
 		ModelAndView mav = new ModelAndView("support");
 		mav.addObject("support", survey.getSupport());
+		mav.addObject("survey", survey);
 		return mav;
 	}
 	

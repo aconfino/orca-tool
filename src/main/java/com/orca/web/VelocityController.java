@@ -26,6 +26,7 @@ public class VelocityController {
 			return new ModelAndView("notAuthorized");
 		ModelAndView mav = new ModelAndView("velocity");
 		mav.addObject("velocity", survey.getVelocity());
+		mav.addObject("survey", survey);
 		return mav;
 	}
 	

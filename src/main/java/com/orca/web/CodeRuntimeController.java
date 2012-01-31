@@ -26,6 +26,7 @@ public class CodeRuntimeController {
 			return new ModelAndView("notAuthorized");
 		ModelAndView mav = new ModelAndView("codeRuntime");
 		mav.addObject("codeRuntime", survey.getCodeRuntime());
+		mav.addObject("survey", survey);
 		return mav;
 	}
 	

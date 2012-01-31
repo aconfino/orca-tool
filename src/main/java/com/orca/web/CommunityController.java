@@ -26,6 +26,7 @@ public class CommunityController {
 			return new ModelAndView("notAuthorized");
 		ModelAndView mav = new ModelAndView("community");
 		mav.addObject("community", survey.getCommunity());
+		mav.addObject("survey", survey);
 		return mav;
 	}
 	

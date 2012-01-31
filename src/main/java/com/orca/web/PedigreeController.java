@@ -26,6 +26,7 @@ public class PedigreeController {
 			return new ModelAndView("notAuthorized");
 		ModelAndView mav = new ModelAndView("pedigree");
 		mav.addObject("pedigree", survey.getPedigree());
+		mav.addObject("survey", survey);
 		return mav;
 	}
 	

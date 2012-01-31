@@ -60,7 +60,6 @@ public class EvaluationWeight {
 	}
 	
 	public SurveyName continueEvaluation(){
-		setWeight();
 		continueButton.click();
 		return new SurveyName(driver);
 	}

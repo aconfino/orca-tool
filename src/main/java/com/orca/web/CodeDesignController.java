@@ -26,6 +26,7 @@ public class CodeDesignController {
 			return new ModelAndView("notAuthorized");
 		ModelAndView mav = new ModelAndView("codeDesign");	
 		mav.addObject("codeDesign", survey.getCodeDesign());
+		mav.addObject("survey", survey);
 		return mav;	
 	}
 	

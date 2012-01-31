@@ -10,8 +10,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SurveyName {
 	private WebDriver driver;
+	protected SurveySubmenu submenu;
 	
 	public SurveyName(WebDriver driver){
+		submenu = new SurveySubmenu(driver);
 		this.driver=driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
@@ -38,5 +40,15 @@ public class SurveyName {
 		goToSummary.click();
 		return new EvaluationSummary(driver);
 	}
+
+	public SurveySubmenu getSubmenu() {
+		return submenu;
+	}
+
+	public void setSubmenu(SurveySubmenu submenu) {
+		this.submenu = submenu;
+	}
+	
+	
 	
 }

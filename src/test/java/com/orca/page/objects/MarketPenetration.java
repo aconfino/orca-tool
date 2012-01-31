@@ -9,10 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.orca.selenium.utils.TestUtils;
 
-public class MarketPenetration {
+public class MarketPenetration extends BasePageObject {
 	protected WebDriver driver;
+	protected SurveySubmenu submenu;
 	
 	public MarketPenetration(WebDriver driver) {
+		submenu = new SurveySubmenu(driver);
 		this.driver = driver;
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
@@ -27,6 +29,9 @@ public class MarketPenetration {
 	@FindBy(id="marketPenetrationScoreSlider")
 	private WebElement marketPenetrationScoreSlider;
 	
+	public void setMetrics(int xAxis){
+		TestUtils.slideElement(driver, marketPenetrationScoreSlider, xAxis);
+	}
 	
 	public Pedigree continueSurvey(){
 		TestUtils.slideElement(driver, marketPenetrationScoreSlider, 100);
@@ -37,6 +42,14 @@ public class MarketPenetration {
 	public EvaluationSummary goToSummary(){
 		goToSummary.click();
 		return new EvaluationSummary(driver);
+	}
+
+	public SurveySubmenu getSubmenu() {
+		return submenu;
+	}
+
+	public void setSubmenu(SurveySubmenu submenu) {
+		this.submenu = submenu;
 	}
 
 }

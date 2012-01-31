@@ -26,6 +26,7 @@ public class FunctionalityController {
 			return new ModelAndView("notAuthorized");
 		ModelAndView mav = new ModelAndView("functionality");
 		mav.addObject("functionality", survey.getFunctionality());
+		mav.addObject("survey", survey);
 		return mav;
 	}
 	
