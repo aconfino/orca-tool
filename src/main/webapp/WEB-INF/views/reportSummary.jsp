@@ -7,8 +7,8 @@
 <span class="reportControls">
 <h2>Report Summary</h2>
 Use our reporting tool to compare the strengths and weaknesses of each software survey.
-<br><br>
-Select the type of graph you would like for your report.
+<br><br><br>
+Select the type of graph:
 <form:form action="reportSummary.html" method="POST" commandName="reportForm">
 	<input name="evaluationId" type="hidden" value="${evaluation.id}"/>
 	<form:select path="type">
@@ -18,7 +18,8 @@ Select the type of graph you would like for your report.
 		<form:option value="overUnderBarGraph">Over Under Bar Graph</form:option>
 	</form:select>
 	<br/>
-	Select the surveys you would like include in the report
+	Select surveys to include:
+	<br/>
 	<form:select path="firstSurveyId">
 		<form:option value="">Select</form:option>
 		<form:options items="${surveyList}" itemValue="id" itemLabel="surveyName" />		
@@ -44,7 +45,10 @@ Select the type of graph you would like for your report.
 		<form:options items="${surveyList}" itemValue="id" itemLabel="surveyName" />
 	</form:select>
 	</c:if>
-	<input type="submit" value="Generate Report">
+	<input type="submit" value="Generate Graph">
+	<br/>
+	<input type="submit" value="Generate Printable Report">
+	
 </form:form>
 </span>
 

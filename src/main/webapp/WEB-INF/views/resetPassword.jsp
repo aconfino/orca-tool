@@ -4,7 +4,7 @@
 	<div id="content">
 		<div class="post">
 			<div class="entry">
-				<form:form action="resetPasswordVerify.html" commandName="resetPasswordForm" >
+				<form:form action="resetPasswordVerify.html" commandName="resetPasswordForm" >				
 					<h2>Reset your password</h2>
 					<div id="simpleCaptcha"><img src="/stickyImg" /></div><br/><br/>
 					<form:label path="email">Email Address:</form:label>

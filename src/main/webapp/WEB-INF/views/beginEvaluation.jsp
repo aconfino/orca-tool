@@ -14,4 +14,5 @@
 </div>
 <!-- end #content -->
 <%@ include file="include/evaluationRightRail.jsp"%>
-<div style="clear: both; height: 40px;">&nbsp;</div>
+	<div style="clear: both; height: 0px;">&nbsp;</div>
+</div>

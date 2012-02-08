@@ -6,4 +6,3 @@
 		</li>
 	</ul>
 </div>
-<!-- end #sidebar -->
