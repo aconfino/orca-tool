@@ -1,7 +1,7 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <body>
 <div id="header">
-	<h1><a href="index.html">Orca<sup>1.0</sup></a></h1><img src="resources/images/icon.png" />
+	<h1><a href="index.html">Orca<sup>1.0</sup></a></h1><img src="resources/images/orca.gif" />
 </div>
 <div id="topLevelMenu">
 	<ul>

@@ -2,10 +2,10 @@
 	<div id="content">
 		<div class="post">
 			<div class="title">
-				<h2><a href="#">Lorem ipsum dolor</a></h2>
+				<h2><a href="#">The Orca Tool</a></h2>
 			</div>
 			<div class="entry"> 
-				<img src="/resources/images/img01.jpg" alt="" width="150" height="102" class="left" />
+				<img src="/resources/images/chart.jpg" alt="Orca Tool - Chart" class="left" />
 				<p>Nulla eu leo diam, eu vulputate purus. Etiam nisl nisi, tempus in rhoncus vehicula, semper in enim. Vestibulum justo leo, sagittis vitae varius elementum, aliquet ac augue. Vivamus convallis nulla eget nisi mollis posuere. In ipsum lorem, congue tincidunt feugiat eget, tincidunt non elit. Ut pharetra interdum elit id sodales. Fusce arcu ligula, viverra quis eleifend eget, laoreet ac lectus. Maecenas nec orci vitae diam porttitor tempor id ac eros. Donec lorem tortor, varius eu euismod vitae, interdum sit amet odio. Phasellus tincidunt quam a nisl vulputate eget dictum ante ultricies. Aenean dapibus magna ac odio volutpat auctor. Nam elementum mi nec lorem eleifend interdum. </p>
 			</div>
 		</div>
