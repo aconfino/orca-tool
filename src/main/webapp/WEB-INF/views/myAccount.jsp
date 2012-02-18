@@ -9,7 +9,7 @@
 					<h2>My Evaluations</h2>
 						<ol>
 							<c:forEach var="evaluation" items="${user.evaluationSet}">
-								<li><c:out value="${evaluation.name}"/> - <a href="evaluationSummary.html?evaluationId=<c:out value="${evaluation.id}"/>">Go to Summary</a> - <a href="editEvaluation.html?evaluationId=<c:out value="${evaluation.id}"/>">Edit</a> - <a href="removeEvaluation.html?evaluationId=<c:out value="${evaluation.id}"/>">Remove </a></li>
+								<li><c:out value="${evaluation.name}"/> - <a href="evaluationSummary.html?evaluationId=<c:out value="${evaluation.id}"/>">Go to Summary</a> - <a href="reportSummary.html?evaluationId=<c:out value="${evaluation.id}"/>">Reports</a> - <a href="editEvaluation.html?evaluationId=<c:out value="${evaluation.id}"/>">Edit</a> - <a href="removeEvaluation.html?evaluationId=<c:out value="${evaluation.id}"/>">Remove </a></li>
 							</c:forEach>
 						</ol>
 				</div>

@@ -104,7 +104,7 @@ public class EvaluationController {
 	@RequestMapping(value="/saveEvaluationWeight.html")
 	public String saveEvaluationWeight(@ModelAttribute("evaluation") Evaluation evaluation,
 			@RequestParam("submit") String submit){
-		if (submit.equals("Continue Survey"))
+		if (submit.equals("Generate Graph"))
 			return "redirect:beginSurvey.html?evaluationId=" + evaluation.getId();
 		else {
 			return "redirect:evaluationSummary.html?evaluationId=" + evaluation.getId();

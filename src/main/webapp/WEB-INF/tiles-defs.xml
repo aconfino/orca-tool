@@ -9,6 +9,10 @@
 		<put-attribute name="topDisplay" value="/WEB-INF/views/include/topDisplay.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/views/include/footer.jsp" />
 	</definition>
+	
+	<definition name="printableTemplate" template="/WEB-INF/views/templates/printableTemplate.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/include/printHeader.jsp" />
+	</definition>
 
 	<definition name="home" extends="mainTemplate">
 		<put-attribute name="title" value="Home" />
@@ -135,6 +139,11 @@
 	<definition name="reportSummary" extends="mainTemplate">
 		<put-attribute name="title" value="Report Summary" />
 		<put-attribute name="body" value="/WEB-INF/views/reportSummary.jsp" />
+	</definition>
+	
+	<definition name="printableReport" extends="printableTemplate">
+		<put-attribute name="title" value="Report Summary" />
+		<put-attribute name="body" value="/WEB-INF/views/printableReport.jsp" />
 	</definition>
 	
 	<!-- Account Views -->
