@@ -30,7 +30,6 @@ public class EmailController {
 
 	@RequestMapping(value = "emailEvaluationVerify.html")
 	public ModelAndView emailEvaluationVerify(@ModelAttribute("emailEvaluationForm") EmailEvaluationForm form, BindingResult result) {	
-	
 		EmailEvaluationFormValidator emailFormValidator = new EmailEvaluationFormValidator();
 		emailFormValidator.validate(form, result);
 		if (result.hasErrors()) {
@@ -43,8 +42,7 @@ public class EmailController {
 	}
 
 	public String getSubject(String evaluationNumber) {
-		String subject = new String("ORCA project - evaluation number: "
-				+ evaluationNumber);
+		String subject = new String("ORCA project - evaluation number: " + evaluationNumber);
 		return subject;
 	}
 

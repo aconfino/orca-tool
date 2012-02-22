@@ -22,7 +22,12 @@
 	<bean id="resetPasswordValidator" class="com.orca.validator.ResetPasswordFormValidator" />
 	<bean id="changePasswordValidator" class="com.orca.validator.ChangePasswordValidator" />
 	
-	
+	<!-- Email Configuration -->
+	<bean id="emailConfiguration" class="com.orca.util.EmailConfiguration">
+        <property name="username" value="orcatool@gmail.com"/>
+        <property name="password" value="orcatool79"/>
+    </bean>
+    
 	<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver"
 		id="viewResolver">
 		<property name="viewClass"

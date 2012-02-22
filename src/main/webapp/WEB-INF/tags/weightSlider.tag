@@ -31,12 +31,12 @@ $(function(){
 
 // Dialog popup
 	var $dialog = $('<div></div>')
-		.html('Use this slider to weight metrics that are the most important to your evaluation.  If this is a key metric to your evaluation, give it a higher value.  Conversly, you can lower other metrics than are not as important.')
+		.html('Use this slider to weigh metrics that are the most important to your evaluation.  If this is a key metric to your evaluation, give it a higher value.  Conversly, you can lower other metrics than are not as important.')
 		.dialog({
 			autoOpen: false,
 			title: '${pageScope.title} Weight'
 		});
-	$('.${pageScope.name}PopUp').click(function() {
+	$('#${pageScope.name}PopUp').click(function() {
 		$dialog.dialog('open');
 		// prevent the default action, e.g., following a link
 		return false;

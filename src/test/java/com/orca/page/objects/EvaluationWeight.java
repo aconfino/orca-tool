@@ -49,7 +49,7 @@ public class EvaluationWeight {
 	
 	@FindBy(xpath="//*[@id='evaluation']/div[2]/input[2]")
 	private WebElement continueButton;
-	
+		
 	@FindBy(xpath="//*[@id='evaluation']/div[2]/input[3]")
 	private WebElement gotoSummaryButton;
 	

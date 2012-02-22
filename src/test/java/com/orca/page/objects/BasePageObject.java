@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class BasePageObject {
 	
-	@FindBy(xpath="//*[@id='menu']/ul/li/a")
+	@FindBy(xpath="//*[@id='topLevelMenu']/ul/li/a")
 	protected WebElement beginEvaluation;
 	
-	@FindBy(xpath="//*[@id='menu']/ul/li[5]/a")
+	@FindBy(xpath="//*[@id='topLevelMenu']/ul/li[5]/a")
 	protected WebElement myAccount;
 	
 	@FindBy(id="page")

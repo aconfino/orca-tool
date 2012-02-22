@@ -22,8 +22,8 @@ public class UserServiceImpl implements UserService {
 
 	public void saveUser(User user) {
 		if (emailAvailable(user.getUsername())){
-			updateUserPassword(user);  // new user, encrypt the password
-		} else {
+			updateUserPassword(user);  // if the email is available, it's a new user
+		} else {										 // encrypt their password
 			saveExistingUser(user);
 		}
 	}
@@ -56,13 +56,13 @@ public class UserServiceImpl implements UserService {
 		    int next = RandomUtils.nextInt(13) + 8;
 		    randomString.append(RandomStringUtils.randomAlphanumeric(next));
 		    return randomString.toString();
-		}
+	}
 
 	public String resetUserPassword(User user) {
 		String password = getRandomString();
 		user.setPassword(password);
 		user.setConfirmPassword(password);
-		updateUserPassword(user);
+		updateUserPassword(user);	  // encrypt the new password
 		return password;
 	}
 	
@@ -86,7 +86,5 @@ public class UserServiceImpl implements UserService {
 			}
 		return null;
 	}
-	
-	
 
 }

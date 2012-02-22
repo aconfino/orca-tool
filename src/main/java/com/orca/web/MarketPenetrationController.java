@@ -38,9 +38,9 @@ public class MarketPenetrationController {
 			return "redirect:notAuthorized.html";
 		survey.setMarketPenetration(marketPenetration);
 		surveyService.saveSurvey(survey);
-		if (submit.equals("Next Metric"))
+		if (submit.equals("Next Metric")) {
 			return "redirect:pedigree.html?surveyId=" + survey.getId();
-		else {
+		} else {
 			return "redirect:evaluationSummary.html?evaluationId=" + survey.getEvaluation().getId();	
 		}
 	}

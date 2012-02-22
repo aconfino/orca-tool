@@ -67,8 +67,8 @@ public class EvaluationServiceImpl implements EvaluationService{
 
 	public boolean authorizedUser(Evaluation evaluation) {
 		String username = SecurityContextHolder.getContext().getAuthentication().getName();
-		if (evaluation.getUser()==null){
-			return true;
+		if (evaluation.getUser()==null){		// evaluation doesn't belong to anyone
+			return true;									// occurs during evaluation creation
 		} 
 		else if ((evaluation.getUser() != null) && (evaluation.getUser().getUsername().equals(username))) {
 			return true;

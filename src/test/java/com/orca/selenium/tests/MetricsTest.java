@@ -125,7 +125,7 @@ public class MetricsTest {
 			assertTrue(evaluationSummary.pageContains("Community: 2.0"));
 		}
 
-	@Test
+	    @Test
 		public void documentationTest() {
 			 beginEvaluation = homePage.beginEvaluation();
 			 evaluationWeight = beginEvaluation.createEvaluation();
@@ -228,6 +228,5 @@ public class MetricsTest {
 			functionality.setMetrics(-100);
 			evaluationSummary = functionality.goToSummary();
 			assertTrue(evaluationSummary.pageContains("Functionality: 2.0"));
-		}
-		
+		}	
 }

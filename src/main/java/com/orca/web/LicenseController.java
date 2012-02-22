@@ -38,9 +38,9 @@ public class LicenseController {
 			return "redirect:notAuthorized.html";
 		survey.setLicense(license);
 		surveyService.saveSurvey(survey);
-		if (submit.equals("Next Metric"))
+		if (submit.equals("Next Metric")) {
 			return "redirect:marketPenetration.html?surveyId=" + survey.getId();
-		else {
+		} else {
 			return "redirect:evaluationSummary.html?evaluationId=" + survey.getEvaluation().getId();	
 		}
 	}

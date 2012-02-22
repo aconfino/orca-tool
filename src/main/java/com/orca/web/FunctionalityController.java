@@ -38,9 +38,9 @@ public class FunctionalityController {
 			return "redirect:notAuthorized.html";
 		survey.setFunctionality(functionality);
 		surveyService.saveSurvey(survey);
-		if (submit.equals("Next Metric"))
+		if (submit.equals("Next Metric")) {
 			return "redirect:surveyComments.html?surveyId=" + survey.getId();
-		else {
+		} else {
 			return "redirect:evaluationSummary.html?evaluationId=" + survey.getEvaluation().getId();	
 		}
 	}

@@ -38,9 +38,9 @@ public class PedigreeController {
 			return "redirect:notAuthorized.html";
 		survey.setPedigree(pedigree);
 		surveyService.saveSurvey(survey);
-		if (submit.equals("Next Metric"))
+		if (submit.equals("Next Metric")) {
 			return "redirect:support.html?surveyId=" + survey.getId();
-		else {
+		} else {
 			return "redirect:evaluationSummary.html?evaluationId=" + survey.getEvaluation().getId();	
 		}
 	}

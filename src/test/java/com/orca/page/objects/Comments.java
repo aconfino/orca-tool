@@ -16,9 +16,9 @@ public class Comments extends BasePageObject {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id="comments")
+	@FindBy(id="surveyComments")
 	private WebElement surveyComments;
-	
+		
 	@FindBy(xpath="//*[@id='survey']/input[2]")
 	private WebElement finishSurvey;
 		

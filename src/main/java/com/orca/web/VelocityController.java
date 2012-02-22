@@ -34,14 +34,13 @@ public class VelocityController {
 	public String saveVelocity(@ModelAttribute("velocity") Velocity velocity, 
 			@RequestParam("surveyId") Integer surveyId, @RequestParam("submit") String submit) {
 		Survey survey = surveyService.getSurvey(surveyId);
-		if (!surveyService.authorizedUser(survey)){
+		if (!surveyService.authorizedUser(survey))
 			return "redirect:notAuthorized.html";
-		}
 		survey.setVelocity(velocity);
 		surveyService.saveSurvey(survey);
-		if (submit.equals("Next Metric"))
+		if (submit.equals("Next Metric")) {
 			return "redirect:functionality.html?surveyId=" + survey.getId();
-		else {
+		} else {
 			return "redirect:evaluationSummary.html?evaluationId=" + survey.getEvaluation().getId();	
 		}
 	}

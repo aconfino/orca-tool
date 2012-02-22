@@ -25,7 +25,6 @@ public class EmailTests  {
 	public void emailTest2(){
 		String messageBody = "The Orca Project is straight ballin'.";
 		// don't want to get blacklisted for spam, so I'm running this sparingly
-	//	service.sendEmail("aconfino@gmail.com", "This is a test", messageBody);
+		// service.sendEmail("aconfino@gmail.com", "This is a test", messageBody);
 	}
-		
 }

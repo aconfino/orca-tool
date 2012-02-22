@@ -18,10 +18,16 @@
 	<bean id="resetPasswordValidator" class="com.orca.validator.ResetPasswordFormValidator" />
 	<bean id="changePasswordValidator" class="com.orca.validator.ChangePasswordValidator" />
 
+	<!-- Email Configuration -->
+	<bean id="emailConfiguration" class="com.orca.util.EmailConfiguration">
+        <property name="username" value="orcatool@gmail.com"/>
+        <property name="password" value="orcatool79"/>
+    </bean>
+
 	<context:annotation-config />
 	<context:component-scan base-package="com.orca" />
 	<import resource="db-config.xml" />
 
-		<bean id="validator" class="com.orca.validator.UserValidator" />
+	<bean id="validator" class="com.orca.validator.UserValidator" />
 
 </beans>

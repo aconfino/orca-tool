@@ -25,11 +25,11 @@ public class ResetPasswordFormValidator {
             e.rejectValue("email", "reset.password.form.email.invalid");
         } else if (service.emailAvailable(form.getEmail())){
 	        e.rejectValue("email", "reset.password.form.email.missing");
- 	   }  else if (form.getAnswer().isEmpty()) {
+ 	    } else if (form.getAnswer().isEmpty()) {
 	        e.rejectValue("answer", "reset.password.form.answer.blank");
-	   } else if (!form.getAnswer().equals(captcha.getAnswer())) {
+	    } else if (!form.getAnswer().equals(captcha.getAnswer())) {
 	        e.rejectValue("answer", "reset.password.form.answer.invalid");
-	   } 
+	    } 
 	}
 
 }

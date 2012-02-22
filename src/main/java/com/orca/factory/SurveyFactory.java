@@ -39,24 +39,24 @@ public class SurveyFactory {
 	}
 	
 	public void createCodeDesign(Survey survey){
-		CodeDesign cd = new CodeDesign();
-		cd.populate();
-		cd.setSurvey(survey);
-		survey.setCodeDesign(cd);
+		CodeDesign codeDesign = new CodeDesign();
+		codeDesign.populate();
+		codeDesign.setSurvey(survey);
+		survey.setCodeDesign(codeDesign);
 	}
 	
 	public void createCodeRuntime(Survey survey){
-		CodeRuntime cr = new CodeRuntime();
-		cr.populate();
-		cr.setSurvey(survey);
-		survey.setCodeRuntime(cr);
+		CodeRuntime codeRuntime = new CodeRuntime();
+		codeRuntime.populate();
+		codeRuntime.setSurvey(survey);
+		survey.setCodeRuntime(codeRuntime);
 	}
 	
 	public void createCodeStatic(Survey survey){
-		CodeStatic cs = new CodeStatic();
-		cs.populate();
-		cs.setSurvey(survey);
-		survey.setCodeStatic(cs);
+		CodeStatic codeStatic = new CodeStatic();
+		codeStatic.populate();
+		codeStatic.setSurvey(survey);
+		survey.setCodeStatic(codeStatic);
 	}
 	
 	public void createCommunity(Survey survey){
@@ -94,7 +94,7 @@ public class SurveyFactory {
 		survey.setPedigree(pedigree);
 	}
 	
-	public static void createSupport(Survey survey){
+	public void createSupport(Survey survey){
 		Support support = new Support();
 		support.populate();
 		support.setSurvey(survey);

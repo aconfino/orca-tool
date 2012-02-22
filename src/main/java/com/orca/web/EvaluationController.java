@@ -44,7 +44,6 @@ public class EvaluationController {
 	
 	@RequestMapping(value="/getEvaluation.html")
 	public String evaluationSummary(@RequestParam("evaluationNumber") String evaluationNumber){
-		
 		try {
 			Long number = new Long(evaluationNumber);
 			Evaluation evaluation = evaluationService.getEvaluationByNumber(number);
@@ -104,9 +103,9 @@ public class EvaluationController {
 	@RequestMapping(value="/saveEvaluationWeight.html")
 	public String saveEvaluationWeight(@ModelAttribute("evaluation") Evaluation evaluation,
 			@RequestParam("submit") String submit){
-		if (submit.equals("Generate Graph"))
+		if (submit.equals("Continue Survey")) {
 			return "redirect:beginSurvey.html?evaluationId=" + evaluation.getId();
-		else {
+		} else {
 			return "redirect:evaluationSummary.html?evaluationId=" + evaluation.getId();
 		}
 	}

@@ -50,8 +50,7 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "saveUser.html")
-	public ModelAndView saveUser(@ModelAttribute("user") User user,
-			BindingResult result) {
+	public ModelAndView saveUser(@ModelAttribute("user") User user, BindingResult result) {
 		userValidator.validate(user, result);
 		if (result.hasErrors()) {
 			ModelAndView mav = new ModelAndView("createAccount");
@@ -84,8 +83,7 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "resetPasswordVerify.html")
-	public ModelAndView resetPasswordVerify(@ModelAttribute("resetPasswordForm") ResetPasswordForm form, BindingResult result) {
-		
+	public ModelAndView resetPasswordVerify(@ModelAttribute("resetPasswordForm") ResetPasswordForm form, BindingResult result) {	
 		resetPasswordValidator.validate(form, result);
 		if (result.hasErrors()) {
 			ModelAndView mav = new ModelAndView("resetPassword");
@@ -112,7 +110,6 @@ public class UserController {
 	
 	@RequestMapping(value = "changePasswordVerify.html")
 	public ModelAndView changePasswordVerify(@ModelAttribute("user") User user, BindingResult result){
-		
 		changePasswordValidator.validate(user, result);
 		if (result.hasErrors()) {
 			ModelAndView mav = new ModelAndView("changePassword");

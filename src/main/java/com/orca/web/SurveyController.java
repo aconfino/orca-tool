@@ -48,9 +48,9 @@ public class SurveyController {
 		if (!surveyService.authorizedUser(survey))
 			return "redirect:notAuthorized.html";
 		surveyService.saveSurvey(survey);
-		if (submit.equals("Begin Metrics"))
+		if (submit.equals("Begin Metrics")) {
 	        return "redirect:codeDesign.html?surveyId=" + survey.getId();
-		else {
+		} else {
 			return "redirect:evaluationSummary.html?evaluationId=" + survey.getEvaluation().getId();	
 		}
 	}

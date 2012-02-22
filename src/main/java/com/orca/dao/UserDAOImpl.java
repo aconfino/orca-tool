@@ -37,10 +37,8 @@ public class UserDAOImpl implements UserDAO {
 	public User userNameExists(String username) {
 		User user = null;
 		List <User> list = template.find("from User where username = ? ", username);
-		if (list.size() > 0){
+		if (list.size() > 0)
 			user = list.get(0);
-			return user;
-		}
 		return user;
 	}
 

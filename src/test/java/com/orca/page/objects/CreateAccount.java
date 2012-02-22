@@ -25,7 +25,7 @@ protected WebDriver driver;
 	@FindBy(id="confirmPassword")
 	WebElement confirmPasswordField;
 	
-	@FindBy(xpath="//*[@id='user']/span/input")
+	@FindBy(xpath="//*[@id='user']/span/input[4]")
 	WebElement createAccountButton;
 
 	public MyAccount createTestAccount(String randomString){	

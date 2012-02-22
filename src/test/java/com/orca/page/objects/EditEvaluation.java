@@ -23,31 +23,31 @@ public class EditEvaluation {
 	@FindBy(id="name")
 	private WebElement name;
 	
-	@FindBy(id="functionalityWeightSlider")
+	@FindBy(className="functionalityWeightSlider")
 	private WebElement functionalitySlider;
 	
-	@FindBy(id="codeWeightSlider")
+	@FindBy(className="codeWeightSlider")
 	private WebElement codeSlider;
 
-	@FindBy(id="pedigreeWeightSlider")
+	@FindBy(className="pedigreeWeightSlider")
 	private WebElement pedigreeSlider;
 	
-	@FindBy(id="marketWeightSlider")
+	@FindBy(className="marketWeightSlider")
 	private WebElement marketSlider;
 
-	@FindBy(id="supportWeightSlider")
+	@FindBy(className="supportWeightSlider")
 	private WebElement supportSlider;
 	
-	@FindBy(id="licenseWeightSlider")
+	@FindBy(className="licenseWeightSlider")
 	private WebElement licenseSlider;
 
-	@FindBy(id="velocityWeightSlider")
+	@FindBy(className="velocityWeightSlider")
 	private WebElement velocitySlider;
 
-	@FindBy(id="communityWeightSlider")
+	@FindBy(className="communityWeightSlider")
 	private WebElement communitySlider;
 
-	@FindBy(id="documentationWeightSlider")
+	@FindBy(className="documentationWeightSlider")
 	private WebElement documentationSlider;
 	
 	@FindBy(xpath="//*[@id='evaluation']/div[2]/input")
