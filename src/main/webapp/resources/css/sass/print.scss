@@ -1,0 +1,33 @@
+ #printContainer{
+ 	 text-align:left;
+ }
+ 
+ .printHeader {
+ 	border-radius:25px;
+  	border:1px solid #000000;
+  	height: 115px;
+  		#printTitle {
+  			float:left;
+  			padding-left:25px;
+  		}
+  		#printLogo {
+  			float:right;
+  		}
+ }
+ 
+ .evaluationDetails {
+ 	overflow:hidden;
+ 	border-radius:25px;
+  	border:1px solid #000000;
+ }
+ 
+ .printableColumn{
+ 	padding: 25px;
+ 	width: 40%;
+ 	float: left;
+ 		input {
+  			font-size: 12pt; 
+  			padding-left: 10px;
+			padding-right: 10px;	
+  		}
+ }

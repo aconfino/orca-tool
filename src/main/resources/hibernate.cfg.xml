@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="com.orca.domain.CodeDesign" />
+        <mapping class="com.orca.domain.CodeRuntime" />
+         <mapping class="com.orca.domain.CodeStatic" />
+         <mapping class="com.orca.domain.Community"/>
+        <mapping class="com.orca.domain.Survey" />
+        <mapping class="com.orca.domain.Documentation" />
+        <mapping class="com.orca.domain.License" />
+        <mapping class="com.orca.domain.MarketPenetration" />
+        <mapping class="com.orca.domain.Pedigree" />
+        <mapping class="com.orca.domain.Support" />
+        <mapping  class="com.orca.domain.Velocity" />
+        <mapping class="com.orca.domain.Evaluation" />
+       	<mapping class="com.orca.domain.Functionality" />
+       	<mapping class="com.orca.domain.User" />
+    </session-factory>
+</hibernate-configuration>

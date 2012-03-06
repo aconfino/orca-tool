@@ -1,0 +1,48 @@
+<c:url value="surveyName.html" var="editSurveyName">
+	<c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="codeDesign.html" var="editCodeDesign">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="codeRuntime.html" var="editCodeRuntime">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="codeStatic.html" var="editCodeStatic">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="community.html" var="editCommunity">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="documentation.html" var="editDocumentation">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="license.html" var="editLicense">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="marketPenetration.html" var="editMarketPenetration">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="pedigree.html" var="editPedigree">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="support.html" var="editSupport">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="velocity.html" var="editVelocity">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="functionality.html" var="editFunctionality">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="surveyComments.html" var="editComments">
+   <c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="surveyComments.html" var="editComments">
+	<c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="removeSurvey.html" var="removeSurvey">
+	<c:param name="surveyId" value="${survey.id}"/>
+</c:url>
+<c:url value="evaluationSummary.html" var="evalSummary">
+   <c:param name="evaluationId" value="${survey.evaluation.id}"/>
+</c:url>

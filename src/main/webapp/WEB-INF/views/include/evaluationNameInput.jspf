@@ -1,0 +1,3 @@
+<form:label path="name">Evaluation name:</form:label>	
+<form:input path="name" /><br><br>  
+<input name="evaluationId" type="hidden" value="${evaluation.id}"/>
