@@ -1,5 +1,7 @@
 package com.orca.web;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -23,13 +25,12 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	@Autowired
-	private UserValidator userValidator;
-	@Autowired
-	private ResetPasswordFormValidator resetPasswordValidator;
+	public UserValidator userValidator;
 	@Autowired
 	private ChangePasswordValidator changePasswordValidator;
 	@Autowired
 	private EmailService emailService;
+	private ResetPasswordFormValidator resetPasswordFormValidator;
 
 	public void setValidator(UserValidator userValidator) {
 		this.userValidator = userValidator;
@@ -82,8 +83,9 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "resetPasswordVerify.html")
-	public ModelAndView resetPasswordVerify(@ModelAttribute("resetPasswordForm") ResetPasswordForm form, BindingResult result) {	
-		resetPasswordValidator.validate(form, result);
+	public ModelAndView resetPasswordVerify(@ModelAttribute("resetPasswordForm") ResetPasswordForm form, BindingResult result, HttpServletRequest request) {	
+		resetPasswordFormValidator = new ResetPasswordFormValidator(request.getSession());
+		resetPasswordFormValidator.validate(form, result);
 		if (result.hasErrors()) {
 			ModelAndView mav = new ModelAndView("resetPassword");
 			mav.addObject("form", form);

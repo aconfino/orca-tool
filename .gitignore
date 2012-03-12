@@ -4,10 +4,7 @@
 *.jar
 *.war
 *.ear
-
-/.svn/
-*/.svn/
-confino_professional_paper_2_2_2009.doc
+07b0108114c0c95053a5c3be9dbd99264e9bce62confino_professional_paper_2_2_2009.doc
 .classpath
 .project
 .settings/

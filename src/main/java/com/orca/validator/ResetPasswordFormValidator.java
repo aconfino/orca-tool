@@ -1,16 +1,24 @@
 package com.orca.validator;
 
+import javax.servlet.http.HttpSession;
+
 import nl.captcha.Captcha;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.Errors;
+
 import com.orca.form.ResetPasswordForm;
 import com.orca.service.UserService;
 
 public class ResetPasswordFormValidator {
 	
 	@Autowired
-	UserService service;
+	private UserService service;
+	private HttpSession session;
+	
+	public ResetPasswordFormValidator(HttpSession session){
+		this.session = session;
+	}
 	
 	private Captcha captcha;
 	
@@ -19,7 +27,7 @@ public class ResetPasswordFormValidator {
 	}
 
 	public void validate(Object object, Errors e) {
-		captcha = ValidatorUtil.getCaptchaFromSession();
+		captcha = ValidatorUtil.getCaptchaFromSession(session);
 		ResetPasswordForm form = (ResetPasswordForm) object;
 		if (!(ValidatorUtil.validEmail(form.getEmail()))){
             e.rejectValue("email", "reset.password.form.email.invalid");

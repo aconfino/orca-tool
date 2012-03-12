@@ -39,6 +39,8 @@ public class SurveyDAOImpl implements SurveyDAO{
 		if (list.size()>0){
 			survey = (Survey) list.get(0);
 		}
+		if (list.size()>0)
+			survey = (Survey) list.get(0);
 		return survey;
 	}
 

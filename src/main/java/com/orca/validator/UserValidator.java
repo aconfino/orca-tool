@@ -7,12 +7,14 @@ import org.springframework.validation.Validator;
 import com.orca.domain.User;
 import com.orca.service.UserService;
 
+
 public class UserValidator implements Validator {
 
 	@Autowired
-	UserService service;
+	private UserService service;
 	
-	public boolean supports(Class <?> clazz) {
+	@SuppressWarnings("rawtypes")
+	public boolean supports(Class clazz) {
 		return User.class.equals(clazz);
 	}
 

@@ -1,5 +1,7 @@
 package com.orca.web;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -19,6 +21,7 @@ public class EmailController {
 
 	@Autowired
 	private EmailService emailService;
+	private EmailEvaluationFormValidator emailFormValidator;
 
 	@RequestMapping(value = "emailEvaluation.html")
 	public ModelAndView emailEvaluation(
@@ -29,8 +32,8 @@ public class EmailController {
 	}
 
 	@RequestMapping(value = "emailEvaluationVerify.html")
-	public ModelAndView emailEvaluationVerify(@ModelAttribute("emailEvaluationForm") EmailEvaluationForm form, BindingResult result) {	
-		EmailEvaluationFormValidator emailFormValidator = new EmailEvaluationFormValidator();
+	public ModelAndView emailEvaluationVerify(@ModelAttribute("emailEvaluationForm") EmailEvaluationForm form, BindingResult result, HttpServletRequest request) {	
+		emailFormValidator = new EmailEvaluationFormValidator(request.getSession());
 		emailFormValidator.validate(form, result);
 		if (result.hasErrors()) {
 			ModelAndView mav = new ModelAndView("emailEvaluation");

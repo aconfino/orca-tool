@@ -31,6 +31,7 @@ public class EvaluationController {
 	private EvaluationFactory evaluationFactory;
 	@Autowired
 	private SurveyFactory surveyFactory;
+
 	
 	@RequestMapping(value="beginEvaluation.html")
 	public ModelAndView beginEvaluation(){
@@ -62,6 +63,7 @@ public class EvaluationController {
 	@RequestMapping(value="/continueEvaluation.html")
 	public ModelAndView continueEvaluation(){
 		return new ModelAndView("continueEvaluation");
+
 	}
 	
 	@RequestMapping(value="/noResultsFound.html")

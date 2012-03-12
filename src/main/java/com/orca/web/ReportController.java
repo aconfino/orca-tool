@@ -22,6 +22,7 @@ public class ReportController {
 	private SurveyService surveyService;
 	@Autowired
 	private EvaluationService evaluationService;
+
 	
 	@RequestMapping(value="reportSummary.html")
 	public ModelAndView reportSummary(@RequestParam("evaluationId") Integer evaluationId){
