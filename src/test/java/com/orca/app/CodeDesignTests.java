@@ -30,7 +30,7 @@ public class CodeDesignTests  {
 		assertTrue((codeDesign.getCalculatedValue()==(new Double (6.5))));	
 	}
 	
-	@Test
+	//@Test
 	public void weightedValueTest(){
 		CodeDesign codeDesign = new CodeDesign();
 		codeDesign.setObjectOriented(3);
