@@ -19,6 +19,8 @@
 
 	<!-- Validator Classes -->
 	<bean id="userValidator" class="com.orca.validator.UserValidator" />
+	<bean id="emailEvaluationFormValidator" class="com.orca.validator.EmailEvaluationFormValidator" />
+	<bean id="resetPasswordFormValidator" class="com.orca.validator.ResetPasswordFormValidator" />
 	<bean id="changePasswordValidator" class="com.orca.validator.ChangePasswordValidator" />
 	
 	<!-- Email Configuration -->

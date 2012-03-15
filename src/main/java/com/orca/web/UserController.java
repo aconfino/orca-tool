@@ -30,6 +30,7 @@ public class UserController {
 	private ChangePasswordValidator changePasswordValidator;
 	@Autowired
 	private EmailService emailService;
+	@Autowired
 	private ResetPasswordFormValidator resetPasswordFormValidator;
 
 	public void setValidator(UserValidator userValidator) {
@@ -84,7 +85,6 @@ public class UserController {
 
 	@RequestMapping(value = "resetPasswordVerify.html")
 	public ModelAndView resetPasswordVerify(@ModelAttribute("resetPasswordForm") ResetPasswordForm form, BindingResult result, HttpServletRequest request) {	
-		resetPasswordFormValidator = new ResetPasswordFormValidator(request.getSession());
 		resetPasswordFormValidator.validate(form, result);
 		if (result.hasErrors()) {
 			ModelAndView mav = new ModelAndView("resetPassword");

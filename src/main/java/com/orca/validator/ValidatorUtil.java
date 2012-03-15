@@ -1,14 +1,7 @@
 package com.orca.validator;
 
-import javax.servlet.http.HttpSession;
-
-import nl.captcha.Captcha;
 
 public class ValidatorUtil {
-
-	//public static Captcha getCaptchaFromSession(HttpSession session) {
-	//	return (Captcha) session.getAttribute(Captcha.NAME);
-	//}
 
 	public static Boolean validEmail(String email) {
 		Boolean validEmail = false;

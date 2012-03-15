@@ -21,6 +21,7 @@ public class EmailController {
 
 	@Autowired
 	private EmailService emailService;
+	@Autowired
 	private EmailEvaluationFormValidator emailFormValidator;
 
 	@RequestMapping(value = "emailEvaluation.html")
@@ -33,7 +34,6 @@ public class EmailController {
 
 	@RequestMapping(value = "emailEvaluationVerify.html")
 	public ModelAndView emailEvaluationVerify(@ModelAttribute("emailEvaluationForm") EmailEvaluationForm form, BindingResult result, HttpServletRequest request) {	
-		emailFormValidator = new EmailEvaluationFormValidator(request.getSession());
 		emailFormValidator.validate(form, result);
 		if (result.hasErrors()) {
 			ModelAndView mav = new ModelAndView("emailEvaluation");
