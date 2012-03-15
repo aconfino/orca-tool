@@ -233,12 +233,13 @@
             <artifactId>mail</artifactId>
             <version>1.4</version>
         </dependency>
-        <!--  Simple Captcha - not in central - added to local repo -->
+        <!--  Simple Captcha - not in central - added to local repo 
         <dependency>
               <groupId> simplecaptcha.sourceforge.net</groupId>
               <artifactId> simpleCaptcha</artifactId>
               <version>1.2.1</version>
         </dependency>
+        -->
         <!-- Selenium Test Tool -->
         <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
