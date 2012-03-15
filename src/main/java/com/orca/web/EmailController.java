@@ -51,7 +51,7 @@ public class EmailController {
 	public String getMessageBody(String evaluationNumber) {
 		String body = "Thank you for using the ORCA (Open Source Rapid Analysis) tool.  \n\n"
 				+ "To continue your software evaluation go to "
-				+ "http://localhost:8080/"
+				+ "http://orca-project.herokuapp.com/"
 				+ "getEvaluation.html?evaluationNumber="
 				+ evaluationNumber
 				+ ".  \n\n Many thanks. \n The ORCA Team.";
