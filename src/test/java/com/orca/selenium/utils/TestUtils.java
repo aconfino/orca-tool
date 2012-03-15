@@ -16,9 +16,6 @@ public class TestUtils {
 	public static final String URL = "http://localhost:8080/";
 	
 	public static FirefoxDriver getFirefoxDriver(){
-	//	File profileDirectory = new File(firefoxProfileDir);
-	//	FirefoxProfile profile = new FirefoxProfile(profileDirectory);
-	//	return new FirefoxDriver(profile);
 		return new FirefoxDriver();
 	}
 	
