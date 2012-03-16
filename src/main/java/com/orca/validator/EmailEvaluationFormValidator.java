@@ -13,9 +13,7 @@ public class EmailEvaluationFormValidator {
 
 	public void validate(Object object, Errors e) {
 		EmailEvaluationForm form = (EmailEvaluationForm) object;
-        if (form.getAnswer().isEmpty()) {
-            e.rejectValue("answer", "email.evaluation.form.answer.blank");
-        } else if (!(ValidatorUtil.validEmail(form.getEmail()))){
+        if (!(ValidatorUtil.validEmail(form.getEmail()))){
             e.rejectValue("email", "email.evaluation.form.email.invalid");
         }
 	}
