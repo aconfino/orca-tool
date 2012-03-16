@@ -23,9 +23,7 @@ public class ResetPasswordFormValidator {
             e.rejectValue("email", "reset.password.form.email.invalid");
         } else if (service.emailAvailable(form.getEmail())){
 	        e.rejectValue("email", "reset.password.form.email.missing");
- 	    } else if (form.getAnswer().isEmpty()) {
-	        e.rejectValue("answer", "reset.password.form.answer.blank");
-	    } 
+ 	    } 
 	}
 
 }
