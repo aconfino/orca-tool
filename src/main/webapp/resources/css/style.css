@@ -48,6 +48,10 @@ a {
 img.left {
   float: left;
   margin: 5px 25px 0px 0px; }
+  
+  img.right {
+  float: right;
+  margin: 0px 25px 25px 0px; }
 
 textarea#surveyComments {
   color: #666;
