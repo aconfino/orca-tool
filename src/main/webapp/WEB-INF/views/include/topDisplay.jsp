@@ -8,7 +8,7 @@
 		<li><a href="beginEvaluation.html">Begin an Evaluation</a></li>
 		<li><a href="continueEvaluation.html">Continue Evaluation</a></li>
 		<li><a href="#">Quick Start Guide</a></li>
-		<li><a href="#">About Bubby Tootie</a></li>
+		<li><a href="#">About the Orca Project</a></li>
 		<li><a href="myAccount.html">My Account</a></li>
 		<sec:authorize access="isAuthenticated()">
 			<li><a href="j_spring_security_logout"> Logout</a></li>
