@@ -131,7 +131,7 @@ public class UserController {
 	public String resetPasswordBody(String password){
 		return new String("Thank you for using the ORCA (Open Source Rapid Analysis) tool.  \n\n"
 			+ "Your password has been changed to " + password + ". \n\n "
-			+ "Please log into your account and change your password as soon as possible by going to http://localhost:8080/"
+			+ "Please log into your account and change your password as soon as possible by going to http://orca-project.herokuapp.com/myAccount.html"
 			+ ".  \n\n Many thanks. \n The ORCA Team.");
 	}
 
