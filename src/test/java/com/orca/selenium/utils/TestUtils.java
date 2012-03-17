@@ -13,7 +13,7 @@ public class TestUtils {
 	
 	// TODO make this path relative
 	public static final String firefoxProfileDir = "C:\\workspace\\orcaproject\\src\\test\\resources\\FirefoxProfile";	
-	public static final String URL = "http://localhost:8080/";
+	public static final String URL = "http://orca-project.herokuapp.com/";
 	
 	public static FirefoxDriver getFirefoxDriver(){
 		return new FirefoxDriver();

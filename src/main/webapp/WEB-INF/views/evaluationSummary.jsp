@@ -36,6 +36,7 @@
 						<div><c:out value="Code Velocity: ${survey.velocity.calculatedValue} - "/><a href="${editVelocity}">edit</a></div>
 						<div><c:out value="Code Functionality: ${survey.functionality.calculatedValue} - "/><a href="${editFunctionality}">edit</a></div>
 						<div><c:out value="Comments: ${survey.comments} - "/><a href="${editComments}">edit</a></div>
+						<div><c:out value="Final Score: ${survey.score}"/></div>
 				</div>
 			</c:forEach>
 		</div>

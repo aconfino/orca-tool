@@ -35,6 +35,7 @@ public class SurveyFactory {
 		createVelocity(survey);
 	    createFunctionality(survey);
 		survey.setEvaluation(evaluation);
+		survey.setScore(0);
 		return survey;
 	}
 	

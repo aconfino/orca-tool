@@ -46,6 +46,28 @@ public class Survey {
 	@ManyToOne
 	@JoinColumn(name = "evaluationId")
 	private Evaluation evaluation;
+	private double score;
+	
+	public double getScore(){
+		return (codeDesign.getWeightedValue(this) 
+				+ codeRuntime.getWeightedValue(this)
+				+ codeStatic.getWeightedValue(this)
+				+ community.getWeightedValue(this)
+				+ documentation.getWeightedValue(this)
+				+ license.getWeightedValue(this)
+				+ marketPenetration.getWeightedValue(this)
+				+ pedigree.getWeightedValue(this)
+				+ support.getWeightedValue(this)
+				+ velocity.getWeightedValue(this)
+				+ functionality.getWeightedValue(this));
+	}
+	
+	public void setScore(double score) {
+		this.score = score;
+	}
+
+
+
 	public Integer getId() {
 		return id;
 	}

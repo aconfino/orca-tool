@@ -234,6 +234,10 @@ input:focus {
   padding: 10px 23px 0px 23px;
   float: left; }
 
+.weightingContent {
+  clear: both;
+  padding: 25px 50px 0px 25px; }
+
 .metricContent {
   width: 500px;
   float: left;
