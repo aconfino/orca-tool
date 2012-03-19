@@ -45,8 +45,6 @@ $(function(){
 		.dialog({
 			autoOpen: false,
 			title: '${pageScope.title}',
-			width: 600,
-			minHeight: 300
 		});
 	$('#${pageScope.name}PopUp').click(function() {
 		$dialog.dialog('open');

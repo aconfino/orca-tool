@@ -4,7 +4,7 @@
 	
 	<div id="noRightRailContent">
 		<div class="post">
-		<div class="weightingContent">
+		<div class="evaluationContent">
 		<h2>Evaluation Weighting</h2>
 		Your evaluation can be weighted to give priority to metrics that are important
 		to your particular project.  Evaluation weightings help customize survey scores

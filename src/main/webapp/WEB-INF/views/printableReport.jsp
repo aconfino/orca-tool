@@ -54,6 +54,7 @@
 				<div><c:out value="Code Velocity: ${survey.velocity.calculatedValue}"/></div>
 				<div><c:out value="Code Functionality: ${survey.functionality.calculatedValue}"/></div>
 				<div><c:out value="Comments: ${survey.comments}"/></div>
+				<div><c:out value="Final Score: ${survey.score}"/></div>
 			</div>
 		</c:forEach>
 	</div>

@@ -5,10 +5,21 @@
 		<div class="post">
 			<div class="metricContent">
 				<h2>Code Runtime</h2>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tellus libero, luctus porta rhoncus eu, interdum et nisl. Proin sapien nisi, cursus quis mattis a, mattis non nibh. Aliquam erat volutpat. Nunc vitae tellus non dolor posuere consequat. Nullam scelerisque ipsum non enim hendrerit volutpat. Aenean nulla enim, facilisis eu luctus sit amet, facilisis sed tortor. Suspendisse ante leo, laoreet in suscipit et, viverra nec sapien. Mauris id laoreet purus. Duis nulla arcu, dapibus ac condimentum a, pretium vel orci. Nullam euismod est vitae libero commodo pulvinar. In ante metus, condimentum vel vulputate eget, tincidunt eget enim. Vivamus euismod, urna eu ornare bibendum, metus odio facilisis turpis, eu sollicitudin nunc lectus eu odio. Aenean fringilla, magna at adipiscing aliquam, nisl diam sodales eros, a vestibulum enim turpis eget enim. Integer non tortor eu lacus sodales bibendum. Proin imperdiet mollis elementum. Nulla vulputate mauris eget lacus euismod luctus. Nam a iaculis lectus. Maecenas dictum ante quis leo interdum aliquet. Integer facilisis molestie elit, in commodo ipsum ultrices a. 				</div	>
-			<div id="cpuThreshholdDescription" style="display:none;">This is a description for the Cpu Threshhold metric</div>
-			<div id="memoryThreshholdDescription" style="display:none;">This is a description for the  MemoryThreshhold metric</div>
-			<div id="IOThreshholdDescription" style="display:none;">This is a description for the IOThreshhold metric</div>		
+				<p>The runtime analysis metric can be one of the more difficult metrics to capture.  Runtime analysis may require a custom 
+				test program, a load generator, test data, instrumentation to gather the metrics, and an isolated test environment.  In addition, 
+				the thresholds used for runtime analysis are highly dependent on the specific situation so even general guidelines are not 
+				possible.
+				</p>
+				<p>The runtime analysis submetric is often omitted from evaluations because it is prohibitively time consuming to calculate.  
+				If your project will be deployed in a highly demanding environment, the time investment in this metric could be well worth it.  
+				We recommend using Bad Boy to record tests and Apache JMeter to generate load.  Recommended Tools:  <a href="http://www.badboy.com.au/">BadBoy </a> 
+				and <a href="http://jmeter.apache.org/">Apache JMeter</a>
+				  
+				</p>
+			</div>
+			<div id="cpuThreshholdDescription" style="display:none;">Does the code remain under a specific CPU threshhold while under load?</div>
+			<div id="memoryThreshholdDescription" style="display:none;">Does the code remain under a specific memory threshhold while under load?</div>
+			<div id="IOThreshholdDescription" style="display:none;">Does the code remain under a specific IO threshhold while under load?</div>		
 			<div class="surveySliders">
 			<form:form action="saveCodeRuntime.html" commandName="codeRuntime" >
 				<orca:targetSlider name="cpuThreshhold" title="CPU Threshhold" value="${codeRuntime.cpuThreshhold}"/>				

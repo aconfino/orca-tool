@@ -5,13 +5,19 @@
 		<div class="post">
 				<div class="metricContent">
 					<h2>Documentation</h2>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tellus libero, luctus porta rhoncus eu, interdum et nisl. Proin sapien nisi, cursus quis mattis a, mattis non nibh. Aliquam erat volutpat. Nunc vitae tellus non dolor posuere consequat. Nullam scelerisque ipsum non enim hendrerit volutpat. Aenean nulla enim, facilisis eu luctus sit amet, facilisis sed tortor. Suspendisse ante leo, laoreet in suscipit et, viverra nec sapien. Mauris id laoreet purus. Duis nulla arcu, dapibus ac condimentum a, pretium vel orci. Nullam euismod est vitae libero commodo pulvinar. In ante metus, condimentum vel vulputate eget, tincidunt eget enim. Vivamus euismod, urna eu ornare bibendum, metus odio facilisis turpis, eu sollicitudin nunc lectus eu odio. Aenean fringilla, magna at adipiscing aliquam, nisl diam sodales eros, a vestibulum enim turpis eget enim. Integer non tortor eu lacus sodales bibendum. Proin imperdiet mollis elementum. Nulla vulputate mauris eget lacus euismod luctus. Nam a iaculis lectus. Maecenas dictum ante quis leo interdum aliquet. Integer facilisis molestie elit, in commodo ipsum ultrices a. 
+					<p>
+					Software documentation is a critical component to software fitness, and yet many open source software projects 
+					have poor documentation.  There are many different types of documentation, and it is important to thoroughly 
+					evaluate the documentation along with the actual source and binaries.  Documentation can be found in many places 
+					including code comments, separate documentation files accompanying the software, help files within the application, 
+					the project website, and message boards.
+					</p>
 				</div>
-				<div id="userDocumentationDescription" style="display:none;">This is a description for the User Documentation metric</div>
-				<div id="developerDocumentationDescription" style="display:none;">This is a description for the Developer Documentation metric</div>
-				<div id="codeCommentsDescription" style="display:none;">This is a description for the Code Comments metric</div>
-				<div id="installationDocumentationDescription" style="display:none;">This is a description for the Installation Documentation metric</div>
-				<div id="administrationDocumentationDescription" style="display:none;">This is a description for the Administration Documentation metric</div>
+				<div id="userDocumentationDescription" style="display:none;">Does the software contain adequate documentation for the end user?</div>
+				<div id="developerDocumentationDescription" style="display:none;">Does the software contain adequate documentation for developers?</div>
+				<div id="codeCommentsDescription" style="display:none;">Does the code contain adequate and helpful comments?</div>
+				<div id="installationDocumentationDescription" style="display:none;">Does the software contain adequate installation documentation?</div>
+				<div id="administrationDocumentationDescription" style="display:none;">Does the software contain adequate administator documentation?</div>
 				<div class="surveySliders">
 					<form:form action="saveDocumentation.html" commandName="documentation" >
 						<orca:targetSlider name="userDocumentation" title="User Documentation" value="${documentation.userDocumentation}"/>				

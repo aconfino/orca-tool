@@ -5,12 +5,20 @@
 		<div class="post">
 				<div class="metricContent">
 					<h2>Code Design</h2>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tellus libero, luctus porta rhoncus eu, interdum et nisl. Proin sapien nisi, cursus quis mattis a, mattis non nibh. Aliquam erat volutpat. Nunc vitae tellus non dolor posuere consequat. Nullam scelerisque ipsum non enim hendrerit volutpat. Aenean nulla enim, facilisis eu luctus sit amet, facilisis sed tortor. Suspendisse ante leo, laoreet in suscipit et, viverra nec sapien. Mauris id laoreet purus. Duis nulla arcu, dapibus ac condimentum a, pretium vel orci. Nullam euismod est vitae libero commodo pulvinar. In ante metus, condimentum vel vulputate eget, tincidunt eget enim. Vivamus euismod, urna eu ornare bibendum, metus odio facilisis turpis, eu sollicitudin nunc lectus eu odio. Aenean fringilla, magna at adipiscing aliquam, nisl diam sodales eros, a vestibulum enim turpis eget enim. Integer non tortor eu lacus sodales bibendum. Proin imperdiet mollis elementum. Nulla vulputate mauris eget lacus euismod luctus. Nam a iaculis lectus. Maecenas dictum ante quis leo interdum aliquet. Integer facilisis molestie elit, in commodo ipsum ultrices a. 
+					<p>The <b>Code Design</b> metric achieved by a code review.  It is usually not practical or 
+					necessary to examine every source file.  A sufficient code review can be performed 
+					by identifying some key source files, such as the main bootstrapping class, and 
+					drilling down into other classes from there.  It is important to “time box” the code 
+					review activity, that is to restrict the code review time to a firm schedule to not allow 
+					the process to continue endlessly.  Rate each key aspect of the code.  
+					While there are many good resources available, <u>The Clean Coder: A Code of Conduct for Professional Programmers</u>
+					is a top notch work on this topic.
+					</p>
 				</div>
-				<div id="objectOrientedDescription" style="display:none;">This is a description for the Object Oriented metric</div>
-				<div id="understandabilityDescription" style="display:none;">This is a description for the Understandability metric</div>
-				<div id="extensibilityDescription" style="display:none;">This is a description for the Extensibility metric</div>
-				<div id="testabilityDescription" style="display:none;">This is a description for the Testability metric</div>	
+				<div id="objectOrientedDescription" style="display:none;">Does the code adhere to object oriented best practices and principles?</div>
+				<div id="understandabilityDescription" style="display:none;">Is the could easy to understand and logically laid out?</div>
+				<div id="extensibilityDescription" style="display:none;">Can the code be easily extended and customized for future use?</div>
+				<div id="testabilityDescription" style="display:none;">Is the code structured in such a way that it is easily unit tested?</div>	
 				<div class="surveySliders">
 				<form:form action="saveCodeDesign.html" commandName="codeDesign">
 					<orca:targetSlider name="objectOriented" title="Object Oriented" value="${codeDesign.objectOriented}"/>				

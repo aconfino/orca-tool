@@ -5,7 +5,28 @@
 		<div class="post">
 				<div class="metricContent">
 					<h2>License</h2>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tellus libero, luctus porta rhoncus eu, interdum et nisl. Proin sapien nisi, cursus quis mattis a, mattis non nibh. Aliquam erat volutpat. Nunc vitae tellus non dolor posuere consequat. Nullam scelerisque ipsum non enim hendrerit volutpat. Aenean nulla enim, facilisis eu luctus sit amet, facilisis sed tortor. Suspendisse ante leo, laoreet in suscipit et, viverra nec sapien. Mauris id laoreet purus. Duis nulla arcu, dapibus ac condimentum a, pretium vel orci. Nullam euismod est vitae libero commodo pulvinar. In ante metus, condimentum vel vulputate eget, tincidunt eget enim. Vivamus euismod, urna eu ornare bibendum, metus odio facilisis turpis, eu sollicitudin nunc lectus eu odio. Aenean fringilla, magna at adipiscing aliquam, nisl diam sodales eros, a vestibulum enim turpis eget enim. Integer non tortor eu lacus sodales bibendum. Proin imperdiet mollis elementum. Nulla vulputate mauris eget lacus euismod luctus. Nam a iaculis lectus. Maecenas dictum ante quis leo interdum aliquet. Integer facilisis molestie elit, in commodo ipsum ultrices a. 
+				<p>Open source software licensing is one the most crucial yet confusing aspects of evaluating open source software's fitness.   
+				The desire to use open source is generally based on financial benefits. However, even though the software is "free" to use, 
+				it is critical to select the right open source software solution for a given situation.  Several categories of licensing are listed below: </p>
+				<p><b>BSD-style Permissive Licenses</b> -- BSD is very permissive license that allows users of the software the freedom to modify and redistribute it in any way.  The only restrictions enforced by the BSD license are that if a user redistributes the software, modified or unmodified, they must:
+					<ol>
+						<li>Include the original license with copyright notice</li>
+						<li>Use the software "<i>As Is</i>" and not hold the author liable for any damages</li>
+						<li>Not use the names of the authors in an advertising of derivative works </li>
+					</ol>
+				</p>
+				<p><b>Weak copyleft licenses</b>, such as GNU's Lesser General Public License, also state that if the licensed 
+				software is modified and redistributed then the derivative must be open sourced.  However weak copyleft licenses 
+				generally permit the runtime linking of the open source software to other programs.  This allows LGPL-licensed 
+				software to be embedded in a proprietary program that is redistributed.  This makes the LGPL license more appropriate 
+				for software libraries that are embedded in other programs, and in fact the LGPL is sometimes called the 
+				Library General Purpose License.
+				<p><b>Strong copyleft licenses</b>, such as the GPL, state that if the software is modified and redistributed, 
+				the derivative must also be released as open source.  In addition, if the software is linked at runtime to another program 
+				and redistributed, that program must be open sourced as well.  This prevents GPL-licensed software from being 
+				embedded in a proprietary program that is redistributed.
+				</p>
+				</p>
 				</div>
 		</div>
 		<div class="licenseMetric">
