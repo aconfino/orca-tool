@@ -8,7 +8,7 @@
 					<p>The <b>Code Design</b> metric achieved by a code review.  It is usually not practical or 
 					necessary to examine every source file.  A sufficient code review can be performed 
 					by identifying some key source files, such as the main bootstrapping class, and 
-					drilling down into other classes from there.  It is important to “time box” the code 
+					drilling down into other classes from there.  It is important to "time box" the code 
 					review activity, that is to restrict the code review time to a firm schedule to not allow 
 					the process to continue endlessly.  Rate each key aspect of the code.  
 					While there are many good resources available, <u>The Clean Coder: A Code of Conduct for Professional Programmers</u>

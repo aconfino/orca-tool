@@ -4,12 +4,22 @@
 	<div id="noRightRailContent">
 		<div class="post">
 				<div class="metricContent">
-					<h2>Pedigree</h2>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tellus libero, luctus porta rhoncus eu, interdum et nisl. Proin sapien nisi, cursus quis mattis a, mattis non nibh. Aliquam erat volutpat. Nunc vitae tellus non dolor posuere consequat. Nullam scelerisque ipsum non enim hendrerit volutpat. Aenean nulla enim, facilisis eu luctus sit amet, facilisis sed tortor. Suspendisse ante leo, laoreet in suscipit et, viverra nec sapien. Mauris id laoreet purus. Duis nulla arcu, dapibus ac condimentum a, pretium vel orci. Nullam euismod est vitae libero commodo pulvinar. In ante metus, condimentum vel vulputate eget, tincidunt eget enim. Vivamus euismod, urna eu ornare bibendum, metus odio facilisis turpis, eu sollicitudin nunc lectus eu odio. Aenean fringilla, magna at adipiscing aliquam, nisl diam sodales eros, a vestibulum enim turpis eget enim. Integer non tortor eu lacus sodales bibendum. Proin imperdiet mollis elementum. Nulla vulputate mauris eget lacus euismod luctus. Nam a iaculis lectus. Maecenas dictum ante quis leo interdum aliquet. Integer facilisis molestie elit, in commodo ipsum ultrices a. 
+					<h2>Pedigree</h2>				
+					The software pedigree criterion is determined by evaluating the authors, 
+					patrons, and lineage of the project.  Organization and individuals who have 
+					produced quality software in the past are more likely to produce quality software now.  
+					Additionally software derived from other software that is known to be of high quality is 
+					likely to benefit from that solid foundation.  Several items need to be considered when
+					evaluating the pedigree of a piece of software.
+					<ul>
+						<li>Is the author of this software is known to produce high quality software?</li>
+						<li>Is the group sponsoring or funding this software is known to produce high quality software?</li>
+						<li>Is this software is derived from or makes heavy use of another piece of software that is known to be of high quality?</li>
+					</ul> 	
 				</div>
-				<div id="authorDescription" style="display:none;">This is a description for the Author Documentation metric</div>
-				<div id="groupSponsorDescription" style="display:none;">This is a description for the Group Sponsor Documentation metric</div>
-				<div id="derivedDescription" style="display:none;">This is a description for the Derived Documentation metric</div>
+				<div id="authorDescription" style="display:none;">The Author score determines whether the author of this software is known to produce high quality software</div>
+				<div id="groupSponsorDescription" style="display:none;">The Group Sponsor score is used to evaluate whether the group sponsoring or funding this software is known to produce high quality software.</div>
+				<div id="derivedDescription" style="display:none;">The Derived score indicates whether this software is derived from or makes heavy use of another piece of software that is known to be of high quality.</div>
 				<div class="surveySliders">
 					<form:form action="savePedigree.html" commandName="pedigree" >
 						<orca:targetSlider name="author" title="Author" value="${pedigree.author}"/>				

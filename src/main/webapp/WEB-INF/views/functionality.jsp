@@ -6,9 +6,22 @@
 		<div class="post">
 				<div class="metricContent">
 					<h2>Functionality</h2>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tellus libero, luctus porta rhoncus eu, interdum et nisl. Proin sapien nisi, cursus quis mattis a, mattis non nibh. Aliquam erat volutpat. Nunc vitae tellus non dolor posuere consequat. Nullam scelerisque ipsum non enim hendrerit volutpat. Aenean nulla enim, facilisis eu luctus sit amet, facilisis sed tortor. Suspendisse ante leo, laoreet in suscipit et, viverra nec sapien. Mauris id laoreet purus. Duis nulla arcu, dapibus ac condimentum a, pretium vel orci. Nullam euismod est vitae libero commodo pulvinar. In ante metus, condimentum vel vulputate eget, tincidunt eget enim. Vivamus euismod, urna eu ornare bibendum, metus odio facilisis turpis, eu sollicitudin nunc lectus eu odio. Aenean fringilla, magna at adipiscing aliquam, nisl diam sodales eros, a vestibulum enim turpis eget enim. Integer non tortor eu lacus sodales bibendum. Proin imperdiet mollis elementum. Nulla vulputate mauris eget lacus euismod luctus. Nam a iaculis lectus. Maecenas dictum ante quis leo interdum aliquet. Integer facilisis molestie elit, in commodo ipsum ultrices a. 
+					<p>
+					It is important to determine whether the open source software possesses the required features.  
+					There is no magic formula that can determine whether software meets its requirements, but by using 	
+					the same standard to evaluate multiple products some objective comparisons can be drawn.
+					</p>
+					<p>
+					It is recommended that evaluators create a list of both functional and non-functional features should be included.  
+					Examples of non-functional features include operating system and hardware requirements, meeting relevant standards, 
+					data exchange formats such as XML, communication protocols such as Internet Inter-Orb Protocol (IIOP), and 
+					database integration.
+					</p>
+					<p>The functionality criterion represents the percentage of desired features that software possesses.  A 100% feature satisfaction rate is not always necessary for an open source software solution to be adopted since missing features can be implemented by the adopting organization.  
+					</p>
+
 				</div>
-				<div id="featureScoreDescription" style="display:none;">This is a description for the Feature Score Documentation metric</div>
+				<div id="featureScoreDescription" style="display:none;">The feature score represents the percentage of desired features that the software possesses.  Does this software have an adequate feature set?</div>
 				<div class="surveySliders">
 					<form:form action="saveFunctionality.html" commandName="functionality" >
 						<orca:targetSlider name="featureScore" title="Features" value="${functionality.featureScore}"/>				

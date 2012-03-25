@@ -5,9 +5,16 @@
 		<div class="post">
 				<div class="metricContent">
 					<h2>Market Penetration</h2>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tellus libero, luctus porta rhoncus eu, interdum et nisl. Proin sapien nisi, cursus quis mattis a, mattis non nibh. Aliquam erat volutpat. Nunc vitae tellus non dolor posuere consequat. Nullam scelerisque ipsum non enim hendrerit volutpat. Aenean nulla enim, facilisis eu luctus sit amet, facilisis sed tortor. Suspendisse ante leo, laoreet in suscipit et, viverra nec sapien. Mauris id laoreet purus. Duis nulla arcu, dapibus ac condimentum a, pretium vel orci. Nullam euismod est vitae libero commodo pulvinar. In ante metus, condimentum vel vulputate eget, tincidunt eget enim. Vivamus euismod, urna eu ornare bibendum, metus odio facilisis turpis, eu sollicitudin nunc lectus eu odio. Aenean fringilla, magna at adipiscing aliquam, nisl diam sodales eros, a vestibulum enim turpis eget enim. Integer non tortor eu lacus sodales bibendum. Proin imperdiet mollis elementum. Nulla vulputate mauris eget lacus euismod luctus. Nam a iaculis lectus. Maecenas dictum ante quis leo interdum aliquet. Integer facilisis molestie elit, in commodo ipsum ultrices a. 
+					It is important to include market leaders in a software evaluation.  
+					Determining a market leader of open source software is a subjective, however there
+					are several sources that can assist in determining market penetration
+					<ol>
+						<li>Number of reviews in trade magazines, websites, and blogs.  Sites such as Ohloh (http://www.ohloh.net) provide community reviews.</li>
+						<li>Google Trends (http://trends.google.com) can be used to gauge popularity of the project's website</li>
+						<li>For Linux-based software, inclusion in highly regarded Linux distributions such as Red Hat can be a sign of market penetration.</li>
+					</ol>
 				</div>
-				<div id="marketPenetrationScoreDescription" style="display:none;">This is a description for the Market Penetration Documentation metric</div>
+				<div id="marketPenetrationScoreDescription" style="display:none;">Score this software based on if it has wide market penetration.</div>
 				<div class="surveySliders">
 					<form:form action="saveMarketPenetration.html" commandName="marketPenetration" >
 						<orca:targetSlider name="marketPenetrationScore" title="Market Penetration" value="${marketPenetration.marketPenetrationScore}"/>				

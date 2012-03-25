@@ -8,7 +8,7 @@
 					<form:label path="surveyName">Survey name:</form:label>	
 					<form:input path="surveyName" /><br><br>  
 					<input name="surveyId" type="hidden" value="${survey.id}"/>
-					<p>Give your survey a name -- for example -- <i>JQuery mobile framework.  
+					<p>Give your survey a name -- for example -- <i>JQuery mobile framework. </i>
 					Once you create a software survey, you can begin to evaluate it's software metrics.  
 					Create multiple software surveys and compare them against each other with our 
 					reporting tooling.</p>

@@ -5,8 +5,10 @@
 		<div id="content">
 			<div class="post">
 				<div class="entry">
-					<p>Sed vel quam. Vestibulum pellentesque. Morbi sit amet magna ac lacus dapibus interdum. </p>
-					<form:form action="saveSurveyComments.html" commandName="survey">
+				<p>
+					If would like to add any additional comments to this survey, can you do so.
+				</p>
+        				<form:form action="saveSurveyComments.html" commandName="survey">
 						<form:label path="comments">Comments:</form:label>
 						<form:textarea path="comments" id="surveyComments"/><br><br>  
 						<input name="surveyId" type="hidden" value="${survey.id}"/>

@@ -6,7 +6,7 @@
 		<div class="entry">
 			<form:form action="evaluationWeight.html" commandName="evaluation" >
 				<%@ include file="include/evaluationNameInput.jspf"%>
-				<p>Give your evaluation a name -- for example -- <i>Mobile Framework Evaluation</p>
+				<p>Give your evaluation a name -- for example -- <i>Mobile Framework Evaluation</i></p>
 				<input type="submit" value="Start evaluation" />
 			</form:form>
 		</div>

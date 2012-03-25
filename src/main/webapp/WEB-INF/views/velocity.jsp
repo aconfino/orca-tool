@@ -5,10 +5,31 @@
 		<div class="post">
 				<div class="metricContent">
 					<h2>Velocity</h2>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tellus libero, luctus porta rhoncus eu, interdum et nisl. Proin sapien nisi, cursus quis mattis a, mattis non nibh. Aliquam erat volutpat. Nunc vitae tellus non dolor posuere consequat. Nullam scelerisque ipsum non enim hendrerit volutpat. Aenean nulla enim, facilisis eu luctus sit amet, facilisis sed tortor. Suspendisse ante leo, laoreet in suscipit et, viverra nec sapien. Mauris id laoreet purus. Duis nulla arcu, dapibus ac condimentum a, pretium vel orci. Nullam euismod est vitae libero commodo pulvinar. In ante metus, condimentum vel vulputate eget, tincidunt eget enim. Vivamus euismod, urna eu ornare bibendum, metus odio facilisis turpis, eu sollicitudin nunc lectus eu odio. Aenean fringilla, magna at adipiscing aliquam, nisl diam sodales eros, a vestibulum enim turpis eget enim. Integer non tortor eu lacus sodales bibendum. Proin imperdiet mollis elementum. Nulla vulputate mauris eget lacus euismod luctus. Nam a iaculis lectus. Maecenas dictum ante quis leo interdum aliquet. Integer facilisis molestie elit, in commodo ipsum ultrices a. 
+					<p>
+					It is important to determine if an open source project is a healthy, growing project, or a stagnant, dying project.  
+					Many open source projects grow stagnant after the initial author moves on to something else.   Release frequency
+					 if often an accurate indicator of a project's velocity.
+					 </p>
+					 <p>
+					 A healthy project will have regular software releases and a fairly constant pace.  
+					Long periods of time without a release generally indicate a problem.  New major releases introduce a large 
+					quantity of new features and potentially break backwards compatibility.  Minor releases add some new features, 
+					but remain backward compatible with other minor releases.  Patch releases contain only bug fixes.  
+					Totaling the major and minor releases per year indicates how quickly a project is adding new features.  
+					Totaling the patch releases per year indicates how quickly a project is fixing bugs.
+					</p>
+					<p>
+					There are multiple sources for gathering data about an open source project's releases including:
+					</p>
+						<ol>
+							<li>A download page on the project's website will list at least the most current releases.</li>
+							<li>A change log is often included in the current releases, and it often lists old releases.</li>
+							<li>Repositories such as the Maven central repository (http://repo1.maven.org/maven2/) have release information that may extend back even further than what it available on a project's web site.</li>
+							<li>The source code repository often will have labels or tags that indicate releases.</li>
+						</ol>				
 				</div>
-				<div id="featureActualDescription" style="display:none;">This is a description for the Feature Actual Documentation metric</div>
-				<div id="patchActualDescription" style="display:none;">This is a description for the Patch Actual Documentation metric</div>
+				<div id="featureActualDescription" style="display:none;">Totaling the major and minor releases per year indicates how quickly a project is adding new features.  Indicate if this project has an adequate feature release schedule.</div>
+				<div id="patchActualDescription" style="display:none;">Totaling the patch releases per year indicates how quickly a project is fixing bugs.  Indicate if this project release patches in a adequate time frame. </div>
 				<div class="surveySliders">
 					<form:form action="saveVelocity.html" commandName="velocity" >
 						<orca:targetSlider name="featureActual" title="Features" value="${velocity.featureActual}"/>				
