@@ -21,5 +21,10 @@ public class HomeController {
 	public ModelAndView homeView() {
 		return new ModelAndView("home");
 	}
+	
+	@RequestMapping(value="aboutOrca.html")
+	public ModelAndView aboutOrca() {
+		return new ModelAndView("aboutOrca");
+	}
 
 }

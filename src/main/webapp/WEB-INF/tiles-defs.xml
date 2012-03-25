@@ -146,6 +146,12 @@
 		<put-attribute name="body" value="/WEB-INF/views/printableReport.jsp" />
 	</definition>
 	
+	<!-- Informational Views -->
+	<definition name="aboutOrca" extends="mainTemplate">
+		<put-attribute name="title" value="About Orca" />
+		<put-attribute name="body" value="/WEB-INF/views/aboutOrca.jsp" />
+	</definition>
+	
 	<!-- Account Views -->
 			
 	<definition name="login" extends="mainTemplate">
