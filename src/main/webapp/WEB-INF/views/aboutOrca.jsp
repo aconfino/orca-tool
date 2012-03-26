@@ -30,7 +30,7 @@
 					<li><a href="http://jqueryui.com/">JQuery UI</a></li>
 					<li><a href="http://sass-lang.com/">Sass</a></li>
 					<li>version controlled on <a href="https://github.com/aconfino/orca-tool">github</a></li>
-					<li>kindly hosted by <a href="http://www.heroku.com/">Heroku</a></li>
+					<li>hosted by <a href="http://www.heroku.com/">Heroku</a></li>
 				</ul>
 				</p>
 			</div>

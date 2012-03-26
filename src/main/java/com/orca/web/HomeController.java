@@ -26,5 +26,10 @@ public class HomeController {
 	public ModelAndView aboutOrca() {
 		return new ModelAndView("aboutOrca");
 	}
+	
+	@RequestMapping(value="quickStart.html")
+	public ModelAndView quickStart() {
+		return new ModelAndView("quickStart");
+	}
 
 }

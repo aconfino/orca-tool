@@ -152,6 +152,11 @@
 		<put-attribute name="body" value="/WEB-INF/views/aboutOrca.jsp" />
 	</definition>
 	
+		<definition name="quickStart" extends="mainTemplate">
+		<put-attribute name="title" value="Quick Start" />
+		<put-attribute name="body" value="/WEB-INF/views/quickStart.jsp" />
+	</definition>
+	
 	<!-- Account Views -->
 			
 	<definition name="login" extends="mainTemplate">
