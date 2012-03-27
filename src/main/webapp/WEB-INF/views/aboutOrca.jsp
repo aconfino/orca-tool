@@ -28,7 +28,7 @@
 					<li><a href="http://www.hibernate.org/">Hibernate</a></li>
 					<li>Apache <a href="http://maven.apache.org/">Maven</a></li>
 					<li><a href="http://jqueryui.com/">JQuery UI</a></li>
-					<li><a href="http://sass-lang.com/">Sass</a></li>
+					<li><a href="http://sass-lang.com/">Sass</a> - <i>(Syntactically Awesome Stylesheets)</i></li>
 					<li>version controlled on <a href="https://github.com/aconfino/orca-tool">github</a></li>
 					<li>hosted by <a href="http://www.heroku.com/">Heroku</a></li>
 				</ul>

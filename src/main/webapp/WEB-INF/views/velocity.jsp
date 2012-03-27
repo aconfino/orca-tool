@@ -24,7 +24,7 @@
 						<ol>
 							<li>A download page on the project's website will list at least the most current releases.</li>
 							<li>A change log is often included in the current releases, and it often lists old releases.</li>
-							<li>Repositories such as the Maven central repository (http://repo1.maven.org/maven2/) have release information that may extend back even further than what it available on a project's web site.</li>
+							<li>Repositories such as the Maven central repository (<a href="http://search.maven.org/#browse/">http://search.maven.org/#browse</a>) have release information that may extend back even further than what it available on a project's web site.</li>
 							<li>The source code repository often will have labels or tags that indicate releases.</li>
 						</ol>				
 				</div>

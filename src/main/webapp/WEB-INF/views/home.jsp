@@ -10,7 +10,7 @@
 				The ORCA project (OpenSource Rapid Comparative Analysis)
 				provides free tools to evaluate software in a consistent and efficient manner.  Using
 				10 proven software metrics, ORCA will help you evaluate every aspect of an open 
-				source project.  ORCA also allows software teams to corroborate on multiple with ease.  
+				source project.  ORCA also allows software teams to corroborate on multiple projects with ease.  
 				Take the risk out of using open source software by helping your organization evaluate 
 				it in an objective and consistent manner.  Software evaluations can be setup in minutes 
 				and of course our tool is 100% free.

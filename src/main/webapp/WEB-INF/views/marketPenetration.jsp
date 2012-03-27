@@ -9,9 +9,9 @@
 					Determining a market leader of open source software is a subjective, however there
 					are several sources that can assist in determining market penetration
 					<ol>
-						<li>Number of reviews in trade magazines, websites, and blogs.  Sites such as Ohloh (http://www.ohloh.net) provide community reviews.</li>
-						<li>Google Trends (http://trends.google.com) can be used to gauge popularity of the project's website</li>
-						<li>For Linux-based software, inclusion in highly regarded Linux distributions such as Red Hat can be a sign of market penetration.</li>
+						<li>Number of reviews in trade magazines, websites, and blogs.  Sites such as Ohloh (<a href="http://www.ohloh.net">http://www.ohloh.net</a>) provide community reviews.</li>
+						<li>Google Trends (<a href="http://trends.google.com">http://trends.google.com</a>) can be used to gauge popularity of the project's website</li>
+						<li>For Linux-based software, inclusion in highly regarded Linux distributions such as <a href="http://www.redhat.com/">Red Hat</a> can be a sign of market penetration.</li>
 					</ol>
 				</div>
 				<div id="marketPenetrationScoreDescription" style="display:none;">Score this software based on if it has wide market penetration.</div>

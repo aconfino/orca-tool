@@ -7,6 +7,8 @@
 			<span class="reportControls">
 				<h2>Report Summary</h2>
 				Use our reporting tool to compare the strengths and weaknesses of each software survey.
+				  Once you generate the report, you can print the graph and summary scores using the link
+				  below the graph.
 				<br><br><br>
 				Select the type of graph:
 				<form:form action="viewGraph.html" method="POST" commandName="reportForm">

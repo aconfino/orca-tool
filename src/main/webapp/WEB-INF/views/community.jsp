@@ -6,7 +6,7 @@
 				<div class="metricContent">
 					<h2>Community</h2>
 					<p>
-					An open source project benefits greatly from an involved user community beyond the project’s authors.  
+					An open source project benefits greatly from an involved user community beyond the project's authors.  
 					A vibrant community is a good sign of project health.  Signs of a good community include an updated 
 					website, an active mailing list, and active message board or Wiki where information between 
 					community members is being exchanged.  
