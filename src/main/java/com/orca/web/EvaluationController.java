@@ -91,7 +91,7 @@ public class EvaluationController {
 	}
 	
 	@RequestMapping(value="/evaluationWeight.html")
-	public ModelAndView evaluationWeight(@ModelAttribute Evaluation evaluation){
+	public ModelAndView evaluationWeight(@ModelAttribute("evaluation") Evaluation evaluation){
 		if (!evaluationService.authorizedUser(evaluation)){
 			return new ModelAndView("notAuthorized");
 		}
@@ -105,6 +105,7 @@ public class EvaluationController {
 	@RequestMapping(value="/saveEvaluationWeight.html")
 	public String saveEvaluationWeight(@ModelAttribute("evaluation") Evaluation evaluation,
 			@RequestParam("submit") String submit){
+		evaluationService.saveEvaluation(evaluation);
 		if (submit.equals("Continue Survey")) {
 			return "redirect:beginSurvey.html?evaluationId=" + evaluation.getId();
 		} else {

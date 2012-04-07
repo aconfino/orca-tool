@@ -1,5 +1,7 @@
 package com.orca.domain;
 
+import java.text.DecimalFormat;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -46,10 +48,12 @@ public class Survey {
 	@ManyToOne
 	@JoinColumn(name = "evaluationId")
 	private Evaluation evaluation;
+	@SuppressWarnings("unused")
 	private double score;
 	
 	public double getScore(){
-		return (codeDesign.getWeightedValue(this) 
+		DecimalFormat decimalFormat = new DecimalFormat("#.##");
+		double score = codeDesign.getWeightedValue(this) 
 				+ codeRuntime.getWeightedValue(this)
 				+ codeStatic.getWeightedValue(this)
 				+ community.getWeightedValue(this)
@@ -59,14 +63,13 @@ public class Survey {
 				+ pedigree.getWeightedValue(this)
 				+ support.getWeightedValue(this)
 				+ velocity.getWeightedValue(this)
-				+ functionality.getWeightedValue(this));
+				+ functionality.getWeightedValue(this);
+        return Double.valueOf(decimalFormat.format(score));
 	}
 	
 	public void setScore(double score) {
 		this.score = score;
 	}
-
-
 
 	public Integer getId() {
 		return id;
