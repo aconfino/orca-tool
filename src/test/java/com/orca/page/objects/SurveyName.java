@@ -1,7 +1,6 @@
 package com.orca.page.objects;
 
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,7 +14,6 @@ public class SurveyName {
 	public SurveyName(WebDriver driver){
 		submenu = new SurveySubmenu(driver);
 		this.driver=driver;
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
 	}
 	

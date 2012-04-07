@@ -1,7 +1,5 @@
 package com.orca.page.objects;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,7 +14,6 @@ public class EditEvaluation {
 	public EditEvaluation(WebDriver driver){
 		submenu = new EvaluationSubMenu(driver);
 		this.driver=driver;
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
 	}
 	
