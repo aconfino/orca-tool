@@ -6,7 +6,7 @@
 				<c:if test="${not empty param.errors}">
 	 				<span class="loginError"><h3>We're sorry. Your user name \ password combination was not found.</h3></span>
  				</c:if>		
-				<form action="<c:url value='j_spring_security_check' />" method="post" >
+				<form action="<c:url value='j_spring_security_check' />" method="post" id="loginForm">
 					<span class="loginColumn">
 					<h2>Login</h2>
 					<label path="username">User name:</label>	

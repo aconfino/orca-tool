@@ -18,7 +18,7 @@ public class TestUtils {
 	
 	public static FirefoxDriver getFirefoxDriver(){
 		FirefoxDriver driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		return driver;
 	}
 	
@@ -43,5 +43,6 @@ public class TestUtils {
 	public static String getURL(){
 		return URL;
 	}
+	
 
 }

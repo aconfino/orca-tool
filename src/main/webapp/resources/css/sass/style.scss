@@ -1,11 +1,28 @@
 
-/* Sass variables */
+/* Sass variables  */ 
 $primaryColor: #ccfb5c;
 $bodyColor:#327996;
 $gradient:#2F2727;   
 $border:9A9A9A;
 $contentWidth: 75%;
 $sideBarWidth: 25%;
+
+/*  Alternate style  
+	$primaryColor: #660000;
+	$bodyColor:#000033;
+	$gradient:#101010 ;
+	$border:9A9A9A;
+	$contentWidth: 50%;
+	$sideBarWidth: 50%;
+	 */	
+
+ @mixin linear-gradient($color1, $color2) {
+   	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+  	background-image: -webkit-linear-gradient(top, $color1, $color2);
+  	background-image:    -moz-linear-gradient(top, $color1, $color2);
+  	background-image:     -ms-linear-gradient(top, $color1, $color2);
+  	background-image:      -o-linear-gradient(top, $color1, $color2);
+}
 
 * {
   margin: 0;
@@ -14,16 +31,12 @@ $sideBarWidth: 25%;
 
 body {
   margin: 0px;
-  background-color: $gradient; 
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($gradient), to($bodyColor));
-  background-image: -webkit-linear-gradient(top, $gradient, $bodyColor);
-  background-image:    -moz-linear-gradient(top, $gradient, $bodyColor);
-  background-image:     -ms-linear-gradient(top, $gradient, $bodyColor);
-  background-image:      -o-linear-gradient(top, $gradient, $bodyColor);
+  background-color: $gradient;  
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: #FFFFFF;
-  min-height: 900px;;
+  min-height: 900px;
+  @include linear-gradient($gradient, $bodyColor);
   }
 
 h1, h2, h3 {
@@ -122,11 +135,7 @@ textarea#surveyComments{
 /* Top Menu */
 #topLevelMenu {
   background-color: $primaryColor; 
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($bodyColor), to(#1a82f7));
-  background-image: -webkit-linear-gradient(top, $primaryColor, $gradient);
-  background-image:    -moz-linear-gradient(top, $primaryColor, $gradient);
-  background-image:     -ms-linear-gradient(top, $primaryColor, $gradient);
-  background-image:      -o-linear-gradient(top, $primaryColor, $gradient);
+  @include linear-gradient($primaryColor, $gradient);
   border-radius:25px;
   border:2px solid $border;
   width: 1200px;

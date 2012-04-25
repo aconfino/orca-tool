@@ -1,4 +1,12 @@
-/* Sass variables */
+/* Sass variables  */
+/*  Alternate style  
+	$primaryColor: #660000;
+	$bodyColor:#000033;
+	$gradient:#101010 ;
+	$border:9A9A9A;
+	$contentWidth: 50%;
+	$sideBarWidth: 50%;
+	 */
 * {
   margin: 0;
   padding: 0; }
@@ -6,15 +14,15 @@
 body {
   margin: 0px;
   background-color: #2f2727;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #FFFFFF;
+  min-height: 900px;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2f2727), to(#327996));
   background-image: -webkit-linear-gradient(top, #2f2727, #327996);
   background-image: -moz-linear-gradient(top, #2f2727, #327996);
   background-image: -ms-linear-gradient(top, #2f2727, #327996);
-  background-image: -o-linear-gradient(top, #2f2727, #327996);
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  color: #FFFFFF;
-  min-height: 900px; }
+  background-image: -o-linear-gradient(top, #2f2727, #327996); }
 
 h1, h2, h3 {
   margin-bottom: 1.5em; }
@@ -48,10 +56,6 @@ a {
 img.left {
   float: left;
   margin: 5px 25px 0px 0px; }
-  
-  img.right {
-  float: right;
-  margin: 0px 25px 25px 0px; }
 
 textarea#surveyComments {
   color: #666;
@@ -108,7 +112,7 @@ textarea#surveyComments {
 /* Top Menu */
 #topLevelMenu {
   background-color: #ccfb5c;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#327996), to(#1a82f7));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccfb5c), to(#2f2727));
   background-image: -webkit-linear-gradient(top, #ccfb5c, #2f2727);
   background-image: -moz-linear-gradient(top, #ccfb5c, #2f2727);
   background-image: -ms-linear-gradient(top, #ccfb5c, #2f2727);
@@ -233,10 +237,6 @@ input:focus {
 .post .evaluationSliders {
   padding: 10px 23px 0px 23px;
   float: left; }
-
-.evaluationContent {
-  clear: both;
-  padding: 25px 50px 0px 25px; }
 
 .metricContent {
   width: 500px;
