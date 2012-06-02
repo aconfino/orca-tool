@@ -1,0 +1,7 @@
+jdbc.driverClassName= com.mysql.jdbc.Driver
+jdbc.dialect=org.hibernate.dialect.MySQLDialect
+jdbc.databaseurl=jdbc:mysql://us-cdbr-east.cleardb.com/heroku_ea448f2aa799494
+jdbc.username=d5905a747ba1d6
+jdbc.password=43d12306
+jdbc.validationQuery=select 1
+jdbc.testOnBorrow=true
