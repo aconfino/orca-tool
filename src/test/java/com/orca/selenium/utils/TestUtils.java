@@ -1,10 +1,12 @@
 package com.orca.selenium.utils;
 
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Action;
@@ -14,20 +16,37 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class TestUtils {
 	
 	// TODO make this path relative
-	public static final String firefoxProfileDir = "C:\\workspace\\orcaproject\\src\\test\\resources\\FirefoxProfile";	
 	public static final String URL = "http://orca-project.herokuapp.com/";
 	private static final Integer driverTimeout = 30;
 
     public static WebDriver getFirefoxDriver() {
     	DesiredCapabilities capabilities = new DesiredCapabilities();
     	capabilities = DesiredCapabilities.firefox();
-    	capabilities.setBrowserName("firefox");
-    	capabilities.setPlatform(org.openqa.selenium.Platform.WINDOWS);
-    	capabilities.setVersion("10");
     	WebDriver firefoxDriver = new FirefoxDriver(capabilities);
     	firefoxDriver.manage().timeouts().implicitlyWait(driverTimeout, TimeUnit.SECONDS);
     	return firefoxDriver;
     }	
+    
+    public static WebDriver getFirefox9Driver(){
+    	FirefoxBinary binary = new FirefoxBinary(new File("C:\\Program Files\\Mozilla Firefox\\9.0\\firefox.exe")); 
+    	WebDriver firefoxDriver = new FirefoxDriver(binary, null);
+    	firefoxDriver.manage().timeouts().implicitlyWait(driverTimeout, TimeUnit.SECONDS);
+    	return firefoxDriver;
+    }
+    
+    public static WebDriver getFirefox10Driver(){
+    	FirefoxBinary binary = new FirefoxBinary(new File("C:\\Program Files\\Mozilla Firefox\\10.0.2\\firefox.exe")); 
+    	WebDriver firefoxDriver = new FirefoxDriver(binary, null);
+    	firefoxDriver.manage().timeouts().implicitlyWait(driverTimeout, TimeUnit.SECONDS);
+    	return firefoxDriver;
+    }
+    
+    public static WebDriver getFirefox11Driver(){
+    	FirefoxBinary binary = new FirefoxBinary(new File("C:\\Program Files\\Mozilla Firefox\\11.0\\firefox.exe")); 
+    	WebDriver firefoxDriver = new FirefoxDriver(binary, null);
+    	firefoxDriver.manage().timeouts().implicitlyWait(driverTimeout, TimeUnit.SECONDS);
+    	return firefoxDriver;
+    }
 	
 	public static ChromeDriver getChromeDriver(){
 		ChromeDriver driver = new ChromeDriver();
