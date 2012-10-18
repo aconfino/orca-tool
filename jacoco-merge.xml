@@ -1,0 +1,5 @@
+<project default="merge">
+  <target name="merge">
+    <echo message="Hello Jacoco Merge"/>
+  </target>
+</project>

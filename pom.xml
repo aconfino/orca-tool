@@ -12,6 +12,7 @@
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 		<spring-security.version>3.0.1.RELEASE</spring-security.version>
 		<tiles.version>2.2.2</tiles.version>
+		<jacoco.version>0.6.0.201210061924</jacoco.version>
 	</properties>
 
 	<dependencies>
@@ -245,7 +246,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.6.0.201210061924</version>
+				<version>${jacoco.version}</version>
 				<executions>
 					<execution>
 						<id>jacoco-initialize</id>
@@ -262,12 +263,11 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!--  used to copy ant task jars - needed for jacoco report -->
+			<!-- used to copy ant task jars - needed for jacoco report -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
-					<!-- Copy the ant tasks jar. Needed for ts.jacoco.report-ant . -->
 					<execution>
 						<id>jacoco-dependency-ant</id>
 						<goals>
@@ -280,7 +280,7 @@
 								<artifactItem>
 									<groupId>org.jacoco</groupId>
 									<artifactId>org.jacoco.ant</artifactId>
-									<version>0.6.0.201210061924</version>
+									<version>${jacoco.version}</version>
 								</artifactItem>
 							</artifactItems>
 							<stripVersion>true</stripVersion>
@@ -289,9 +289,25 @@
 					</execution>
 				</executions>
 			</plugin>
-
-
-
+			<!-- execute some ant task -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<ant antfile="${basedir}/jacoco-merge.xml" target="merge" />
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 		<!-- use to run Selenium tests in parallel from a Jenkins job <plugin> 
 			<groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
