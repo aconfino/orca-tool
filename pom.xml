@@ -211,7 +211,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -243,30 +243,60 @@
 				</executions>
 			</plugin>
 			<plugin>
-    			<groupId>org.jacoco</groupId>
-   			 	<artifactId>jacoco-maven-plugin</artifactId>
-    			<version>0.6.0.201210061924</version>
-  				<executions>
-   					<execution>
-    					<id>jacoco-initialize</id>
-    					<goals>
-     						<goal>prepare-agent</goal>
-					    </goals>
-   					</execution>
-   					<execution>
-    					<id>jacoco-site</id>
-    					<phase>package</phase>
-    					<goals>
-     						<goal>report</goal>
-    					</goals>
-   					</execution>
-  				</executions>
-  				</plugin>
-    		</plugins>
-			<!-- use to run Selenium tests in parallel from a Jenkins job <plugin> 
-				<groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
-				<version>2.12</version> <configuration> <parallel>classes</parallel> <threadCount>${numberOfThreads}</threadCount> 
-				<perCoreThreadCount>false</perCoreThreadCount> </configuration> </plugin> -->
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.6.0.201210061924</version>
+				<executions>
+					<execution>
+						<id>jacoco-initialize</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>jacoco-site</id>
+						<phase>package</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!--  used to copy ant task jars - needed for jacoco report -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<!-- Copy the ant tasks jar. Needed for ts.jacoco.report-ant . -->
+					<execution>
+						<id>jacoco-dependency-ant</id>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<phase>process-test-resources</phase>
+						<inherited>false</inherited>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.jacoco</groupId>
+									<artifactId>org.jacoco.ant</artifactId>
+									<version>0.6.0.201210061924</version>
+								</artifactItem>
+							</artifactItems>
+							<stripVersion>true</stripVersion>
+							<outputDirectory>${basedir}/target/jacoco-jars</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+
+
+		</plugins>
+		<!-- use to run Selenium tests in parallel from a Jenkins job <plugin> 
+			<groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
+			<version>2.12</version> <configuration> <parallel>classes</parallel> <threadCount>${numberOfThreads}</threadCount> 
+			<perCoreThreadCount>false</perCoreThreadCount> </configuration> </plugin> -->
 	</build>
 
 </project>
