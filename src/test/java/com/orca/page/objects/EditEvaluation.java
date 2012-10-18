@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.orca.selenium.utils.TestUtils;
 
-public class EditEvaluation {
+public class EditEvaluation extends BasePageObject {
 	private WebDriver driver;
 	protected EvaluationSubMenu submenu;
 	

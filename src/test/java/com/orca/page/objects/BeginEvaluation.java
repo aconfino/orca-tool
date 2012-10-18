@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class BeginEvaluation {
+public class BeginEvaluation extends BasePageObject {
 	protected WebDriver driver;
 	protected EvaluationSubMenu submenu;
 	

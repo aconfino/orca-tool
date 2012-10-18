@@ -47,7 +47,7 @@ public class SurveyIntegrationTest {
 		
 		@Before
 		public void openTheBrowser() throws IOException {
-			driver = TestUtils.getFirefoxDriver();
+			driver = TestUtils.getFirefox9Driver();
 			homePage = PageFactory.initElements(driver, Home.class);
 			homePage.open();
 		}

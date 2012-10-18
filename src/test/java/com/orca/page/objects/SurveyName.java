@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SurveyName {
+public class SurveyName extends BasePageObject {
 	private WebDriver driver;
 	protected SurveySubmenu submenu;
 	

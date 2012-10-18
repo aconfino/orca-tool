@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.orca.selenium.utils.TestUtils;
 
-public class EvaluationWeight {
+public class EvaluationWeight extends BasePageObject {
 	protected WebDriver driver;
 	protected EvaluationSubMenu submenu;
 	
