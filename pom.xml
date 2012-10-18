@@ -297,6 +297,11 @@
    									<artifactId>org.jacoco.agent</artifactId>
   									 <version>${jacoco.version}</version>
    								</artifactItem>
+   								<artifactItem>
+   									<groupId>asm</groupId>
+									<artifactId>asm-all</artifactId>
+									<version>2.2</version>							
+   								</artifactItem>
 							</artifactItems>
 							<stripVersion>true</stripVersion>
 							<outputDirectory>${basedir}/target/jacoco-jars</outputDirectory>

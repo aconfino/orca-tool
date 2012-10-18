@@ -1,14 +1,20 @@
 <project name="Example" xmlns:jacoco="antlib:org.jacoco.ant">
 
 <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
-	<classpath path="${basedir}/target/jacoco-jars/org.jacoco.ant.jar" />
-	<classpath path="${basedir}/target/jacoco-jars/org.jacoco.report.jar" />
-	<classpath path="${basedir}/target/jacoco-jars/org.jacoco.core.jar" />
-	<classpath path="${basedir}/target/jacoco-jars/org.jacoco.agent.jar" />
+	<classpath path="${basedir}/target/jacoco-jars/jacocoant.jar" />	
 </taskdef>
 
-<jacoco:merge destfile="merged.exec">
-     <fileset dir="target/site/jacoco" includes="*.exec"/>
-</jacoco:merge>
-   
+<jacoco:report>                       
+        <executiondata>
+            <file file="target/jacoco.exec"/>
+			<file file="target/jacoco2.exec"/>
+        </executiondata>
+		<structure name="Example Project">
+			<classfiles>
+				<fileset dir="target/classes"/>
+			</classfiles>
+		</structure>
+		<xml destfile="${basedir}/target/merged-report.xml" />                     
+</jacoco:report>
+
 </project>
