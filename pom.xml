@@ -12,7 +12,7 @@
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 		<spring-security.version>3.0.1.RELEASE</spring-security.version>
 		<tiles.version>2.2.2</tiles.version>
-		<jacoco.version>0.6.0.201210061924</jacoco.version>
+		<jacoco.version>0.5.7.201204190339</jacoco.version>
 	</properties>
 
 	<dependencies>
@@ -282,6 +282,21 @@
 									<artifactId>org.jacoco.ant</artifactId>
 									<version>${jacoco.version}</version>
 								</artifactItem>
+								<artifactItem>
+								 	<groupId>org.jacoco</groupId>
+   									<artifactId>org.jacoco.report</artifactId>
+  									 <version>${jacoco.version}</version>
+   								</artifactItem>
+   								<artifactItem>
+								 	<groupId>org.jacoco</groupId>
+   									<artifactId>org.jacoco.core</artifactId>
+  									 <version>${jacoco.version}</version>
+   								</artifactItem>
+   								<artifactItem>
+								 	<groupId>org.jacoco</groupId>
+   									<artifactId>org.jacoco.agent</artifactId>
+  									 <version>${jacoco.version}</version>
+   								</artifactItem>
 							</artifactItems>
 							<stripVersion>true</stripVersion>
 							<outputDirectory>${basedir}/target/jacoco-jars</outputDirectory>
@@ -302,7 +317,7 @@
 						</goals>
 						<configuration>
 							<tasks>
-								<ant antfile="${basedir}/jacoco-merge.xml" target="merge" />
+								<ant antfile="${basedir}/jacoco-merge.xml" />
 							</tasks>
 						</configuration>
 					</execution>

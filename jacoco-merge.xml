@@ -1,5 +1,14 @@
-<project default="merge">
-  <target name="merge">
-    <echo message="Hello Jacoco Merge"/>
-  </target>
+<project name="Example" xmlns:jacoco="antlib:org.jacoco.ant">
+
+<taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
+	<classpath path="${basedir}/target/jacoco-jars/org.jacoco.ant.jar" />
+	<classpath path="${basedir}/target/jacoco-jars/org.jacoco.report.jar" />
+	<classpath path="${basedir}/target/jacoco-jars/org.jacoco.core.jar" />
+	<classpath path="${basedir}/target/jacoco-jars/org.jacoco.agent.jar" />
+</taskdef>
+
+<jacoco:merge destfile="merged.exec">
+     <fileset dir="target/site/jacoco" includes="*.exec"/>
+</jacoco:merge>
+   
 </project>
