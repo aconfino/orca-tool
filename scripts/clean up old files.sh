@@ -1,4 +1,4 @@
-
+#!/bin/bash
 find /home/vagrant/test-data/* -mtime +30 -exec rm {} \;
 
 part #1 - find the matching file
