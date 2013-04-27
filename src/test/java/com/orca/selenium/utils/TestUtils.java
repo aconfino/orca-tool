@@ -28,7 +28,7 @@ public class TestUtils {
     }	
     
     public static WebDriver getFirefox9Driver(){
-    	FirefoxBinary binary = new FirefoxBinary(new File("C:\\Program Files\\Mozilla Firefox\\9.0\\firefox.exe")); 
+    	FirefoxBinary binary = new FirefoxBinary(new File("C:\\tools\\firefox\\9.0\\firefox.exe")); 
     	WebDriver firefoxDriver = new FirefoxDriver(binary, null);
     	firefoxDriver.manage().timeouts().implicitlyWait(driverTimeout, TimeUnit.SECONDS);
     	return firefoxDriver;
