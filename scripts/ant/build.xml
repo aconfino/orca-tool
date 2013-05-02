@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project name="Compress, Concatenate, and FTP CSS and JS" default="initialize">
+
+	<!-- properties are immutable -->
+	<property name="foo" value="Hello mate!" />
+	<property name="bar" value="bar" />
+
+	<target name="create-dir">
+		<echo>Beginning!</echo>
+		<mkdir dir="${bar}" />
+	</target>
+
+	<!-- calling variable-test will cause create-dir to be called first -->
+	<target name="variable-test" depends="create-dir">
+		<echo>${foo}</echo>
+	</target>
+
+	<target name="call_mom" depends="variable-test">
+		<echo> Hi Mom! </echo>
+	</target>
+
+	<target name="delete-dir" depends="call_mom">
+		<delete dir="${bar}" />
+	</target>
+
+	<target name="initialize" depends="delete-dir">
+		<echo>Done!</echo>
+	</target>
+
+</project>
