@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="Compress, Concatenate, and FTP CSS and JS" default="initialize">
+
+<!-- properties are immutable -->
+<property name="src" value="C:/workspace/orca-tool/src/main/webapp/WEB-INF/views" />
+<property name="output" value="C:/workspace/ant-stuff" />
+
+<target name="compile">
+    <jspc srcdir="${src}" destdir="${output}"> </jspc>
+</target>
+ 
+</project>
