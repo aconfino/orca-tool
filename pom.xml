@@ -271,7 +271,7 @@
 					</execution>
 				</executions>
 			</plugin> 
-			<!-- end - precompiling jsps -->
+			 end - precompiling jsps -->
 		</plugins>
 	</build>
 </project>
