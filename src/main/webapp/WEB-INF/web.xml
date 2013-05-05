@@ -14,21 +14,21 @@
 	</context-param>
 	<!-- Spring Security Filters -->
 	<filter>
-    	<filter-name>springSecurityFilterChain</filter-name>
-    	<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 	</filter>
 	<filter-mapping>
-    	<filter-name>springSecurityFilterChain</filter-name>
-    	<url-pattern>/*</url-pattern>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-    <listener>
-      <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
-    </listener>
+	<listener>
+		<listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
+	</listener>
 
 	<!-- Processes application requests -->
 	<servlet>
@@ -50,7 +50,7 @@
 		<servlet-class>com.orca.servlet.ReverseServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-	
+
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
@@ -59,33 +59,32 @@
 		<url-pattern>*.jpg</url-pattern>
 		<url-pattern>*.png</url-pattern>
 		<url-pattern>*.gif</url-pattern>
-		 <url-pattern>*.html</url-pattern>	
+		<url-pattern>*.html</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>simpleServlet</servlet-name>
-		<url-pattern>/superKick</url-pattern>	
+		<url-pattern>/superKick</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>reverseServlet</servlet-name>
-		<url-pattern>/reverse</url-pattern>	
+		<url-pattern>/reverse</url-pattern>
 	</servlet-mapping>
-	
-	<!-- Simple Captcha -->
-	    <servlet>
-        <servlet-name>SimpleCaptchaServlet</servlet-name>
-        <servlet-class>nl.captcha.servlet.StickyCaptchaServlet</servlet-class>
-        <init-param>
-            <param-name>width</param-name>
-            <param-value>250</param-value>
-        </init-param>
-        <init-param>
-            <param-name>height</param-name>
-            <param-value>75</param-value>
-        </init-param>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>SimpleCaptchaServlet</servlet-name>
-        <url-pattern>/stickyImg</url-pattern>
-    </servlet-mapping>
 
+	<!-- Simple Captcha -->
+	<servlet>
+		<servlet-name>SimpleCaptchaServlet</servlet-name>
+		<servlet-class>nl.captcha.servlet.StickyCaptchaServlet</servlet-class>
+		<init-param>
+			<param-name>width</param-name>
+			<param-value>250</param-value>
+		</init-param>
+		<init-param>
+			<param-name>height</param-name>
+			<param-value>75</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SimpleCaptchaServlet</servlet-name>
+		<url-pattern>/stickyImg</url-pattern>
+	</servlet-mapping>
 </web-app>
