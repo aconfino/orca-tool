@@ -82,13 +82,13 @@
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-core</artifactId>
 			<version>${tiles.version}</version>
-			<scope>runtime</scope>
+			<!-- can't be scoped for runtime if we precompile jsps -->
 		</dependency>
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-jsp</artifactId>
 			<version>${tiles.version}</version>
-			<scope>runtime</scope>
+			<!-- can't be scoped for runtime if we precompile jsps -->
 		</dependency>
 		<!-- Logging -->
 		<dependency>
@@ -267,11 +267,13 @@
 						<configuration>
 							<keepSources>true</keepSources>
 							<ignoreJspFragmentErrors>true</ignoreJspFragmentErrors>
+							<verbose>true</verbose>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin> 
-			 end - precompiling jsps -->
+			 -->
+			 <!-- end - precompiling jsps -->
 		</plugins>
 	</build>
 </project>
