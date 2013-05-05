@@ -7,7 +7,7 @@
 			<div class="entry"> 
 				<img src="/resources/images/chart.jpg" alt="Orca Project - Chart" class="left" />
 				<p>
-				Hi Mom!  The ORCA project (OpenSource Rapid Comparative Analysis)
+				The ORCA project (OpenSource Rapid Comparative Analysis)
 				provides free tools to evaluate software in a consistent and efficient manner.  Using
 				10 proven software metrics, ORCA will help you evaluate every aspect of an open 
 				source project.  ORCA also allows software teams to corroborate on multiple projects with ease.  
