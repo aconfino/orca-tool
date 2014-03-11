@@ -1,0 +1,42 @@
+#!/bin/bash
+#
+RETVAL=0;
+
+start() {
+        echo "Starting myService"
+}
+
+stop() {
+        echo "Stopping myService"
+}
+
+restart() {
+        stop
+        start
+}
+
+status() {
+   echo "Doing just fine..."
+}
+
+case "$1" in 
+start)
+        start
+;;
+stop)
+        stop
+;;
+restart)
+        restart
+;;
+status)
+        status
+;;
+
+*)
+
+echo $"Usage: $0 {start|stop|restart}"
+exit 1
+esac
+
+exit $RETVAL 
